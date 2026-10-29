@@ -37,7 +37,6 @@ export const Recommendations = () => {
   const [filterStatus, setFilterStatus] = useState('all');
   const [isLogOpen, setIsLogOpen] = useState(false);
 
-  // Edit / Reject action modal state
   const [activeRecForAction, setActiveRecForAction] = useState(null);
   const [actionType, setActionType] = useState('edit');
   const [customValue, setCustomValue] = useState('');
@@ -62,7 +61,7 @@ export const Recommendations = () => {
         edited_value: null,
         note: `Approved recommendation ${rec.rec_id}`
       });
-      notifySuccess(`Recommendation ${rec.rec_id} approved and applied to menu.`);
+      notifySuccess(`Recommendation ${rec.rec_id} approved and applied.`);
     } catch (err) {
       notifyError('Failed to record approval');
     }
@@ -95,7 +94,7 @@ export const Recommendations = () => {
   };
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', width: '100%', maxWidth: '1440px', margin: '0 auto' }}>
       {/* Header */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '1rem' }}>
         <div>
@@ -103,12 +102,12 @@ export const Recommendations = () => {
             <span className="badge badge-neutral">
               Part E · POST /recommend & POST /overrides
             </span>
-            <span style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>Layer 4/5 Multi-Objective Optimizer</span>
+            <span style={{ fontSize: '0.72rem', color: '#8a94a6' }}>Layer 4/5 Multi-Objective Optimizer</span>
           </div>
-          <h2 style={{ fontSize: '1.45rem', fontWeight: 700, color: 'var(--text-primary)', margin: 0 }}>
-            Policy Recommendations & Pilot Gatekeeper
+          <h2 style={{ fontSize: '1.45rem', fontWeight: 700, color: '#ffffff', margin: 0 }}>
+            Policy Recommendations & Pilot Gate
           </h2>
-          <p style={{ fontSize: '0.82rem', color: 'var(--text-tertiary)', marginTop: '3px' }}>
+          <p style={{ fontSize: '0.82rem', color: '#8a94a6', marginTop: '3px' }}>
             Confidence-gated actions (Apply ≥ 0.80, Pilot, Hold) optimizing cafeteria margin while maintaining student meal affordability.
           </p>
         </div>
@@ -135,50 +134,50 @@ export const Recommendations = () => {
       </div>
 
       {/* Top Section: KPI Summaries & Pareto Frontier Curve */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '1rem' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '1.25rem' }}>
         
         {/* KPI Summaries */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
           <MetricCard
             title="Total Daily Profit Delta (Expected)"
             range={summary?.profit_delta}
             isCurrency={true}
             subtext="Net system gain across proposed menu"
-            color="var(--accent-emerald)"
+            color="#34d399"
           />
 
-          <div className="panel" style={{ padding: '1.1rem', display: 'flex', flexDirection: 'column', gap: '6px' }}>
-            <span style={{ fontSize: '0.72rem', fontWeight: 600, color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+          <div className="bento-card" style={{ padding: '1.2rem', display: 'flex', flexDirection: 'column', gap: '6px' }}>
+            <span style={{ fontSize: '0.75rem', fontWeight: 600, color: '#8a94a6', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
               Student Affordability Guarantee
             </span>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
               <div>
-                <span style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>Baseline Reach:</span>
-                <div className="mono" style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--text-primary)' }}>
+                <span style={{ fontSize: '0.7rem', color: '#8a94a6' }}>Baseline Reach:</span>
+                <div className="mono" style={{ fontSize: '1.35rem', fontWeight: 800, color: '#ffffff' }}>
                   {formatRatioAsPct(summary?.coverage_before || 0.74)}
                 </div>
               </div>
-              <div style={{ fontSize: '1.2rem', color: 'var(--text-muted)' }}>→</div>
+              <div style={{ fontSize: '1.35rem', color: '#34d399' }}>→</div>
               <div>
-                <span style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>Optimized Reach:</span>
-                <div className="mono" style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--accent-emerald)' }}>
+                <span style={{ fontSize: '0.7rem', color: '#8a94a6' }}>Optimized Reach:</span>
+                <div className="mono" style={{ fontSize: '1.35rem', fontWeight: 800, color: '#34d399' }}>
                   {formatRatioAsPct(summary?.coverage_after || guardrails.coverage_target)}
                 </div>
               </div>
             </div>
-            <p style={{ fontSize: '0.72rem', color: 'var(--text-muted)', margin: '4px 0 0 0' }}>
+            <p style={{ fontSize: '0.72rem', color: '#8a94a6', margin: '4px 0 0 0' }}>
               Contract guarantee: ≥{Math.round(guardrails.coverage_target * 100)}% of campus students can afford a complete meal under budget.
             </p>
           </div>
         </div>
 
         {/* Pareto Frontier Curve Panel */}
-        <div className="panel" style={{ padding: '1.1rem' }}>
+        <div className="bento-card" style={{ padding: '1.2rem' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.25rem' }}>
-            <h4 style={{ fontSize: '0.88rem', margin: 0, color: 'var(--text-secondary)' }}>
+            <h4 style={{ fontSize: '0.92rem', margin: 0, color: '#ffffff' }}>
               Profit vs Affordability Frontier Curve
             </h4>
-            <span style={{ fontSize: '0.68rem', color: 'var(--text-muted)' }}>
+            <span style={{ fontSize: '0.68rem', color: '#8a94a6' }}>
               Pareto Optimal Boundary
             </span>
           </div>
@@ -200,12 +199,12 @@ export const Recommendations = () => {
               onClick={() => setFilterStatus(tab.id)}
               style={{
                 backgroundColor: filterStatus === tab.id ? 'var(--bg-surface-elevated)' : 'transparent',
-                color: filterStatus === tab.id ? 'var(--text-primary)' : 'var(--text-tertiary)',
-                border: filterStatus === tab.id ? '1px solid var(--border-strong)' : '1px solid var(--border-subtle)',
-                borderRadius: 'var(--radius-sm)',
-                padding: '4px 10px',
+                color: filterStatus === tab.id ? 'var(--text-primary)' : 'var(--text-secondary)',
+                border: filterStatus === tab.id ? '1px solid var(--border-medium)' : '1px solid transparent',
+                borderRadius: 'var(--radius-pill)',
+                padding: '4px 12px',
                 fontSize: '0.75rem',
-                fontWeight: filterStatus === tab.id ? 600 : 500,
+                fontWeight: 600,
                 cursor: 'pointer'
               }}
             >
@@ -214,13 +213,13 @@ export const Recommendations = () => {
           ))}
         </div>
 
-        <span style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>
+        <span style={{ fontSize: '0.72rem', color: '#8a94a6' }}>
           Changes require owner confirmation via Owner Token
         </span>
       </div>
 
       {/* Recommendations Cards Grid */}
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
         {filteredRecs.map((rec) => {
           const targetName = getItemOrComboName(rec.item_id || rec.combo_id);
           const unitSymbol = rec.kind === 'price' ? '₹' : rec.kind === 'portion' ? 'g' : '%';
@@ -228,17 +227,17 @@ export const Recommendations = () => {
           return (
             <div
               key={rec.rec_id}
-              className="panel"
+              className="bento-card"
               style={{
-                padding: '1.15rem',
+                padding: '1.25rem',
                 display: 'flex',
                 flexDirection: 'column',
-                gap: '0.75rem',
+                gap: '0.85rem',
                 borderLeft: rec.status === 'apply'
-                  ? '3px solid var(--accent-emerald)'
+                  ? '4px solid #34d399'
                   : rec.status === 'pilot'
-                  ? '3px solid var(--accent-amber)'
-                  : '3px solid var(--accent-rose)'
+                  ? '4px solid #fbbf24'
+                  : '4px solid #f87171'
               }}
             >
               {/* Row 1: Status, Rec ID, Kind, Target Name */}
@@ -247,21 +246,21 @@ export const Recommendations = () => {
                   <StatusTag status={rec.status} />
                   <div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                      <span className="mono" style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>
+                      <span className="mono" style={{ fontSize: '0.7rem', color: '#8a94a6' }}>
                         {rec.rec_id}
                       </span>
                       <span style={{
                         fontSize: '0.65rem',
                         textTransform: 'uppercase',
-                        padding: '1px 4px',
-                        borderRadius: 'var(--radius-xs)',
+                        padding: '1px 5px',
+                        borderRadius: 'var(--radius-pill)',
                         backgroundColor: 'rgba(255, 255, 255, 0.05)',
-                        color: 'var(--text-muted)'
+                        color: '#8a94a6'
                       }}>
                         {rec.kind}
                       </span>
                     </div>
-                    <h4 style={{ fontSize: '0.98rem', fontWeight: 600, color: 'var(--text-primary)', margin: '2px 0 0 0' }}>
+                    <h4 style={{ fontSize: '1.05rem', fontWeight: 700, color: '#ffffff', margin: '2px 0 0 0' }}>
                       {targetName}
                     </h4>
                   </div>
@@ -269,7 +268,7 @@ export const Recommendations = () => {
 
                 {/* Expected Profit Delta Badge */}
                 <div style={{ textAlign: 'right' }}>
-                  <span style={{ fontSize: '0.68rem', color: 'var(--text-muted)', display: 'block' }}>Expected Daily Delta</span>
+                  <span style={{ fontSize: '0.68rem', color: '#8a94a6', display: 'block' }}>Expected Daily Delta</span>
                   <RangeBadge range={rec.expected_profit_delta} isCurrency={true} />
                 </div>
               </div>
@@ -279,44 +278,44 @@ export const Recommendations = () => {
                 display: 'grid',
                 gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
                 gap: '8px',
-                padding: '8px 10px',
-                borderRadius: 'var(--radius-md)',
-                backgroundColor: 'var(--bg-canvas)',
+                padding: '10px 12px',
+                borderRadius: '14px',
+                backgroundColor: 'var(--bg-surface-inset)',
                 border: '1px solid var(--border-subtle)',
                 alignItems: 'center'
               }}>
                 <div>
-                  <span style={{ fontSize: '0.68rem', color: 'var(--text-muted)', display: 'block' }}>Current → Proposed</span>
-                  <div className="mono" style={{ fontSize: '0.88rem', fontWeight: 700, color: 'var(--text-primary)' }}>
+                  <span style={{ fontSize: '0.68rem', color: 'var(--text-secondary)', display: 'block' }}>Current → Proposed</span>
+                  <div className="mono" style={{ fontSize: '0.92rem', fontWeight: 800, color: 'var(--text-primary)' }}>
                     {rec.kind === 'price' ? formatINR(rec.current) : `${rec.current}${unitSymbol}`}
                     {' '}→{' '}
-                    <span style={{ color: 'var(--accent-emerald)' }}>
+                    <span style={{ color: 'var(--accent-green)' }}>
                       {rec.kind === 'price' ? formatINR(rec.proposed) : `${rec.proposed}${unitSymbol}`}
                     </span>
                   </div>
                 </div>
 
                 <div>
-                  <span style={{ fontSize: '0.68rem', color: 'var(--text-muted)', display: 'block' }}>Confidence Score</span>
-                  <div className="mono" style={{ fontSize: '0.82rem', fontWeight: 600, color: rec.prob_improves >= 0.8 ? 'var(--accent-emerald)' : 'var(--accent-amber)' }}>
+                  <span style={{ fontSize: '0.68rem', color: '#8a94a6', display: 'block' }}>Confidence Score</span>
+                  <div className="mono" style={{ fontSize: '0.85rem', fontWeight: 700, color: rec.prob_improves >= 0.8 ? '#34d399' : '#fbbf24' }}>
                     {formatRatioAsPct(rec.prob_improves)} probability of profit gain
                   </div>
                 </div>
 
                 {rec.guardrails_met && rec.guardrails_met.length > 0 && (
                   <div>
-                    <span style={{ fontSize: '0.68rem', color: 'var(--text-muted)', display: 'block', marginBottom: '2px' }}>Guardrails Satisfied</span>
+                    <span style={{ fontSize: '0.68rem', color: '#8a94a6', display: 'block', marginBottom: '2px' }}>Guardrails Satisfied</span>
                     <div style={{ display: 'flex', gap: '3px', flexWrap: 'wrap' }}>
                       {rec.guardrails_met.map((gm, gIdx) => (
                         <span
                           key={gIdx}
                           style={{
                             fontSize: '0.65rem',
-                            color: 'var(--accent-emerald)',
-                            backgroundColor: 'var(--accent-emerald-subtle)',
-                            border: '1px solid var(--accent-emerald-border)',
-                            borderRadius: 'var(--radius-xs)',
-                            padding: '1px 4px'
+                            color: '#34d399',
+                            backgroundColor: 'rgba(52, 211, 153, 0.12)',
+                            border: '1px solid rgba(52, 211, 153, 0.25)',
+                            borderRadius: 'var(--radius-pill)',
+                            padding: '1px 6px'
                           }}
                         >
                           ✓ {gm}
@@ -328,7 +327,7 @@ export const Recommendations = () => {
               </div>
 
               {/* Row 3: AI Explanation */}
-              <p style={{ fontSize: '0.8rem', color: 'var(--text-tertiary)', margin: 0, lineHeight: '1.45' }}>
+              <p style={{ fontSize: '0.82rem', color: '#cbd5e1', margin: 0, lineHeight: '1.45' }}>
                 {rec.reason}
               </p>
 
@@ -339,9 +338,14 @@ export const Recommendations = () => {
               <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '6px', paddingTop: '6px', borderTop: '1px solid var(--border-subtle)' }}>
                 <button
                   onClick={() => handleOpenActionModal(rec, 'reject')}
-                  className="btn-danger"
+                  className="btn-secondary"
                   disabled={submitting}
-                  style={{ fontSize: '0.75rem', padding: '3px 8px' }}
+                  style={{
+                    fontSize: '0.75rem',
+                    padding: '4px 10px',
+                    borderColor: 'rgba(248, 113, 113, 0.3)',
+                    color: '#f87171'
+                  }}
                 >
                   <X size={12} />
                   <span>Reject</span>
@@ -351,7 +355,7 @@ export const Recommendations = () => {
                   onClick={() => handleOpenActionModal(rec, 'edit')}
                   className="btn-secondary"
                   disabled={submitting}
-                  style={{ fontSize: '0.75rem', padding: '3px 8px' }}
+                  style={{ fontSize: '0.75rem', padding: '4px 10px' }}
                 >
                   <Edit3 size={12} />
                   <span>Edit Value</span>
@@ -361,7 +365,7 @@ export const Recommendations = () => {
                   onClick={() => handleQuickApprove(rec)}
                   className="btn-primary"
                   disabled={submitting}
-                  style={{ fontSize: '0.75rem', padding: '3px 10px' }}
+                  style={{ fontSize: '0.75rem', padding: '4px 14px' }}
                 >
                   <Check size={12} />
                   <span>{rec.status === 'pilot' ? 'Approve 7d Pilot Arm' : 'Approve & Apply'}</span>
@@ -384,7 +388,7 @@ export const Recommendations = () => {
           <form onSubmit={handleConfirmActionModal} style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>
             {actionType === 'edit' && (
               <div>
-                <label style={{ fontSize: '0.78rem', fontWeight: 600, color: 'var(--text-primary)', display: 'block', marginBottom: '4px' }}>
+                <label style={{ fontSize: '0.78rem', fontWeight: 600, color: '#ffffff', display: 'block', marginBottom: '4px' }}>
                   Owner Overridden Value:
                 </label>
                 <input
@@ -398,7 +402,7 @@ export const Recommendations = () => {
             )}
 
             <div>
-              <label style={{ fontSize: '0.78rem', fontWeight: 600, color: 'var(--text-primary)', display: 'block', marginBottom: '4px' }}>
+              <label style={{ fontSize: '0.78rem', fontWeight: 600, color: '#ffffff', display: 'block', marginBottom: '4px' }}>
                 Note for Policy Learning Cycle:
               </label>
               <textarea
