@@ -36,14 +36,6 @@ export const StudentBudgetBuilder = () => {
         flexDirection: 'column',
         gap: '4px'
       }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-          <span className="badge badge-neutral" style={{ fontSize: '0.65rem' }}>
-            Unauthenticated · Rate-Limited
-          </span>
-          <span style={{ fontSize: '0.68rem', color: 'var(--text-muted)' }}>
-            Contract Part F · GET /student/offers
-          </span>
-        </div>
         <h3 style={{ fontSize: '1.05rem', fontWeight: 700, color: 'var(--text-primary)', margin: 0 }}>
           Campus Student Meal Finder
         </h3>
@@ -87,58 +79,66 @@ export const StudentBudgetBuilder = () => {
 
         {/* Quick Presets */}
         <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
-          {quickPresets.map(preset => (
-            <button
-              key={preset}
-              onClick={() => handleBudgetChange(preset)}
-              style={{
-                flex: 1,
-                padding: '4px',
-                borderRadius: 'var(--radius-sm)',
-                border: budget === preset ? '1px solid var(--accent-blue)' : '1px solid var(--border-subtle)',
-                backgroundColor: budget === preset ? 'var(--accent-blue-subtle)' : 'transparent',
-                color: budget === preset ? 'var(--accent-blue)' : 'var(--text-muted)',
-                fontSize: '0.78rem',
-                fontFamily: 'var(--font-mono)',
-                fontWeight: 600,
-                cursor: 'pointer'
-              }}
-            >
-              ₹{preset}
-            </button>
-          ))}
+          {quickPresets.map(preset => {
+            const isSelected = budget === preset;
+            return (
+              <button
+                key={preset}
+                onClick={() => handleBudgetChange(preset)}
+                style={{
+                  flex: 1,
+                  padding: '6px 4px',
+                  borderRadius: 'var(--radius-sm)',
+                  border: isSelected ? '1px solid var(--accent-blue)' : '1px solid var(--border-subtle)',
+                  backgroundColor: isSelected ? 'var(--accent-blue-subtle)' : 'var(--bg-surface-inset)',
+                  color: isSelected ? 'var(--accent-blue)' : 'var(--text-secondary)',
+                  fontSize: '0.8rem',
+                  fontFamily: 'var(--font-mono)',
+                  fontWeight: 700,
+                  cursor: 'pointer',
+                  transition: 'all 0.15s ease'
+                }}
+              >
+                ₹{preset}
+              </button>
+            );
+          })}
         </div>
       </div>
 
       {/* Filter Tabs */}
-      <div style={{ display: 'flex', gap: '4px' }}>
+      <div style={{ display: 'flex', gap: '6px' }}>
         {[
-          { id: 'all', label: `All (${offers.combos.length + offers.single_items.length})` },
+          { id: 'all', label: `All Offers (${offers.combos.length + offers.single_items.length})` },
           { id: 'combos', label: `Combos (${offers.combos.length})` },
-          { id: 'singles', label: `Dishes (${offers.single_items.length})` }
-        ].map(tab => (
-          <button
-            key={tab.id}
-            onClick={() => setActiveTab(tab.id)}
-            style={{
-              padding: '4px 10px',
-              borderRadius: 'var(--radius-sm)',
-              border: activeTab === tab.id ? '1px solid var(--border-strong)' : '1px solid transparent',
-              backgroundColor: activeTab === tab.id ? 'var(--bg-surface-elevated)' : 'transparent',
-              color: activeTab === tab.id ? 'var(--text-primary)' : 'var(--text-muted)',
-              fontSize: '0.75rem',
-              fontWeight: 500,
-              cursor: 'pointer'
-            }}
-          >
-            {tab.label}
-          </button>
-        ))}
+          { id: 'singles', label: `Single Dishes (${offers.single_items.length})` }
+        ].map(tab => {
+          const isTabActive = activeTab === tab.id;
+          return (
+            <button
+              key={tab.id}
+              onClick={() => setActiveTab(tab.id)}
+              style={{
+                padding: '5px 12px',
+                borderRadius: 'var(--radius-pill)',
+                border: isTabActive ? '1px solid var(--border-medium)' : '1px solid var(--border-subtle)',
+                backgroundColor: isTabActive ? 'var(--nav-btn-active-bg)' : 'transparent',
+                color: isTabActive ? 'var(--nav-btn-active-color)' : 'var(--text-secondary)',
+                fontSize: '0.75rem',
+                fontWeight: 600,
+                cursor: 'pointer',
+                transition: 'all 0.15s ease'
+              }}
+            >
+              {tab.label}
+            </button>
+          );
+        })}
       </div>
 
       {/* Offers Results Section */}
       {loading ? (
-        <div style={{ padding: '2rem', textAlign: 'center', color: 'var(--text-muted)', fontSize: '0.8rem' }}>
+        <div style={{ padding: '2rem', textAlign: 'center', color: 'var(--text-secondary)', fontSize: '0.8rem' }}>
           Querying meals for ₹{budget}...
         </div>
       ) : (
@@ -147,20 +147,20 @@ export const StudentBudgetBuilder = () => {
           {/* Combos list */}
           {(activeTab === 'all' || activeTab === 'combos') && (
             <div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
-                <h4 style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', margin: 0 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '8px' }}>
+                <h4 style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-secondary)', margin: 0 }}>
                   Curated Meal Combos ({offers.combos.length})
                 </h4>
               </div>
 
               {offers.combos.length === 0 ? (
-                <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', padding: '10px', backgroundColor: 'var(--bg-canvas)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-subtle)' }}>
-                  No complete combos available under ₹{budget}. Increase budget or select single dishes.
+                <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', padding: '12px', backgroundColor: 'var(--bg-surface-inset)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-subtle)' }}>
+                  No complete combos available under ₹{budget}. Increase your budget slider or select single dishes below.
                 </div>
               ) : (
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                   {offers.combos.map((combo, idx) => (
-                    <OfferCard key={combo.offer_id ? `${combo.offer_id}-${idx}` : `combo-${idx}`} offer={combo} />
+                    <OfferCard key={combo.combo_id || combo.offer_id ? `${combo.combo_id || combo.offer_id}-${idx}` : `combo-${idx}`} offer={combo} />
                   ))}
                 </div>
               )}
@@ -169,11 +169,11 @@ export const StudentBudgetBuilder = () => {
 
           {/* Single Items list */}
           {(activeTab === 'all' || activeTab === 'singles') && (
-            <div style={{ marginTop: '0.35rem' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
-                <Utensils size={13} color="var(--accent-blue)" />
-                <h4 style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', margin: 0 }}>
-                  Single Dishes & Portion Tiers ({offers.single_items.length})
+            <div style={{ marginTop: '0.5rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '8px' }}>
+                <Utensils size={14} color="var(--accent-blue)" />
+                <h4 style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-secondary)', margin: 0 }}>
+                  Single Dishes & Value Tiers ({offers.single_items.length})
                 </h4>
               </div>
 
@@ -182,7 +182,7 @@ export const StudentBudgetBuilder = () => {
                   <div
                     key={`${item.item_id || 'item'}-${idx}`}
                     style={{
-                      padding: '8px 10px',
+                      padding: '10px 12px',
                       borderRadius: 'var(--radius-sm)',
                       backgroundColor: 'var(--bg-surface-elevated)',
                       border: '1px solid var(--border-subtle)',
@@ -192,19 +192,22 @@ export const StudentBudgetBuilder = () => {
                     }}
                   >
                     <div>
-                      <div style={{ fontSize: '0.82rem', fontWeight: 600, color: 'var(--text-primary)' }}>
+                      <div style={{ fontSize: '0.84rem', fontWeight: 700, color: 'var(--text-primary)' }}>
                         {item.name}
                       </div>
-                      <div style={{ fontSize: '0.7rem', color: 'var(--text-muted)', marginTop: '1px' }}>
+                      <div style={{ fontSize: '0.72rem', color: 'var(--text-secondary)', marginTop: '2px' }}>
                         Portion: {item.portion_size_g}g
-                        {item.portion_tiers && item.portion_tiers.length > 1 && (
-                          <span> · {item.portion_tiers.length} portion sizes available</span>
+                        {item.price_per_100g > 0 && (
+                          <span> · <strong className="mono" style={{ color: 'var(--text-primary)' }}>₹{item.price_per_100g}</strong>/100g</span>
+                        )}
+                        {item.tier && item.tier !== 'regular' && (
+                          <span> · <span style={{ textTransform: 'capitalize', color: 'var(--accent-blue)' }}>{item.tier} portion</span></span>
                         )}
                       </div>
                     </div>
 
                     <div style={{ textAlign: 'right' }}>
-                      <div className="mono" style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--accent-emerald)' }}>
+                      <div className="mono" style={{ fontSize: '1rem', fontWeight: 800, color: 'var(--accent-emerald)' }}>
                         {formatINR(item.price, 0)}
                       </div>
                     </div>
@@ -219,46 +222,32 @@ export const StudentBudgetBuilder = () => {
   );
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', alignItems: 'center' }}>
-      {/* Screen Control Header */}
-      <div style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
-        <div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
-            <span className="badge badge-neutral">
-              Part F · GET /student/offers
-            </span>
-            <span style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>Student Partition (Zero Internal Leakage)</span>
-          </div>
-          <h2 style={{ fontSize: '1.45rem', fontWeight: 700, color: 'var(--text-primary)', margin: 0 }}>
-            Student Budget Builder
-          </h2>
-          <p style={{ fontSize: '0.82rem', color: 'var(--text-tertiary)', marginTop: '3px' }}>
-            Student-facing interface with zero backend unit cost, margin, or model internal leakage.
-          </p>
-        </div>
-
-        {/* View Mode Toggle */}
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', alignItems: 'center', width: '100%', maxWidth: '1440px', margin: '0 auto' }}>
+      {/* Top Action Bar with View Mode Toggle */}
+      <div style={{ width: '100%', display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
         <div style={{
           display: 'flex',
-          backgroundColor: 'var(--bg-canvas)',
-          border: '1px solid var(--border-subtle)',
-          borderRadius: 'var(--radius-md)',
-          padding: '2px'
+          backgroundColor: 'var(--bg-surface-elevated)',
+          border: '1px solid var(--border-medium)',
+          borderRadius: 'var(--radius-pill)',
+          padding: '3px',
+          boxShadow: 'var(--shadow-card)'
         }}>
           <button
             onClick={() => setPhoneFrameMode(true)}
             style={{
-              backgroundColor: phoneFrameMode ? 'var(--bg-surface-elevated)' : 'transparent',
-              color: phoneFrameMode ? 'var(--text-primary)' : 'var(--text-muted)',
-              border: phoneFrameMode ? '1px solid var(--border-medium)' : '1px solid transparent',
-              borderRadius: 'var(--radius-sm)',
-              padding: '4px 10px',
+              backgroundColor: phoneFrameMode ? 'var(--nav-btn-active-bg)' : 'transparent',
+              color: phoneFrameMode ? 'var(--nav-btn-active-color)' : 'var(--text-secondary)',
+              border: 'none',
+              borderRadius: 'var(--radius-pill)',
+              padding: '5px 12px',
               fontSize: '0.75rem',
-              fontWeight: 500,
+              fontWeight: 600,
               cursor: 'pointer',
               display: 'flex',
               alignItems: 'center',
-              gap: '5px'
+              gap: '6px',
+              transition: 'all 0.15s ease'
             }}
           >
             <Smartphone size={13} />
@@ -268,17 +257,18 @@ export const StudentBudgetBuilder = () => {
           <button
             onClick={() => setPhoneFrameMode(false)}
             style={{
-              backgroundColor: !phoneFrameMode ? 'var(--bg-surface-elevated)' : 'transparent',
-              color: !phoneFrameMode ? 'var(--text-primary)' : 'var(--text-muted)',
-              border: !phoneFrameMode ? '1px solid var(--border-medium)' : '1px solid transparent',
-              borderRadius: 'var(--radius-sm)',
-              padding: '4px 10px',
+              backgroundColor: !phoneFrameMode ? 'var(--nav-btn-active-bg)' : 'transparent',
+              color: !phoneFrameMode ? 'var(--nav-btn-active-color)' : 'var(--text-secondary)',
+              border: 'none',
+              borderRadius: 'var(--radius-pill)',
+              padding: '5px 12px',
               fontSize: '0.75rem',
-              fontWeight: 500,
+              fontWeight: 600,
               cursor: 'pointer',
               display: 'flex',
               alignItems: 'center',
-              gap: '5px'
+              gap: '6px',
+              transition: 'all 0.15s ease'
             }}
           >
             <Monitor size={13} />
@@ -347,7 +337,7 @@ export const StudentBudgetBuilder = () => {
         </div>
       ) : (
         /* Full Desktop Container */
-        <div className="panel" style={{ width: '100%', maxWidth: '920px', padding: '1.75rem' }}>
+        <div className="bento-card" style={{ width: '100%', maxWidth: '840px', padding: '1.75rem' }}>
           {content}
         </div>
       )}

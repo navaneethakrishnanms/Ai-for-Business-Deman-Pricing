@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Modal } from '../../components/common/Modal';
 import { formatINR } from '../../utils/formatters';
 import { Plus, Trash2, CheckCircle2 } from 'lucide-react';
+import { SearchableSelect } from '../../components/common/SearchableSelect';
 
 export const ScenarioBuilderModal = ({ isOpen, onClose, items = [], onAddScenario }) => {
   const [scenarioName, setScenarioName] = useState('New Balanced Scenario');
@@ -47,11 +48,11 @@ export const ScenarioBuilderModal = ({ isOpen, onClose, items = [], onAddScenari
       onClose={onClose}
       title="Create Custom Scenario"
       subtitle="Define pricing and portion modifications to evaluate alongside Today's baseline"
-      maxWidth="620px"
+      maxWidth="680px"
     >
       <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
         <div>
-          <label style={{ fontSize: '0.85rem', fontWeight: 600, display: 'block', marginBottom: '6px' }}>
+          <label style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-primary)', display: 'block', marginBottom: '6px' }}>
             Scenario Name:
           </label>
           <input
@@ -73,7 +74,7 @@ export const ScenarioBuilderModal = ({ isOpen, onClose, items = [], onAddScenari
 
         <div>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
-            <label style={{ fontSize: '0.85rem', fontWeight: 600 }}>Item Price & Portion Modifications:</label>
+            <label style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-primary)' }}>Item Price & Portion Modifications:</label>
             <button
               type="button"
               onClick={handleAddChange}
@@ -81,7 +82,7 @@ export const ScenarioBuilderModal = ({ isOpen, onClose, items = [], onAddScenari
                 background: 'var(--accent-blue-subtle)',
                 border: '1px solid var(--accent-blue)',
                 color: 'var(--accent-blue)',
-                borderRadius: '4px',
+                borderRadius: '6px',
                 padding: '4px 8px',
                 fontSize: '0.75rem',
                 cursor: 'pointer',
@@ -95,48 +96,32 @@ export const ScenarioBuilderModal = ({ isOpen, onClose, items = [], onAddScenari
             </button>
           </div>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
             {itemChanges.map((change, idx) => {
-              const selectedItem = items.find(i => i.item_id === change.item_id);
               return (
                 <div
                   key={idx}
                   style={{
                     display: 'grid',
-                    gridTemplateColumns: '1.5fr 1fr 1fr auto',
+                    gridTemplateColumns: '1.8fr 1fr 1fr auto',
                     gap: '8px',
                     alignItems: 'center',
-                    padding: '8px',
-                    borderRadius: '6px',
+                    padding: '8px 10px',
+                    borderRadius: '8px',
                     backgroundColor: 'var(--bg-surface-inset)',
                     border: '1px solid var(--border-subtle)'
                   }}
                 >
-                  <select
-                    value={change.item_id}
-                    onChange={(e) => {
-                      const it = items.find(i => i.item_id === e.target.value);
-                      handleUpdateChange(idx, 'item_id', e.target.value);
-                      if (it) {
-                        handleUpdateChange(idx, 'price', it.price);
-                        handleUpdateChange(idx, 'portion_size_g', it.portion_size_g);
-                      }
+                  <SearchableSelect
+                    items={items}
+                    selectedId={change.item_id}
+                    onSelect={(it) => {
+                      handleUpdateChange(idx, 'item_id', it.item_id);
+                      handleUpdateChange(idx, 'price', it.price);
+                      handleUpdateChange(idx, 'portion_size_g', it.portion_size_g);
                     }}
-                    style={{
-                      padding: '6px',
-                      borderRadius: '4px',
-                      background: 'var(--input-bg)',
-                      border: '1px solid var(--border-subtle)',
-                      color: 'var(--text-primary)',
-                      fontSize: '0.78rem'
-                    }}
-                  >
-                    {items.map(it => (
-                      <option key={it.item_id} value={it.item_id}>
-                        {it.name}
-                      </option>
-                    ))}
-                  </select>
+                    placeholder="Search menu item..."
+                  />
 
                   <div>
                     <input
@@ -146,12 +131,12 @@ export const ScenarioBuilderModal = ({ isOpen, onClose, items = [], onAddScenari
                       placeholder="Price ₹"
                       style={{
                         width: '100%',
-                        padding: '6px',
-                        borderRadius: '4px',
+                        padding: '8px 10px',
+                        borderRadius: '6px',
                         background: 'var(--input-bg)',
                         border: '1px solid var(--border-subtle)',
                         color: 'var(--text-primary)',
-                        fontSize: '0.78rem'
+                        fontSize: '0.82rem'
                       }}
                     />
                   </div>
@@ -164,12 +149,12 @@ export const ScenarioBuilderModal = ({ isOpen, onClose, items = [], onAddScenari
                       placeholder="Portion (g)"
                       style={{
                         width: '100%',
-                        padding: '6px',
-                        borderRadius: '4px',
+                        padding: '8px 10px',
+                        borderRadius: '6px',
                         background: 'var(--input-bg)',
                         border: '1px solid var(--border-subtle)',
                         color: 'var(--text-primary)',
-                        fontSize: '0.78rem'
+                        fontSize: '0.82rem'
                       }}
                     />
                   </div>
@@ -180,18 +165,20 @@ export const ScenarioBuilderModal = ({ isOpen, onClose, items = [], onAddScenari
                     style={{
                       background: 'none',
                       border: 'none',
-                      color: 'var(--text-dim)',
+                      color: 'var(--text-muted)',
                       cursor: 'pointer',
                       padding: '4px'
                     }}
+                    title="Remove item modification"
                   >
-                    <Trash2 size={15} />
+                    <Trash2 size={16} />
                   </button>
                 </div>
               );
             })}
           </div>
         </div>
+
 
         <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '8px', marginTop: '0.5rem' }}>
           <button type="button" onClick={onClose} className="btn-secondary" style={{ fontSize: '0.85rem' }}>

@@ -5,24 +5,16 @@ import {
   TrendingUp, 
   Layers, 
   Sparkles, 
-  Smartphone, 
-  Settings, 
-  Terminal,
-  Sun,
-  Moon
+  Smartphone
 } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
-import { useTheme } from '../../context/ThemeContext';
 import { SCREENS } from './Navbar';
 
 export const Sidebar = ({ 
   activeScreen, 
-  setActiveScreen, 
-  onOpenGuardrails, 
-  onOpenAssistant 
+  setActiveScreen
 }) => {
   const { setActiveRole } = useAuth();
-  const { isDark, toggleTheme } = useTheme();
 
   const navItems = [
     { id: SCREENS.MENU_HEALTH, label: 'Menu Health & Sales', icon: Store, role: 'owner' },
@@ -49,7 +41,7 @@ export const Sidebar = ({
       zIndex: 50,
       userSelect: 'none'
     }}>
-      {/* Top Brand Logo Mark (Matching stylized curve in screenshot) */}
+      {/* Top Brand Logo Mark */}
       <div 
         onClick={() => {
           setActiveScreen(SCREENS.MENU_HEALTH);
@@ -61,8 +53,11 @@ export const Sidebar = ({
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          cursor: 'pointer'
+          cursor: 'pointer',
+          transition: 'transform 0.2s ease'
         }}
+        onMouseEnter={(e) => { e.currentTarget.style.transform = 'scale(1.08)'; }}
+        onMouseLeave={(e) => { e.currentTarget.style.transform = 'scale(1)'; }}
         title="CampusPrice Executive Dashboard"
       >
         <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
@@ -72,12 +67,12 @@ export const Sidebar = ({
         </svg>
       </div>
 
-      {/* Center Floating Dock Capsule (Exact rounded dark capsule from screenshot) */}
+      {/* Center Floating Dock Capsule */}
       <nav style={{
         backgroundColor: 'var(--bg-surface-elevated)',
         border: '1px solid var(--border-medium)',
         borderRadius: '30px',
-        padding: '8px 6px',
+        padding: '10px 6px',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
@@ -95,19 +90,19 @@ export const Sidebar = ({
                 setActiveScreen(item.id);
                 setActiveRole(item.role);
               }}
+              className={`nav-tab-btn ${isActive ? 'is-active' : ''}`}
               style={{
-                width: '42px',
-                height: '42px',
+                width: '44px',
+                height: '44px',
                 borderRadius: '14px',
                 border: 'none',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
                 cursor: 'pointer',
-                transition: 'all 0.15s ease',
                 backgroundColor: isActive ? 'var(--nav-btn-active-bg)' : 'transparent',
                 color: isActive ? 'var(--nav-btn-active-color)' : 'var(--text-secondary)',
-                boxShadow: isActive ? '0 4px 14px rgba(0, 0, 0, 0.15)' : 'none'
+                boxShadow: isActive ? '0 4px 14px rgba(0, 0, 0, 0.16)' : 'none'
               }}
               title={item.label}
               onMouseEnter={(e) => {
@@ -127,114 +122,11 @@ export const Sidebar = ({
             </button>
           );
         })}
-
-        {/* Separator */}
-        <div style={{ width: '20px', height: '1px', backgroundColor: 'var(--border-subtle)', margin: '2px 0' }} />
-
-        {/* Assistant / What-If trigger */}
-        <button
-          onClick={onOpenAssistant}
-          style={{
-            width: '42px',
-            height: '42px',
-            borderRadius: '14px',
-            border: 'none',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            cursor: 'pointer',
-            backgroundColor: 'transparent',
-            color: 'var(--accent-green)',
-            transition: 'all 0.15s ease'
-          }}
-          title="What-If AI Co-pilot"
-          onMouseEnter={(e) => {
-            e.currentTarget.style.backgroundColor = 'var(--accent-green-subtle)';
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.backgroundColor = 'transparent';
-          }}
-        >
-          <Terminal size={18} />
-        </button>
       </nav>
 
-      {/* Bottom Profile Avatar, Theme Switcher & Settings Dock */}
-      <div style={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        gap: '8px'
-      }}>
-        {/* Quick Theme Toggle Pill in Dock */}
-        <button
-          onClick={toggleTheme}
-          style={{
-            width: '34px',
-            height: '34px',
-            borderRadius: '10px',
-            backgroundColor: 'var(--bg-surface-elevated)',
-            border: '1px solid var(--border-subtle)',
-            color: isDark ? '#fbbf24' : '#6366f1',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            cursor: 'pointer',
-            transition: 'all 0.15s ease'
-          }}
-          title={isDark ? "Switch to Light Theme" : "Switch to Dark Theme"}
-        >
-          {isDark ? <Sun size={16} /> : <Moon size={16} />}
-        </button>
-
-        {/* User avatar */}
-        <div style={{
-          width: '38px',
-          height: '38px',
-          borderRadius: '12px',
-          overflow: 'hidden',
-          border: '1px solid var(--border-medium)',
-          cursor: 'pointer',
-          backgroundColor: 'var(--bg-surface-elevated)'
-        }}
-        title="Owner Session"
-        >
-          <img 
-            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&h=120&q=80" 
-            alt="Owner"
-            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-          />
-        </div>
-
-        {/* Settings Pill */}
-        <button
-          onClick={onOpenGuardrails}
-          style={{
-            width: '34px',
-            height: '34px',
-            borderRadius: '10px',
-            backgroundColor: 'var(--bg-surface-elevated)',
-            border: '1px solid var(--border-subtle)',
-            color: 'var(--text-secondary)',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            cursor: 'pointer',
-            transition: 'all 0.15s ease'
-          }}
-          title="Guardrails & Settings"
-          onMouseEnter={(e) => {
-            e.currentTarget.style.color = 'var(--text-primary)';
-            e.currentTarget.style.borderColor = 'var(--border-strong)';
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.color = 'var(--text-secondary)';
-            e.currentTarget.style.borderColor = 'var(--border-subtle)';
-          }}
-        >
-          <Settings size={16} />
-        </button>
-      </div>
+      {/* Bottom Spacer to keep dock centered */}
+      <div style={{ width: '38px', height: '38px' }} />
     </aside>
   );
 };
+

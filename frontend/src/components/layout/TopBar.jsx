@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import { 
-  ChevronDown, 
-  Grid, 
   Key, 
   ShieldCheck, 
   Sun,
-  Moon
+  Moon,
+  Sparkles
 } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
 import { useGuardrailsContext } from '../../context/GuardrailsContext';
@@ -21,17 +20,13 @@ const SCREEN_TITLES = {
   [SCREENS.STUDENT_BUDGET]: 'Student Budget Builder'
 };
 
-export const TopBar = ({ activeScreen, onOpenGuardrails, onOpenAssistant, dayType = 'regular', onDayTypeChange }) => {
+export const TopBar = ({ activeScreen, onOpenGuardrails, onOpenAssistant }) => {
   const { ownerToken, updateToken } = useAuth();
   const { guardrails } = useGuardrailsContext();
   const { theme, toggleTheme, isDark } = useTheme();
 
-  const [showTimeDropdown, setShowTimeDropdown] = useState(false);
-  const [selectedTimeframe, setSelectedTimeframe] = useState('This Week');
   const [showTokenEdit, setShowTokenEdit] = useState(false);
   const [tokenInput, setTokenInput] = useState(ownerToken || '');
-
-  const timeframes = ['Today', 'This Week', 'Exam Period', 'Full Semester'];
 
   const handleSaveToken = (e) => {
     e.preventDefault();
@@ -123,88 +118,29 @@ export const TopBar = ({ activeScreen, onOpenGuardrails, onOpenAssistant, dayTyp
           <span>Floor {guardrails.margin_floor_pct}%</span>
         </button>
 
-        {/* View Grid Icon Capsule Button (from screenshot) */}
+        {/* AI Co-pilot Button (Part G: /assistant/query) */}
         <button
+          onClick={onOpenAssistant}
           style={{
-            width: '40px',
-            height: '40px',
-            borderRadius: '12px',
-            backgroundColor: 'var(--bg-surface-elevated)',
-            border: '1px solid var(--border-subtle)',
-            color: 'var(--text-secondary)',
             display: 'flex',
             alignItems: 'center',
-            justifyContent: 'center',
+            gap: '6px',
+            padding: '0.45rem 0.85rem',
+            borderRadius: 'var(--radius-pill)',
+            backgroundColor: 'var(--bg-surface-elevated)',
+            border: '1px solid var(--border-medium)',
+            color: 'var(--text-primary)',
+            fontSize: '0.78rem',
+            fontWeight: 600,
             cursor: 'pointer',
+            boxShadow: 'var(--shadow-card)',
             transition: 'all 0.15s ease'
           }}
-          title="Grid Layout View"
+          title="Open Natural Language AI Assistant (Part G)"
         >
-          <Grid size={17} />
+          <Sparkles size={14} color="var(--accent-green)" />
+          <span>AI Co-pilot</span>
         </button>
-
-        {/* Timeframe Dropdown Capsule Button (Exact match to "This Week ⌄" in screenshot) */}
-        <div style={{ position: 'relative' }}>
-          <button
-            onClick={() => setShowTimeDropdown(!showTimeDropdown)}
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '8px',
-              padding: '0.55rem 1.15rem',
-              borderRadius: 'var(--radius-pill)',
-              backgroundColor: 'var(--bg-surface-elevated)',
-              border: '1px solid var(--border-subtle)',
-              color: 'var(--text-primary)',
-              fontSize: '0.82rem',
-              fontWeight: 600,
-              cursor: 'pointer',
-              transition: 'all 0.15s ease'
-            }}
-          >
-            <span>{selectedTimeframe}</span>
-            <ChevronDown size={14} color="var(--text-secondary)" />
-          </button>
-
-          {showTimeDropdown && (
-            <div style={{
-              position: 'absolute',
-              right: 0,
-              top: 'calc(100% + 6px)',
-              backgroundColor: 'var(--bg-surface-elevated)',
-              border: '1px solid var(--border-medium)',
-              borderRadius: '14px',
-              padding: '6px',
-              minWidth: '150px',
-              boxShadow: 'var(--shadow-modal)',
-              zIndex: 100
-            }}>
-              {timeframes.map(tf => (
-                <button
-                  key={tf}
-                  onClick={() => {
-                    setSelectedTimeframe(tf);
-                    setShowTimeDropdown(false);
-                  }}
-                  style={{
-                    width: '100%',
-                    textAlign: 'left',
-                    padding: '8px 12px',
-                    borderRadius: '8px',
-                    border: 'none',
-                    backgroundColor: selectedTimeframe === tf ? 'var(--accent-green-subtle)' : 'transparent',
-                    color: selectedTimeframe === tf ? 'var(--accent-green)' : 'var(--text-secondary)',
-                    fontSize: '0.8rem',
-                    fontWeight: 600,
-                    cursor: 'pointer'
-                  }}
-                >
-                  {tf}
-                </button>
-              ))}
-            </div>
-          )}
-        </div>
 
         {/* Owner Session Token Pill */}
         <div style={{ position: 'relative' }}>

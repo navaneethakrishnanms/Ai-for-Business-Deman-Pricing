@@ -21,9 +21,9 @@ export const FrontierCurve = ({ frontier = [], currentCoverage = 0.74, currentPr
   }
 
   const chartData = frontier.map(f => ({
-    coveragePct: Math.round(f.coverage * 100),
-    coverage: f.coverage,
-    expected_profit: f.expected_profit
+    coveragePct: Math.round(((f.coverage_actual ?? f.coverage_target ?? f.coverage ?? 0.75)) * 100),
+    coverage: f.coverage_actual ?? f.coverage_target ?? f.coverage ?? 0.75,
+    expected_profit: Math.round(f.profit_mean ?? f.expected_profit ?? 0)
   }));
 
   const CustomTooltip = ({ active, payload }) => {
@@ -38,7 +38,7 @@ export const FrontierCurve = ({ frontier = [], currentCoverage = 0.74, currentPr
           boxShadow: 'var(--shadow-elevated)',
           fontSize: '0.78rem'
         }}>
-          <div style={{ color: 'var(--text-secondary)' }}>Student Coverage: <strong className="mono">{d.coveragePct}%</strong></div>
+          <div style={{ color: 'var(--text-secondary)' }}>Student Coverage: <strong className="mono" style={{ color: 'var(--text-primary)' }}>{d.coveragePct}%</strong></div>
           <div style={{ color: 'var(--accent-emerald)', marginTop: '2px' }}>Expected Profit: <strong className="mono">{formatINR(d.expected_profit, 0)}/day</strong></div>
         </div>
       );
@@ -56,7 +56,7 @@ export const FrontierCurve = ({ frontier = [], currentCoverage = 0.74, currentPr
             stroke="var(--text-muted)" 
             tick={{ fill: 'var(--text-tertiary)', fontSize: 11, fontFamily: 'var(--font-mono)' }}
             tickFormatter={(v) => `${v}%`}
-            label={{ value: 'Affordability (Student Coverage %)', position: 'insideBottom', offset: -10, fill: 'var(--text-muted)', fontSize: 11 }}
+            label={{ value: 'Affordability (Student Coverage %)', position: 'insideBottom', offset: -10, fill: 'var(--text-secondary)', fontSize: 11 }}
           />
           <YAxis 
             stroke="var(--text-muted)" 
@@ -78,8 +78,8 @@ export const FrontierCurve = ({ frontier = [], currentCoverage = 0.74, currentPr
               y={currentProfit}
               r={5}
               fill="var(--accent-emerald)"
-              stroke="#ffffff"
-              strokeWidth={1.5}
+              stroke="var(--bg-surface)"
+              strokeWidth={2}
             />
           )}
         </LineChart>

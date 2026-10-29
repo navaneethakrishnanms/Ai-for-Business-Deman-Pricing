@@ -10,10 +10,11 @@ const router = express.Router();
  */
 router.post('/query', requireOwnerAuth, async (req, res, next) => {
   try {
-    const { query: userQuery, context } = req.body;
+    const userQuery = req.body.query || req.body.text;
+    const context = req.body.context || {};
 
     if (!userQuery) {
-      return res.apiError('query is required', 400);
+      return res.apiError('query or text is required', 400);
     }
 
     const aiResponse = await queryAssistant({ query: userQuery, context });

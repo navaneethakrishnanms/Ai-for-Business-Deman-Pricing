@@ -13,6 +13,7 @@ import {
   ShieldAlert,
   ArrowRight
 } from 'lucide-react';
+import { SearchableSelect } from '../../components/common/SearchableSelect';
 
 export const ComboStudio = () => {
   const { items } = useMenu();
@@ -63,66 +64,41 @@ export const ComboStudio = () => {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', width: '100%', maxWidth: '1440px', margin: '0 auto' }}>
-      {/* Header */}
-      <div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
-          <span className="badge badge-neutral">
-            Part D · POST /combos/evaluate
-          </span>
-          <span style={{ fontSize: '0.72rem', color: '#8a94a6' }}>Layer 2 Combo Cannibalisation & Cross-Sell Model</span>
-        </div>
-        <h2 style={{ fontSize: '1.45rem', fontWeight: 700, color: '#ffffff', margin: 0 }}>
-          Combo Studio & Cannibalisation Guard
-        </h2>
-        <p style={{ fontSize: '0.82rem', color: '#8a94a6', marginTop: '3px' }}>
-          Test meal pairing discounts while preventing the <strong>Cannibalisation Trap</strong> — where discounts erode gross margin on students who would have purchased both items at standard prices.
-        </p>
-      </div>
-
       {/* Main Grid: Controls on Left, Analysis on Right */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '1.25rem' }}>
+
         
         {/* Left Column: Pairing Configuration */}
         <div className="bento-card" style={{ padding: '1.25rem', display: 'flex', flexDirection: 'column', gap: '1.15rem' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', borderBottom: '1px solid var(--border-subtle)', paddingBottom: '0.65rem' }}>
-            <Layers size={16} color="#34d399" />
-            <h3 style={{ fontSize: '1rem', color: '#ffffff', margin: 0 }}>Combo Pairing Inputs</h3>
+            <Layers size={16} color="var(--accent-green)" />
+            <h3 style={{ fontSize: '0.98rem', fontWeight: 700, color: 'var(--text-primary)', margin: 0 }}>Combo Pairing Inputs</h3>
           </div>
 
-          {/* Main Item Select */}
+          {/* Main Item Searchable Select */}
           <div>
-            <label style={{ fontSize: '0.78rem', color: '#8a94a6', display: 'block', marginBottom: '6px' }}>
+            <label style={{ fontSize: '0.78rem', fontWeight: 600, color: 'var(--text-secondary)', display: 'block', marginBottom: '6px' }}>
               Main Course Selection:
             </label>
-            <select
+            <SearchableSelect
+              items={mains}
               value={mainId}
-              onChange={(e) => setMainId(e.target.value)}
-              style={{ width: '100%' }}
-            >
-              {mains.map(m => (
-                <option key={m.item_id} value={m.item_id}>
-                  {m.name} — {formatINR(m.price)} (Margin: {formatPct(m.margin_pct)})
-                </option>
-              ))}
-            </select>
+              onChange={setMainId}
+              placeholder="Search or select main dish..."
+            />
           </div>
 
-          {/* Add-on Select */}
+          {/* Add-on Searchable Select */}
           <div>
-            <label style={{ fontSize: '0.78rem', color: '#8a94a6', display: 'block', marginBottom: '6px' }}>
+            <label style={{ fontSize: '0.78rem', fontWeight: 600, color: 'var(--text-secondary)', display: 'block', marginBottom: '6px' }}>
               Add-On / Beverage Selection:
             </label>
-            <select
+            <SearchableSelect
+              items={addons}
               value={addonId}
-              onChange={(e) => setAddonId(e.target.value)}
-              style={{ width: '100%' }}
-            >
-              {addons.map(a => (
-                <option key={a.item_id} value={a.item_id}>
-                  {a.name} — {formatINR(a.price)} (Margin: {formatPct(a.margin_pct)})
-                </option>
-              ))}
-            </select>
+              onChange={setAddonId}
+              placeholder="Search or select add-on or drink..."
+            />
           </div>
 
           {/* Combo Discount Slider */}

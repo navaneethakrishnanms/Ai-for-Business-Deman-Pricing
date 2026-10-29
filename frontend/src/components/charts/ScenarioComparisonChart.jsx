@@ -17,7 +17,7 @@ export const ScenarioComparisonChart = ({ results = [] }) => {
   }
 
   const chartData = results.map(r => ({
-    name: r.scenario_name,
+    name: r.scenario_name || r.name || 'Scenario',
     revenue: r.revenue?.mean || 0,
     profit: r.profit?.mean || 0,
     margin_pct: r.margin_pct || 0

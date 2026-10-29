@@ -30,7 +30,7 @@ export const AssistantModal = ({ isOpen, onClose, onApplyScenario }) => {
     <Modal
       isOpen={isOpen}
       onClose={handleClose}
-      title="Decision Support What-If Assistant (Part G: /assistant/query)"
+      title="Decision Support What-If Assistant"
       subtitle="Evaluates hypothetical pricing decisions using log-linear demand & cannibalisation models"
       maxWidth="680px"
     >

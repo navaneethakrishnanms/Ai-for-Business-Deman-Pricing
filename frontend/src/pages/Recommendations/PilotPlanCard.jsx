@@ -12,23 +12,23 @@ export const PilotPlanCard = ({ pilotPlan }) => {
       marginTop: '8px',
       padding: '10px 12px',
       borderRadius: '8px',
-      backgroundColor: 'rgba(245, 158, 11, 0.08)',
-      border: '1px solid rgba(245, 158, 11, 0.25)',
+      backgroundColor: 'var(--accent-amber-subtle)',
+      border: '1px solid rgba(245, 158, 11, 0.3)',
       display: 'flex',
       flexDirection: 'column',
       gap: '6px'
     }}>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#fbbf24', fontSize: '0.78rem', fontWeight: 700 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: 'var(--accent-amber)', fontSize: '0.78rem', fontWeight: 700 }}>
           <Beaker size={14} />
           <span>7-Day A/B Pilot Test Plan</span>
         </div>
-        <span style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>
-          Duration: <strong>{duration_days} days</strong>
+        <span style={{ fontSize: '0.7rem', color: 'var(--text-secondary)' }}>
+          Duration: <strong style={{ color: 'var(--text-primary)' }}>{duration_days} days</strong>
         </span>
       </div>
 
-      <p style={{ fontSize: '0.72rem', color: 'var(--text-dim)', margin: 0 }}>
+      <p style={{ fontSize: '0.72rem', color: 'var(--text-secondary)', margin: 0 }}>
         Tests consumer reaction across experimental cohorts before broad roll-out to avoid demand shocks.
       </p>
 

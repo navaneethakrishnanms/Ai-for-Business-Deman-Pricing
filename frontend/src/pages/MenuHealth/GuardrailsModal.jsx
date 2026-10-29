@@ -37,7 +37,7 @@ export const GuardrailsModal = ({ isOpen, onClose }) => {
     <Modal
       isOpen={isOpen}
       onClose={onClose}
-      title="Owner Guardrails Configuration (Part A: /config)"
+      title="Owner Guardrails Configuration"
       subtitle="Defines hard algorithmic bounds that the pricing and combo models must respect"
       maxWidth="620px"
     >
