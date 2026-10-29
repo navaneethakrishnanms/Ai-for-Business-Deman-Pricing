@@ -1,0 +1,195 @@
+{
+  "data": {
+    "rows": 676,
+    "columns": 37,
+    "products": 52,
+    "categories": 9,
+    "first_month": "2017-01-01",
+    "last_month": "2018-08-01",
+    "missing_values": 0
+  },
+  "pooled_log_log_fe": {
+    "coef": -2.435195260262671,
+    "ci_low": -3.229351144946302,
+    "ci_high": -1.6410393755790404,
+    "r2": 0.2486622554076089,
+    "n": 676
+  },
+  "with_calendar_controls": {
+    "coef": -2.577075876027643,
+    "ci_low": -3.3790069052326928,
+    "ci_high": -1.7751448468225934,
+    "r2": 0.30248034522608325,
+    "n": 676
+  },
+  "with_calendar_and_competitor_price": {
+    "coef": -2.6130941108630483,
+    "ci_low": -3.4681508378144548,
+    "ci_high": -1.7580373839116419,
+    "r2": 0.30288597624472013,
+    "n": 676
+  },
+  "with_customers_outcome_proxy": {
+    "coef": -1.1780295306576445,
+    "ci_low": -2.098620062619016,
+    "ci_high": -0.25743899869627285,
+    "r2": 0.4162268070329771,
+    "n": 676
+  },
+  "per_category": {
+    "bed_bath_table": {
+      "coef": -3.4127006426902735,
+      "ci_low": -11.63193714843958,
+      "ci_high": 4.8065358630590325,
+      "r2": 0.23623412141022404,
+      "n": 61,
+      "includes_zero": true,
+      "n_products": 5
+    },
+    "computers_accessories": {
+      "coef": -2.485825987129651,
+      "ci_low": -3.750306877766878,
+      "ci_high": -1.221345096492424,
+      "r2": 0.26679067740546614,
+      "n": 69,
+      "includes_zero": false,
+      "n_products": 6
+    },
+    "consoles_games": {
+      "coef": -2.4188380258933697,
+      "ci_low": -4.759453352681894,
+      "ci_high": -0.07822269910484536,
+      "r2": 0.3025057775705077,
+      "n": 22,
+      "includes_zero": false,
+      "n_products": 2
+    },
+    "cool_stuff": {
+      "coef": -1.1972246760339296,
+      "ci_low": -4.423783227802991,
+      "ci_high": 2.0293338757351314,
+      "r2": 0.03409426656006842,
+      "n": 57,
+      "includes_zero": true,
+      "n_products": 5
+    },
+    "furniture_decor": {
+      "coef": -7.41064230406073,
+      "ci_low": -12.544578290906006,
+      "ci_high": -2.276706317215453,
+      "r2": 0.39684495519981944,
+      "n": 48,
+      "includes_zero": false,
+      "n_products": 4
+    },
+    "garden_tools": {
+      "coef": -1.1958546887633281,
+      "ci_low": -3.4056246349559087,
+      "ci_high": 1.0139152574292523,
+      "r2": 0.30217707502972035,
+      "n": 160,
+      "includes_zero": true,
+      "n_products": 10
+    },
+    "health_beauty": {
+      "coef": 0.6116381332577195,
+      "ci_low": -4.4439403312207615,
+      "ci_high": 5.667216597736201,
+      "r2": 0.1295788187061272,
+      "n": 130,
+      "includes_zero": true,
+      "n_products": 10
+    },
+    "perfumery": {
+      "coef": -4.889866141162783,
+      "ci_low": -19.439976656504427,
+      "ci_high": 9.660244374178863,
+      "r2": 0.20047528130288372,
+      "n": 26,
+      "includes_zero": true,
+      "n_products": 2
+    },
+    "watches_gifts": {
+      "coef": -3.0495640155232353,
+      "ci_low": -3.6166462405475537,
+      "ci_high": -2.482481790498917,
+      "r2": 0.29503951536852946,
+      "n": 103,
+      "includes_zero": false,
+      "n_products": 8
+    }
+  },
+  "per_category_summary": {
+    "min": -7.41064230406073,
+    "max": 0.6116381332577195,
+    "intervals_including_zero": 5,
+    "n": 9
+  },
+  "per_product_summary": {
+    "usable": 31,
+    "negative": 23,
+    "median": -2.128055867811052
+  },
+  "backtests": [
+    {
+      "cutoff_t": 12,
+      "n_train": 321,
+      "n_test": 325,
+      "wape_product_average": 0.7682506560210123,
+      "wape_loglog_fe": 0.8807309787086665,
+      "loglog_price_effect": -2.529700272654938,
+      "wape_loglog_with_time_trend": 2.6614640373881358,
+      "wape_boosted_free": 0.7349486757367013,
+      "boosted_free_demand_rises_after_10pct_price_rise": 0.2676923076923077,
+      "wape_boosted_monotone": 0.7410153112253033,
+      "boosted_monotone_demand_rises_after_10pct_price_rise": 0.0,
+      "corr_price_dev_demand_dev": -0.3301437955874159,
+      "n_test_rows_price_above_5pct": 48,
+      "share_demand_below_avg_when_price_above_5pct": 0.6458333333333334
+    },
+    {
+      "cutoff_t": 14,
+      "n_train": 418,
+      "n_test": 258,
+      "wape_product_average": 0.8400654288302297,
+      "wape_loglog_fe": 1.0522618316463488,
+      "loglog_price_effect": -3.210620474154317,
+      "wape_loglog_with_time_trend": 2.0890908269066983,
+      "wape_boosted_free": 0.7065503174733011,
+      "boosted_free_demand_rises_after_10pct_price_rise": 0.18992248062015504,
+      "wape_boosted_monotone": 0.7208688809757918,
+      "boosted_monotone_demand_rises_after_10pct_price_rise": 0.0,
+      "corr_price_dev_demand_dev": -0.2727949406562112,
+      "n_test_rows_price_above_5pct": 42,
+      "share_demand_below_avg_when_price_above_5pct": 0.7142857142857143
+    },
+    {
+      "cutoff_t": 16,
+      "n_train": 516,
+      "n_test": 160,
+      "wape_product_average": 0.9417324232990274,
+      "wape_loglog_fe": 1.2225030449206782,
+      "loglog_price_effect": -3.0456718525441895,
+      "wape_loglog_with_time_trend": 1.8308440737710903,
+      "wape_boosted_free": 0.8341831501909848,
+      "boosted_free_demand_rises_after_10pct_price_rise": 0.23125,
+      "wape_boosted_monotone": 0.8391160887783777,
+      "boosted_monotone_demand_rises_after_10pct_price_rise": 0.0,
+      "corr_price_dev_demand_dev": -0.310008168428369,
+      "n_test_rows_price_above_5pct": 20,
+      "share_demand_below_avg_when_price_above_5pct": 0.65
+    }
+  ],
+  "notes": [
+    "customers is an outcome proxy and is excluded from every model",
+    "no linear time trend is used (see wape_loglog_with_time_trend)"
+  ],
+  "demand_model_prior": {
+    "mean": -2.44,
+    "sd": 0.41,
+    "ci": [
+      -3.23,
+      -1.64
+    ]
+  }
+}
