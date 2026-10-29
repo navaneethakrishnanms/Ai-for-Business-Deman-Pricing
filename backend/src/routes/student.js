@@ -1,6 +1,7 @@
 import express from 'express';
 import { studentLimiter, studentDataSanitizer } from '../middleware/security.js';
 import { query } from '../db/index.js';
+import { getStudentOffers } from '../services/aiClient.js';
 import { SEED_ITEMS, SEED_COMBOS } from '../db/initDb.js';
 import { roundMoney } from '../utils/response.js';
 
@@ -111,6 +112,30 @@ router.get('/offers', studentLimiter, studentDataSanitizer, async (req, res, nex
         }
       }
     });
+
+    try {
+      const aiData = await getStudentOffers(budget);
+      if (aiData && aiData.offers && aiData.offers.length > 0) {
+        aiData.offers.forEach(o => {
+          if (!affordableCombos.some(c => c.combo_id === o.offer_id)) {
+            affordableCombos.push({
+              type: 'combo_deal',
+              combo_id: o.offer_id,
+              name: o.title,
+              items: o.items,
+              combo_price: o.price,
+              original_price: o.list_price,
+              savings_rs: o.you_save,
+              discount_pct: o.list_price > 0 ? roundMoney(((o.list_price - o.price) / o.list_price) * 100) : 0,
+              portion_size_g: 500,
+              price_per_100g: o.price_per_100g
+            });
+          }
+        });
+      }
+    } catch (aiErr) {
+      // Keep DB combos if AI service is starting
+    }
 
     // Rank deals by best value (lowest price per 100g first)
     affordableItems.sort((a, b) => a.price_per_100g - b.price_per_100g);

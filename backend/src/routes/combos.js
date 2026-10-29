@@ -1,7 +1,6 @@
 import express from 'express';
 import { requireOwnerAuth } from '../middleware/security.js';
-import { evaluateCombo } from '../services/aiClient.js';
-import { formatRange } from '../utils/response.js';
+import { evaluateCombo, getComboSuggestions } from '../services/aiClient.js';
 
 const router = express.Router();
 
@@ -32,42 +31,12 @@ router.post('/evaluate', requireOwnerAuth, async (req, res, next) => {
 
 /**
  * GET /api/combos/suggestions (Part D: Combo Studio Suggestions)
- * Returns pre-computed best pairings and discounts
+ * Calls AI Service Layer 2 engine to get all computed best discount combos
  */
 router.get('/suggestions', requireOwnerAuth, async (req, res, next) => {
   try {
-    const suggestions = [
-      {
-        main_item_id: 'item_veg_meals',
-        addon_item_id: 'item_tea',
-        best_discount_pct: 10.0,
-        incremental_profit_per_day: formatRange(450.0, 320.0, 580.0),
-        status: 'apply'
-      },
-      {
-        main_item_id: 'item_dosa',
-        addon_item_id: 'item_tea',
-        best_discount_pct: 8.0,
-        incremental_profit_per_day: formatRange(380.0, 270.0, 490.0),
-        status: 'apply'
-      },
-      {
-        main_item_id: 'item_dosa',
-        addon_item_id: 'item_cold_coffee',
-        best_discount_pct: 12.0,
-        incremental_profit_per_day: formatRange(-120.0, -240.0, -40.0),
-        status: 'hold'
-      },
-      {
-        main_item_id: 'item_biryani',
-        addon_item_id: 'item_cold_coffee',
-        best_discount_pct: 5.0,
-        incremental_profit_per_day: formatRange(210.0, 110.0, 310.0),
-        status: 'pilot'
-      }
-    ];
-
-    res.apiSuccess({ suggestions });
+    const data = await getComboSuggestions();
+    res.apiSuccess(data);
   } catch (error) {
     next(error);
   }

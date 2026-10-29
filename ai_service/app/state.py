@@ -146,8 +146,12 @@ def _seed_offers():
         for rec in result["recommendations"]:
             if rec["status"] == "apply" and rec["kind"] == "combo":
                 _store.set_offer(rec["combo_id"], rec["proposed_discount_pct"], "auto_seed")
+        if not _store.offers():
+            _store.set_offer("combo_veg_tea", 10.0, "seed_baseline")
     except Exception as e:
         log.warning(f"offer seeding skipped: {e}")
+        if not _store.offers():
+            _store.set_offer("combo_veg_tea", 10.0, "seed_baseline")
 
 
 def get_engine() -> Engine:

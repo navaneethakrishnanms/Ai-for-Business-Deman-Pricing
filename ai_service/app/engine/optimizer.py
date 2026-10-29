@@ -42,7 +42,9 @@ class Optimizer:
 
     def _coverage_ok(self, menu, g: Guardrails, mix, target=None):
         cov = self.eng.coverage(menu, mix)
-        return cov["overall"] >= (target if target is not None else g.coverage_target) - 1e-9, cov
+        base_cov = self.eng.coverage(self.eng.today(), mix)["overall"]
+        req = min(target if target is not None else g.coverage_target, base_cov)
+        return cov["overall"] >= req - 1e-9, cov
 
     def _fairness_ok(self, i, price_new, today, g: Guardrails, mix):
         """Block an item price increase that would push tight-tier exam-day coverage below target."""
