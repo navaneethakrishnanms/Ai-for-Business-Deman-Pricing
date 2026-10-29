@@ -1,0 +1,153 @@
+### CampusPrice AI Service – One call per endpoint
+### Base URL: http://localhost:8001
+### Auth: Authorization: Bearer demo-owner-token  (or set AUTH_DISABLED=true in .env)
+
+# ── Health ─────────────────────────────────────────────────────────────────────
+GET http://localhost:8001/health
+
+###
+
+# ── Items ──────────────────────────────────────────────────────────────────────
+GET http://localhost:8001/items
+Authorization: Bearer demo-owner-token
+
+###
+
+# ── Config (read) ──────────────────────────────────────────────────────────────
+GET http://localhost:8001/config
+Authorization: Bearer demo-owner-token
+
+###
+
+# ── Config (update) ────────────────────────────────────────────────────────────
+PUT http://localhost:8001/config
+Authorization: Bearer demo-owner-token
+Content-Type: application/json
+
+{
+  "margin_floor_pct": 15,
+  "max_weekly_change_pct": 10,
+  "student_price_cap": 120,
+  "coverage_target": 0.80,
+  "combo_discount_cap_pct": 15,
+  "fairness_mode": true
+}
+
+###
+
+# ── Predict ────────────────────────────────────────────────────────────────────
+POST http://localhost:8001/predict
+Authorization: Bearer demo-owner-token
+Content-Type: application/json
+
+{
+  "item_id": "dosa",
+  "price": 44.0,
+  "portion_size_g": 180,
+  "discount_pct": 0.0,
+  "day_type": "regular"
+}
+
+###
+
+# ── Scenarios / Compare ────────────────────────────────────────────────────────
+POST http://localhost:8001/scenarios/compare
+Authorization: Bearer demo-owner-token
+Content-Type: application/json
+
+{
+  "scenarios": [
+    {
+      "name": "Raise Dosa",
+      "item_changes": [{"item_id": "dosa", "price": 45.0}],
+      "combo_changes": []
+    },
+    {
+      "name": "Veg Meals Discount",
+      "item_changes": [{"item_id": "veg_meals", "price": 65.0}],
+      "combo_changes": []
+    }
+  ],
+  "day_type_mix": {"regular": 0.6, "exam": 0.2, "weekend": 0.1, "event": 0.1}
+}
+
+###
+
+# ── Combos / Evaluate ──────────────────────────────────────────────────────────
+POST http://localhost:8001/combos/evaluate
+Authorization: Bearer demo-owner-token
+Content-Type: application/json
+
+{
+  "main_item_id": "veg_meals",
+  "addon_item_id": "tea",
+  "discount_pct": 10.0,
+  "day_type": "regular"
+}
+
+###
+
+# ── Combos / Suggestions ──────────────────────────────────────────────────────
+GET http://localhost:8001/combos/suggestions
+Authorization: Bearer demo-owner-token
+
+###
+
+# ── Recommend ──────────────────────────────────────────────────────────────────
+POST http://localhost:8001/recommend
+Authorization: Bearer demo-owner-token
+Content-Type: application/json
+
+{
+  "coverage_target": 0.80,
+  "include_frontier": true
+}
+
+###
+
+# ── Override (approve a recommendation) ────────────────────────────────────────
+# Replace <rec_id> with an actual rec_id from /recommend
+POST http://localhost:8001/overrides
+Authorization: Bearer demo-owner-token
+Content-Type: application/json
+
+{
+  "rec_id": "rec_replace_me",
+  "decision": "approve",
+  "note": "Approved after review"
+}
+
+###
+
+# ── Overrides (list) ───────────────────────────────────────────────────────────
+GET http://localhost:8001/overrides
+Authorization: Bearer demo-owner-token
+
+###
+
+# ── Student Offers (no auth, budget filtered) ──────────────────────────────────
+GET http://localhost:8001/student/offers?budget=100
+
+###
+
+# ── Assistant ──────────────────────────────────────────────────────────────────
+POST http://localhost:8001/assistant/query
+Authorization: Bearer demo-owner-token
+Content-Type: application/json
+
+{
+  "text": "What happens if I raise the Dosa price by 10%?",
+  "context": {}
+}
+
+###
+
+# ── Model Status ───────────────────────────────────────────────────────────────
+GET http://localhost:8001/model/status
+Authorization: Bearer demo-owner-token
+
+###
+
+# ── Demo Reset ─────────────────────────────────────────────────────────────────
+POST http://localhost:8001/demo/reset
+Authorization: Bearer demo-owner-token

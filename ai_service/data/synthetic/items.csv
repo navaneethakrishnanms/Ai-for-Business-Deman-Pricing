@@ -1,0 +1,15 @@
+item_id,name,kind,price,cost,portion_size_g,combo_items,discount_pct
+veg_meals,Veg Meals,main,70.0,45.0,350,,0.0
+egg_fried_rice,Egg Fried Rice,main,60.0,36.0,300,,0.0
+chicken_biryani,Chicken Biryani,main,90.0,96.0,350,,0.0
+dosa,Dosa,main,40.0,24.0,180,,0.0
+chapati_kurma,Chapati Kurma,main,50.0,30.0,250,,0.0
+paneer_roll,Paneer Roll,main,55.0,57.0,200,,0.0
+salad_bowl,Salad Bowl,main,65.0,38.0,200,,0.0
+tea,Tea,addon,12.0,4.0,150,,0.0
+cold_coffee,Cold Coffee,addon,40.0,17.0,250,,0.0
+samosa,Samosa,addon,15.0,7.0,80,,0.0
+fresh_juice,Fresh Juice,addon,45.0,30.0,250,,0.0
+combo_veg_tea,Veg Meals + Tea,combo,82.0,49.0,500,veg_meals+tea,0.0
+combo_dosa_cc,Dosa + Cold Coffee,combo,80.0,41.0,430,dosa+cold_coffee,10.0
+combo_bir_juice,Chicken Biryani + Fresh Juice,combo,135.0,126.0,600,chicken_biryani+fresh_juice,5.0

@@ -1,0 +1,1681 @@
+date,day_index,item_id,item,price,portion_size_g,cost,qty_sold,combo,combo_items,day_type,discount_pct,price_test
+2026-06-01,0,veg_meals,Veg Meals,68.0,350,45.0,134,no,,regular,0.0,0
+2026-06-01,0,egg_fried_rice,Egg Fried Rice,59.0,300,36.0,46,no,,regular,0.0,0
+2026-06-01,0,chicken_biryani,Chicken Biryani,88.0,350,96.0,100,no,,regular,5.0,0
+2026-06-01,0,dosa,Dosa,38.0,180,24.0,150,no,,regular,10.0,0
+2026-06-01,0,chapati_kurma,Chapati Kurma,49.0,250,30.0,47,no,,regular,0.0,0
+2026-06-01,0,paneer_roll,Paneer Roll,52.5,200,57.0,53,no,,regular,0.0,0
+2026-06-01,0,salad_bowl,Salad Bowl,63.0,200,38.0,8,no,,regular,0.0,0
+2026-06-01,0,tea,Tea,11.5,150,4.0,100,no,,regular,0.0,0
+2026-06-01,0,cold_coffee,Cold Coffee,38.5,250,17.0,138,no,,regular,10.0,0
+2026-06-01,0,samosa,Samosa,14.5,80,7.0,53,no,,regular,0.0,0
+2026-06-01,0,fresh_juice,Fresh Juice,43.5,250,30.0,16,no,,regular,5.0,0
+2026-06-02,1,veg_meals,Veg Meals,70.5,350,45.0,108,no,,regular,0.0,0
+2026-06-02,1,egg_fried_rice,Egg Fried Rice,60.5,300,36.0,69,no,,regular,0.0,0
+2026-06-02,1,chicken_biryani,Chicken Biryani,90.5,350,96.0,107,no,,regular,5.0,0
+2026-06-02,1,dosa,Dosa,39.5,180,24.0,188,no,,regular,10.0,0
+2026-06-02,1,chapati_kurma,Chapati Kurma,50.5,250,30.0,53,no,,regular,0.0,0
+2026-06-02,1,paneer_roll,Paneer Roll,55.5,200,57.0,49,no,,regular,0.0,0
+2026-06-02,1,salad_bowl,Salad Bowl,66.5,200,38.0,5,no,,regular,0.0,0
+2026-06-02,1,tea,Tea,12.5,150,4.0,95,no,,regular,0.0,0
+2026-06-02,1,cold_coffee,Cold Coffee,40.5,250,17.0,160,no,,regular,10.0,0
+2026-06-02,1,samosa,Samosa,15.0,80,7.0,56,no,,regular,0.0,0
+2026-06-02,1,fresh_juice,Fresh Juice,45.5,250,30.0,13,no,,regular,5.0,0
+2026-06-03,2,veg_meals,Veg Meals,63.5,350,45.0,101,no,,regular,0.0,0
+2026-06-03,2,egg_fried_rice,Egg Fried Rice,55.5,300,36.0,45,no,,regular,0.0,0
+2026-06-03,2,chicken_biryani,Chicken Biryani,81.5,350,96.0,82,no,,regular,5.0,0
+2026-06-03,2,dosa,Dosa,37.5,180,24.0,113,no,,regular,10.0,0
+2026-06-03,2,chapati_kurma,Chapati Kurma,46.0,250,30.0,48,no,,regular,0.0,0
+2026-06-03,2,paneer_roll,Paneer Roll,50.5,200,57.0,46,no,,regular,0.0,0
+2026-06-03,2,salad_bowl,Salad Bowl,60.0,200,38.0,9,no,,regular,0.0,0
+2026-06-03,2,tea,Tea,11.0,150,4.0,75,no,,regular,0.0,0
+2026-06-03,2,cold_coffee,Cold Coffee,36.5,250,17.0,132,no,,regular,10.0,0
+2026-06-03,2,samosa,Samosa,13.5,80,7.0,46,no,,regular,0.0,0
+2026-06-03,2,fresh_juice,Fresh Juice,41.5,250,30.0,12,no,,regular,5.0,0
+2026-06-04,3,veg_meals,Veg Meals,74.5,350,45.0,141,no,,regular,0.0,0
+2026-06-04,3,egg_fried_rice,Egg Fried Rice,63.0,300,36.0,59,no,,regular,0.0,0
+2026-06-04,3,chicken_biryani,Chicken Biryani,96.0,350,96.0,97,no,,regular,5.0,0
+2026-06-04,3,dosa,Dosa,42.5,180,24.0,171,no,,regular,10.0,0
+2026-06-04,3,chapati_kurma,Chapati Kurma,52.5,250,30.0,73,no,,regular,0.0,0
+2026-06-04,3,paneer_roll,Paneer Roll,58.0,200,57.0,61,no,,regular,0.0,0
+2026-06-04,3,salad_bowl,Salad Bowl,68.5,200,38.0,15,no,,regular,0.0,0
+2026-06-04,3,tea,Tea,13.0,150,4.0,89,no,,regular,0.0,0
+2026-06-04,3,cold_coffee,Cold Coffee,42.0,250,17.0,158,no,,regular,10.0,0
+2026-06-04,3,samosa,Samosa,16.0,80,7.0,53,no,,regular,0.0,0
+2026-06-04,3,fresh_juice,Fresh Juice,48.0,250,30.0,9,no,,regular,5.0,0
+2026-06-05,4,veg_meals,Veg Meals,72.0,350,45.0,145,no,,regular,0.0,0
+2026-06-05,4,egg_fried_rice,Egg Fried Rice,61.5,300,36.0,58,no,,regular,0.0,0
+2026-06-05,4,chicken_biryani,Chicken Biryani,92.5,350,96.0,96,no,,regular,5.0,0
+2026-06-05,4,dosa,Dosa,40.5,180,24.0,178,no,,regular,10.0,0
+2026-06-05,4,chapati_kurma,Chapati Kurma,52.0,250,30.0,51,no,,regular,0.0,0
+2026-06-05,4,paneer_roll,Paneer Roll,55.5,200,57.0,40,no,,regular,0.0,0
+2026-06-05,4,salad_bowl,Salad Bowl,66.5,200,38.0,14,no,,regular,0.0,0
+2026-06-05,4,tea,Tea,12.5,150,4.0,102,no,,regular,0.0,0
+2026-06-05,4,cold_coffee,Cold Coffee,40.5,250,17.0,155,no,,regular,10.0,0
+2026-06-05,4,samosa,Samosa,15.5,80,7.0,48,no,,regular,0.0,0
+2026-06-05,4,fresh_juice,Fresh Juice,45.5,250,30.0,14,no,,regular,5.0,0
+2026-06-06,5,veg_meals,Veg Meals,70.0,350,45.0,34,no,,weekend,0.0,0
+2026-06-06,5,egg_fried_rice,Egg Fried Rice,58.5,300,36.0,23,no,,weekend,0.0,0
+2026-06-06,5,chicken_biryani,Chicken Biryani,89.0,350,96.0,45,no,,weekend,5.0,0
+2026-06-06,5,dosa,Dosa,39.0,180,24.0,42,no,,weekend,10.0,0
+2026-06-06,5,chapati_kurma,Chapati Kurma,50.0,250,30.0,16,no,,weekend,0.0,0
+2026-06-06,5,paneer_roll,Paneer Roll,53.5,200,57.0,19,no,,weekend,0.0,0
+2026-06-06,5,salad_bowl,Salad Bowl,64.5,200,38.0,4,no,,weekend,0.0,0
+2026-06-06,5,tea,Tea,12.0,150,4.0,28,no,,weekend,0.0,0
+2026-06-06,5,cold_coffee,Cold Coffee,39.5,250,17.0,36,no,,weekend,10.0,0
+2026-06-06,5,samosa,Samosa,15.0,80,7.0,23,no,,weekend,0.0,0
+2026-06-06,5,fresh_juice,Fresh Juice,44.5,250,30.0,8,no,,weekend,5.0,0
+2026-06-07,6,veg_meals,Veg Meals,69.0,350,45.0,33,no,,weekend,0.0,0
+2026-06-07,6,egg_fried_rice,Egg Fried Rice,58.5,300,36.0,15,no,,weekend,0.0,0
+2026-06-07,6,chicken_biryani,Chicken Biryani,91.0,350,96.0,42,no,,weekend,5.0,0
+2026-06-07,6,dosa,Dosa,39.0,180,24.0,46,no,,weekend,10.0,0
+2026-06-07,6,chapati_kurma,Chapati Kurma,50.0,250,30.0,16,no,,weekend,0.0,0
+2026-06-07,6,paneer_roll,Paneer Roll,54.5,200,57.0,20,no,,weekend,0.0,0
+2026-06-07,6,salad_bowl,Salad Bowl,63.5,200,38.0,2,no,,weekend,0.0,0
+2026-06-07,6,tea,Tea,11.5,150,4.0,26,no,,weekend,0.0,0
+2026-06-07,6,cold_coffee,Cold Coffee,39.5,250,17.0,50,no,,weekend,10.0,0
+2026-06-07,6,samosa,Samosa,14.5,80,7.0,18,no,,weekend,0.0,0
+2026-06-07,6,fresh_juice,Fresh Juice,44.0,250,30.0,8,no,,weekend,5.0,0
+2026-06-08,7,veg_meals,Veg Meals,72.0,350,45.0,142,no,,regular,5.0,0
+2026-06-08,7,egg_fried_rice,Egg Fried Rice,60.5,300,36.0,53,no,,regular,0.0,0
+2026-06-08,7,chicken_biryani,Chicken Biryani,90.0,350,96.0,98,no,,regular,10.0,0
+2026-06-08,7,dosa,Dosa,40.5,180,24.0,150,no,,regular,15.0,0
+2026-06-08,7,chapati_kurma,Chapati Kurma,51.0,250,30.0,51,no,,regular,0.0,0
+2026-06-08,7,paneer_roll,Paneer Roll,55.5,200,57.0,51,no,,regular,0.0,0
+2026-06-08,7,salad_bowl,Salad Bowl,66.0,200,38.0,15,no,,regular,0.0,0
+2026-06-08,7,tea,Tea,12.0,150,4.0,109,no,,regular,5.0,0
+2026-06-08,7,cold_coffee,Cold Coffee,40.5,250,17.0,126,no,,regular,15.0,0
+2026-06-08,7,samosa,Samosa,15.5,80,7.0,48,no,,regular,0.0,0
+2026-06-08,7,fresh_juice,Fresh Juice,45.5,250,30.0,25,no,,regular,10.0,0
+2026-06-09,8,veg_meals,Veg Meals,68.5,350,45.0,140,no,,regular,5.0,0
+2026-06-09,8,egg_fried_rice,Egg Fried Rice,59.0,300,36.0,54,no,,regular,0.0,0
+2026-06-09,8,chicken_biryani,Chicken Biryani,89.0,350,96.0,101,no,,regular,10.0,0
+2026-06-09,8,dosa,Dosa,39.5,180,24.0,143,no,,regular,15.0,0
+2026-06-09,8,chapati_kurma,Chapati Kurma,49.0,250,30.0,64,no,,regular,0.0,0
+2026-06-09,8,paneer_roll,Paneer Roll,53.5,200,57.0,42,no,,regular,0.0,0
+2026-06-09,8,salad_bowl,Salad Bowl,64.0,200,38.0,10,no,,regular,0.0,0
+2026-06-09,8,tea,Tea,12.0,150,4.0,106,no,,regular,5.0,0
+2026-06-09,8,cold_coffee,Cold Coffee,40.5,250,17.0,133,no,,regular,15.0,0
+2026-06-09,8,samosa,Samosa,14.5,80,7.0,60,no,,regular,0.0,0
+2026-06-09,8,fresh_juice,Fresh Juice,44.0,250,30.0,14,no,,regular,10.0,0
+2026-06-10,9,veg_meals,Veg Meals,69.0,350,45.0,149,no,,event,5.0,0
+2026-06-10,9,egg_fried_rice,Egg Fried Rice,59.5,300,36.0,68,no,,event,0.0,0
+2026-06-10,9,chicken_biryani,Chicken Biryani,89.5,350,96.0,151,no,,event,10.0,0
+2026-06-10,9,dosa,Dosa,39.5,180,24.0,192,no,,event,15.0,0
+2026-06-10,9,chapati_kurma,Chapati Kurma,49.5,250,30.0,66,no,,event,0.0,0
+2026-06-10,9,paneer_roll,Paneer Roll,55.0,200,57.0,42,no,,event,0.0,0
+2026-06-10,9,salad_bowl,Salad Bowl,64.5,200,38.0,16,no,,event,0.0,0
+2026-06-10,9,tea,Tea,12.0,150,4.0,117,no,,event,5.0,0
+2026-06-10,9,cold_coffee,Cold Coffee,39.5,250,17.0,194,no,,event,15.0,0
+2026-06-10,9,samosa,Samosa,15.0,80,7.0,67,no,,event,0.0,0
+2026-06-10,9,fresh_juice,Fresh Juice,44.0,250,30.0,27,no,,event,10.0,0
+2026-06-11,10,veg_meals,Veg Meals,71.0,350,45.0,144,no,,regular,5.0,0
+2026-06-11,10,egg_fried_rice,Egg Fried Rice,62.0,300,36.0,53,no,,regular,0.0,0
+2026-06-11,10,chicken_biryani,Chicken Biryani,93.0,350,96.0,92,no,,regular,10.0,0
+2026-06-11,10,dosa,Dosa,41.5,180,24.0,166,no,,regular,15.0,0
+2026-06-11,10,chapati_kurma,Chapati Kurma,52.0,250,30.0,52,no,,regular,0.0,0
+2026-06-11,10,paneer_roll,Paneer Roll,56.0,200,57.0,53,no,,regular,0.0,0
+2026-06-11,10,salad_bowl,Salad Bowl,65.0,200,38.0,14,no,,regular,0.0,0
+2026-06-11,10,tea,Tea,12.5,150,4.0,121,no,,regular,5.0,0
+2026-06-11,10,cold_coffee,Cold Coffee,42.0,250,17.0,140,no,,regular,15.0,0
+2026-06-11,10,samosa,Samosa,15.5,80,7.0,40,no,,regular,0.0,0
+2026-06-11,10,fresh_juice,Fresh Juice,46.0,250,30.0,12,no,,regular,10.0,0
+2026-06-12,11,veg_meals,Veg Meals,72.0,350,45.0,122,no,,regular,5.0,0
+2026-06-12,11,egg_fried_rice,Egg Fried Rice,61.5,300,36.0,44,no,,regular,0.0,0
+2026-06-12,11,chicken_biryani,Chicken Biryani,91.0,350,96.0,119,no,,regular,10.0,0
+2026-06-12,11,dosa,Dosa,41.0,180,24.0,169,no,,regular,15.0,0
+2026-06-12,11,chapati_kurma,Chapati Kurma,51.5,250,30.0,50,no,,regular,0.0,0
+2026-06-12,11,paneer_roll,Paneer Roll,57.0,200,57.0,47,no,,regular,0.0,0
+2026-06-12,11,salad_bowl,Salad Bowl,66.5,200,38.0,15,no,,regular,0.0,0
+2026-06-12,11,tea,Tea,12.5,150,4.0,108,no,,regular,5.0,0
+2026-06-12,11,cold_coffee,Cold Coffee,41.0,250,17.0,155,no,,regular,15.0,0
+2026-06-12,11,samosa,Samosa,15.5,80,7.0,48,no,,regular,0.0,0
+2026-06-12,11,fresh_juice,Fresh Juice,47.0,250,30.0,18,no,,regular,10.0,0
+2026-06-13,12,veg_meals,Veg Meals,69.0,350,45.0,39,no,,weekend,5.0,0
+2026-06-13,12,egg_fried_rice,Egg Fried Rice,60.0,300,36.0,18,no,,weekend,0.0,0
+2026-06-13,12,chicken_biryani,Chicken Biryani,89.0,350,96.0,51,no,,weekend,10.0,0
+2026-06-13,12,dosa,Dosa,40.0,180,24.0,48,no,,weekend,15.0,0
+2026-06-13,12,chapati_kurma,Chapati Kurma,50.5,250,30.0,20,no,,weekend,0.0,0
+2026-06-13,12,paneer_roll,Paneer Roll,55.0,200,57.0,17,no,,weekend,0.0,0
+2026-06-13,12,salad_bowl,Salad Bowl,64.5,200,38.0,3,no,,weekend,0.0,0
+2026-06-13,12,tea,Tea,12.0,150,4.0,37,no,,weekend,5.0,0
+2026-06-13,12,cold_coffee,Cold Coffee,40.0,250,17.0,46,no,,weekend,15.0,0
+2026-06-13,12,samosa,Samosa,15.0,80,7.0,21,no,,weekend,0.0,0
+2026-06-13,12,fresh_juice,Fresh Juice,44.5,250,30.0,7,no,,weekend,10.0,0
+2026-06-14,13,veg_meals,Veg Meals,70.0,350,45.0,40,no,,weekend,5.0,0
+2026-06-14,13,egg_fried_rice,Egg Fried Rice,60.5,300,36.0,11,no,,weekend,0.0,0
+2026-06-14,13,chicken_biryani,Chicken Biryani,88.5,350,96.0,59,no,,weekend,10.0,0
+2026-06-14,13,dosa,Dosa,39.0,180,24.0,56,no,,weekend,15.0,0
+2026-06-14,13,chapati_kurma,Chapati Kurma,50.0,250,30.0,13,no,,weekend,0.0,0
+2026-06-14,13,paneer_roll,Paneer Roll,56.0,200,57.0,12,no,,weekend,0.0,0
+2026-06-14,13,salad_bowl,Salad Bowl,65.0,200,38.0,2,no,,weekend,0.0,0
+2026-06-14,13,tea,Tea,12.0,150,4.0,29,no,,weekend,5.0,0
+2026-06-14,13,cold_coffee,Cold Coffee,40.0,250,17.0,51,no,,weekend,15.0,0
+2026-06-14,13,samosa,Samosa,15.0,80,7.0,18,no,,weekend,0.0,0
+2026-06-14,13,fresh_juice,Fresh Juice,44.5,250,30.0,11,no,,weekend,10.0,0
+2026-06-15,14,veg_meals,Veg Meals,70.5,350,45.0,166,no,,regular,5.0,0
+2026-06-15,14,egg_fried_rice,Egg Fried Rice,60.0,300,36.0,58,no,,regular,0.0,0
+2026-06-15,14,chicken_biryani,Chicken Biryani,89.5,350,96.0,98,no,,regular,5.0,0
+2026-06-15,14,dosa,Dosa,40.5,180,24.0,163,no,,regular,15.0,0
+2026-06-15,14,chapati_kurma,Chapati Kurma,50.0,250,30.0,65,no,,regular,0.0,0
+2026-06-15,14,paneer_roll,Paneer Roll,55.5,200,57.0,51,no,,regular,0.0,0
+2026-06-15,14,salad_bowl,Salad Bowl,65.5,200,38.0,13,no,,regular,0.0,0
+2026-06-15,14,tea,Tea,12.0,150,4.0,125,no,,regular,5.0,0
+2026-06-15,14,cold_coffee,Cold Coffee,40.5,250,17.0,149,no,,regular,15.0,0
+2026-06-15,14,samosa,Samosa,15.0,80,7.0,49,no,,regular,0.0,0
+2026-06-15,14,fresh_juice,Fresh Juice,45.0,250,30.0,9,no,,regular,5.0,0
+2026-06-16,15,veg_meals,Veg Meals,68.0,350,45.0,134,no,,regular,5.0,0
+2026-06-16,15,egg_fried_rice,Egg Fried Rice,57.0,300,36.0,43,no,,regular,0.0,0
+2026-06-16,15,chicken_biryani,Chicken Biryani,88.0,350,96.0,97,no,,regular,5.0,0
+2026-06-16,15,dosa,Dosa,39.5,180,24.0,149,no,,regular,15.0,0
+2026-06-16,15,chapati_kurma,Chapati Kurma,48.5,250,30.0,62,no,,regular,0.0,0
+2026-06-16,15,paneer_roll,Paneer Roll,54.0,200,57.0,34,no,,regular,0.0,0
+2026-06-16,15,salad_bowl,Salad Bowl,63.0,200,38.0,8,no,,regular,0.0,0
+2026-06-16,15,tea,Tea,11.5,150,4.0,93,no,,regular,5.0,0
+2026-06-16,15,cold_coffee,Cold Coffee,39.5,250,17.0,135,no,,regular,15.0,0
+2026-06-16,15,samosa,Samosa,14.5,80,7.0,53,no,,regular,0.0,0
+2026-06-16,15,fresh_juice,Fresh Juice,44.5,250,30.0,16,no,,regular,5.0,0
+2026-06-17,16,veg_meals,Veg Meals,67.5,350,45.0,150,no,,regular,5.0,0
+2026-06-17,16,egg_fried_rice,Egg Fried Rice,60.0,300,36.0,65,no,,regular,0.0,0
+2026-06-17,16,chicken_biryani,Chicken Biryani,88.5,350,96.0,100,no,,regular,5.0,0
+2026-06-17,16,dosa,Dosa,39.5,180,24.0,151,no,,regular,15.0,0
+2026-06-17,16,chapati_kurma,Chapati Kurma,49.5,250,30.0,60,no,,regular,0.0,0
+2026-06-17,16,paneer_roll,Paneer Roll,54.0,200,57.0,47,no,,regular,0.0,0
+2026-06-17,16,salad_bowl,Salad Bowl,64.0,200,38.0,13,no,,regular,0.0,0
+2026-06-17,16,tea,Tea,12.0,150,4.0,117,no,,regular,5.0,0
+2026-06-17,16,cold_coffee,Cold Coffee,39.5,250,17.0,142,no,,regular,15.0,0
+2026-06-17,16,samosa,Samosa,15.0,80,7.0,45,no,,regular,0.0,0
+2026-06-17,16,fresh_juice,Fresh Juice,44.5,250,30.0,15,no,,regular,5.0,0
+2026-06-18,17,veg_meals,Veg Meals,71.5,350,45.0,147,no,,regular,5.0,0
+2026-06-18,17,egg_fried_rice,Egg Fried Rice,62.0,300,36.0,58,no,,regular,0.0,0
+2026-06-18,17,chicken_biryani,Chicken Biryani,90.5,350,96.0,111,no,,regular,5.0,0
+2026-06-18,17,dosa,Dosa,40.5,180,24.0,172,no,,regular,15.0,0
+2026-06-18,17,chapati_kurma,Chapati Kurma,50.5,250,30.0,61,no,,regular,0.0,0
+2026-06-18,17,paneer_roll,Paneer Roll,55.5,200,57.0,63,no,,regular,0.0,0
+2026-06-18,17,salad_bowl,Salad Bowl,65.5,200,38.0,7,no,,regular,0.0,0
+2026-06-18,17,tea,Tea,12.5,150,4.0,111,no,,regular,5.0,0
+2026-06-18,17,cold_coffee,Cold Coffee,41.0,250,17.0,144,no,,regular,15.0,0
+2026-06-18,17,samosa,Samosa,15.5,80,7.0,52,no,,regular,0.0,0
+2026-06-18,17,fresh_juice,Fresh Juice,46.5,250,30.0,17,no,,regular,5.0,0
+2026-06-19,18,veg_meals,Veg Meals,68.5,350,45.0,140,no,,regular,5.0,0
+2026-06-19,18,egg_fried_rice,Egg Fried Rice,59.5,300,36.0,52,no,,regular,0.0,0
+2026-06-19,18,chicken_biryani,Chicken Biryani,89.0,350,96.0,96,no,,regular,5.0,0
+2026-06-19,18,dosa,Dosa,39.5,180,24.0,145,no,,regular,15.0,0
+2026-06-19,18,chapati_kurma,Chapati Kurma,49.5,250,30.0,64,no,,regular,0.0,0
+2026-06-19,18,paneer_roll,Paneer Roll,54.0,200,57.0,53,no,,regular,0.0,0
+2026-06-19,18,salad_bowl,Salad Bowl,64.0,200,38.0,12,no,,regular,0.0,0
+2026-06-19,18,tea,Tea,12.0,150,4.0,92,no,,regular,5.0,0
+2026-06-19,18,cold_coffee,Cold Coffee,40.0,250,17.0,145,no,,regular,15.0,0
+2026-06-19,18,samosa,Samosa,14.5,80,7.0,58,no,,regular,0.0,0
+2026-06-19,18,fresh_juice,Fresh Juice,44.5,250,30.0,12,no,,regular,5.0,0
+2026-06-20,19,veg_meals,Veg Meals,66.0,350,45.0,32,no,,weekend,5.0,0
+2026-06-20,19,egg_fried_rice,Egg Fried Rice,56.0,300,36.0,11,no,,weekend,0.0,0
+2026-06-20,19,chicken_biryani,Chicken Biryani,85.5,350,96.0,37,no,,weekend,5.0,0
+2026-06-20,19,dosa,Dosa,37.5,180,24.0,40,no,,weekend,15.0,0
+2026-06-20,19,chapati_kurma,Chapati Kurma,47.0,250,30.0,11,no,,weekend,0.0,0
+2026-06-20,19,paneer_roll,Paneer Roll,51.0,200,57.0,20,no,,weekend,0.0,0
+2026-06-20,19,salad_bowl,Salad Bowl,61.0,200,38.0,4,no,,weekend,0.0,0
+2026-06-20,19,tea,Tea,11.5,150,4.0,28,no,,weekend,5.0,0
+2026-06-20,19,cold_coffee,Cold Coffee,38.0,250,17.0,47,no,,weekend,15.0,0
+2026-06-20,19,samosa,Samosa,14.5,80,7.0,14,no,,weekend,0.0,0
+2026-06-20,19,fresh_juice,Fresh Juice,42.0,250,30.0,4,no,,weekend,5.0,0
+2026-06-21,20,veg_meals,Veg Meals,69.5,350,45.0,40,no,,weekend,5.0,0
+2026-06-21,20,egg_fried_rice,Egg Fried Rice,59.0,300,36.0,19,no,,weekend,0.0,0
+2026-06-21,20,chicken_biryani,Chicken Biryani,89.0,350,96.0,35,no,,weekend,5.0,0
+2026-06-21,20,dosa,Dosa,39.0,180,24.0,39,no,,weekend,15.0,0
+2026-06-21,20,chapati_kurma,Chapati Kurma,49.5,250,30.0,14,no,,weekend,0.0,0
+2026-06-21,20,paneer_roll,Paneer Roll,53.5,200,57.0,14,no,,weekend,0.0,0
+2026-06-21,20,salad_bowl,Salad Bowl,64.0,200,38.0,6,no,,weekend,0.0,0
+2026-06-21,20,tea,Tea,11.5,150,4.0,29,no,,weekend,5.0,0
+2026-06-21,20,cold_coffee,Cold Coffee,39.0,250,17.0,43,no,,weekend,15.0,0
+2026-06-21,20,samosa,Samosa,14.5,80,7.0,19,no,,weekend,0.0,0
+2026-06-21,20,fresh_juice,Fresh Juice,44.0,250,30.0,6,no,,weekend,5.0,0
+2026-06-22,21,veg_meals,Veg Meals,71.5,350,45.0,166,no,,regular,15.0,0
+2026-06-22,21,egg_fried_rice,Egg Fried Rice,61.5,300,36.0,46,no,,regular,0.0,0
+2026-06-22,21,chicken_biryani,Chicken Biryani,92.0,350,96.0,88,no,,regular,5.0,0
+2026-06-22,21,dosa,Dosa,41.0,180,24.0,157,no,,regular,5.0,0
+2026-06-22,21,chapati_kurma,Chapati Kurma,51.0,250,30.0,57,no,,regular,0.0,0
+2026-06-22,21,paneer_roll,Paneer Roll,56.5,200,57.0,58,no,,regular,0.0,0
+2026-06-22,21,salad_bowl,Salad Bowl,65.5,200,38.0,15,no,,regular,0.0,0
+2026-06-22,21,tea,Tea,12.0,150,4.0,169,no,,regular,15.0,0
+2026-06-22,21,cold_coffee,Cold Coffee,41.5,250,17.0,126,no,,regular,5.0,0
+2026-06-22,21,samosa,Samosa,15.5,80,7.0,48,no,,regular,0.0,0
+2026-06-22,21,fresh_juice,Fresh Juice,46.5,250,30.0,9,no,,regular,5.0,0
+2026-06-23,22,veg_meals,Veg Meals,69.0,350,45.0,158,no,,regular,15.0,0
+2026-06-23,22,egg_fried_rice,Egg Fried Rice,58.5,300,36.0,56,no,,regular,0.0,0
+2026-06-23,22,chicken_biryani,Chicken Biryani,90.0,350,96.0,87,no,,regular,5.0,0
+2026-06-23,22,dosa,Dosa,39.5,180,24.0,136,no,,regular,5.0,0
+2026-06-23,22,chapati_kurma,Chapati Kurma,49.0,250,30.0,54,no,,regular,0.0,0
+2026-06-23,22,paneer_roll,Paneer Roll,54.0,200,57.0,53,no,,regular,0.0,0
+2026-06-23,22,salad_bowl,Salad Bowl,64.0,200,38.0,7,no,,regular,0.0,0
+2026-06-23,22,tea,Tea,12.0,150,4.0,151,no,,regular,15.0,0
+2026-06-23,22,cold_coffee,Cold Coffee,39.5,250,17.0,107,no,,regular,5.0,0
+2026-06-23,22,samosa,Samosa,15.0,80,7.0,46,no,,regular,0.0,0
+2026-06-23,22,fresh_juice,Fresh Juice,45.0,250,30.0,13,no,,regular,5.0,0
+2026-06-24,23,veg_meals,Veg Meals,70.0,350,45.0,156,no,,regular,15.0,0
+2026-06-24,23,egg_fried_rice,Egg Fried Rice,59.5,300,36.0,45,no,,regular,0.0,0
+2026-06-24,23,chicken_biryani,Chicken Biryani,90.5,350,96.0,91,no,,regular,5.0,0
+2026-06-24,23,dosa,Dosa,39.5,180,24.0,137,no,,regular,5.0,0
+2026-06-24,23,chapati_kurma,Chapati Kurma,50.0,250,30.0,69,no,,regular,0.0,0
+2026-06-24,23,paneer_roll,Paneer Roll,54.5,200,57.0,48,no,,regular,0.0,0
+2026-06-24,23,salad_bowl,Salad Bowl,65.5,200,38.0,9,no,,regular,0.0,0
+2026-06-24,23,tea,Tea,12.0,150,4.0,150,no,,regular,15.0,0
+2026-06-24,23,cold_coffee,Cold Coffee,40.0,250,17.0,112,no,,regular,5.0,0
+2026-06-24,23,samosa,Samosa,15.0,80,7.0,60,no,,regular,0.0,0
+2026-06-24,23,fresh_juice,Fresh Juice,45.0,250,30.0,12,no,,regular,5.0,0
+2026-06-25,24,veg_meals,Veg Meals,73.5,350,45.0,141,no,,regular,15.0,0
+2026-06-25,24,egg_fried_rice,Egg Fried Rice,60.5,300,36.0,54,no,,regular,0.0,0
+2026-06-25,24,chicken_biryani,Chicken Biryani,93.5,350,96.0,110,no,,regular,5.0,0
+2026-06-25,24,dosa,Dosa,41.0,180,24.0,166,no,,regular,5.0,0
+2026-06-25,24,chapati_kurma,Chapati Kurma,51.0,250,30.0,60,no,,regular,0.0,0
+2026-06-25,24,paneer_roll,Paneer Roll,55.5,200,57.0,49,no,,regular,0.0,0
+2026-06-25,24,salad_bowl,Salad Bowl,66.5,200,38.0,16,no,,regular,0.0,0
+2026-06-25,24,tea,Tea,12.0,150,4.0,165,no,,regular,15.0,0
+2026-06-25,24,cold_coffee,Cold Coffee,41.0,250,17.0,129,no,,regular,5.0,0
+2026-06-25,24,samosa,Samosa,15.5,80,7.0,46,no,,regular,0.0,0
+2026-06-25,24,fresh_juice,Fresh Juice,45.5,250,30.0,20,no,,regular,5.0,0
+2026-06-26,25,veg_meals,Veg Meals,74.5,350,45.0,163,no,,regular,15.0,0
+2026-06-26,25,egg_fried_rice,Egg Fried Rice,64.5,300,36.0,65,no,,regular,0.0,0
+2026-06-26,25,chicken_biryani,Chicken Biryani,96.5,350,96.0,100,no,,regular,5.0,0
+2026-06-26,25,dosa,Dosa,43.0,180,24.0,181,no,,regular,5.0,0
+2026-06-26,25,chapati_kurma,Chapati Kurma,53.5,250,30.0,62,no,,regular,0.0,0
+2026-06-26,25,paneer_roll,Paneer Roll,60.0,200,57.0,66,no,,regular,0.0,0
+2026-06-26,25,salad_bowl,Salad Bowl,69.5,200,38.0,11,no,,regular,0.0,0
+2026-06-26,25,tea,Tea,13.0,150,4.0,155,no,,regular,15.0,0
+2026-06-26,25,cold_coffee,Cold Coffee,42.5,250,17.0,145,no,,regular,5.0,0
+2026-06-26,25,samosa,Samosa,16.5,80,7.0,42,no,,regular,0.0,0
+2026-06-26,25,fresh_juice,Fresh Juice,48.0,250,30.0,12,no,,regular,5.0,0
+2026-06-27,26,veg_meals,Veg Meals,67.5,350,45.0,39,no,,weekend,15.0,0
+2026-06-27,26,egg_fried_rice,Egg Fried Rice,58.5,300,36.0,8,no,,weekend,0.0,0
+2026-06-27,26,chicken_biryani,Chicken Biryani,87.5,350,96.0,48,no,,weekend,5.0,0
+2026-06-27,26,dosa,Dosa,38.0,180,24.0,44,no,,weekend,5.0,0
+2026-06-27,26,chapati_kurma,Chapati Kurma,48.0,250,30.0,17,no,,weekend,0.0,0
+2026-06-27,26,paneer_roll,Paneer Roll,54.0,200,57.0,10,no,,weekend,0.0,0
+2026-06-27,26,salad_bowl,Salad Bowl,63.5,200,38.0,3,no,,weekend,0.0,0
+2026-06-27,26,tea,Tea,11.5,150,4.0,42,no,,weekend,15.0,0
+2026-06-27,26,cold_coffee,Cold Coffee,39.0,250,17.0,41,no,,weekend,5.0,0
+2026-06-27,26,samosa,Samosa,14.5,80,7.0,21,no,,weekend,0.0,0
+2026-06-27,26,fresh_juice,Fresh Juice,43.5,250,30.0,5,no,,weekend,5.0,0
+2026-06-28,27,veg_meals,Veg Meals,73.5,350,45.0,53,no,,weekend,15.0,0
+2026-06-28,27,egg_fried_rice,Egg Fried Rice,63.5,300,36.0,23,no,,weekend,0.0,0
+2026-06-28,27,chicken_biryani,Chicken Biryani,93.0,350,96.0,52,no,,weekend,5.0,0
+2026-06-28,27,dosa,Dosa,42.5,180,24.0,48,no,,weekend,5.0,0
+2026-06-28,27,chapati_kurma,Chapati Kurma,53.5,250,30.0,18,no,,weekend,0.0,0
+2026-06-28,27,paneer_roll,Paneer Roll,58.0,200,57.0,22,no,,weekend,0.0,0
+2026-06-28,27,salad_bowl,Salad Bowl,68.0,200,38.0,5,no,,weekend,0.0,0
+2026-06-28,27,tea,Tea,13.0,150,4.0,50,no,,weekend,15.0,0
+2026-06-28,27,cold_coffee,Cold Coffee,42.5,250,17.0,45,no,,weekend,5.0,0
+2026-06-28,27,samosa,Samosa,16.0,80,7.0,16,no,,weekend,0.0,0
+2026-06-28,27,fresh_juice,Fresh Juice,48.5,250,30.0,4,no,,weekend,5.0,0
+2026-06-29,28,veg_meals,Veg Meals,66.0,350,45.0,94,no,,exam,10.0,0
+2026-06-29,28,egg_fried_rice,Egg Fried Rice,55.5,300,36.0,45,no,,exam,0.0,0
+2026-06-29,28,chicken_biryani,Chicken Biryani,86.5,350,96.0,45,no,,exam,0.0,0
+2026-06-29,28,dosa,Dosa,38.0,180,24.0,106,no,,exam,15.0,0
+2026-06-29,28,chapati_kurma,Chapati Kurma,46.5,250,30.0,33,no,,exam,0.0,0
+2026-06-29,28,paneer_roll,Paneer Roll,51.5,200,57.0,31,no,,exam,0.0,0
+2026-06-29,28,salad_bowl,Salad Bowl,61.5,200,38.0,6,no,,exam,0.0,0
+2026-06-29,28,tea,Tea,11.5,150,4.0,101,no,,exam,10.0,0
+2026-06-29,28,cold_coffee,Cold Coffee,38.5,250,17.0,101,no,,exam,15.0,0
+2026-06-29,28,samosa,Samosa,14.5,80,7.0,21,no,,exam,0.0,0
+2026-06-29,28,fresh_juice,Fresh Juice,43.0,250,30.0,8,no,,exam,0.0,0
+2026-06-30,29,veg_meals,Veg Meals,71.0,350,45.0,100,no,,exam,10.0,0
+2026-06-30,29,egg_fried_rice,Egg Fried Rice,60.5,300,36.0,36,no,,exam,0.0,0
+2026-06-30,29,chicken_biryani,Chicken Biryani,90.0,350,96.0,53,no,,exam,0.0,0
+2026-06-30,29,dosa,Dosa,40.0,180,24.0,156,no,,exam,15.0,0
+2026-06-30,29,chapati_kurma,Chapati Kurma,50.5,250,30.0,43,no,,exam,0.0,0
+2026-06-30,29,paneer_roll,Paneer Roll,55.5,200,57.0,39,no,,exam,0.0,0
+2026-06-30,29,salad_bowl,Salad Bowl,65.0,200,38.0,9,no,,exam,0.0,0
+2026-06-30,29,tea,Tea,12.0,150,4.0,102,no,,exam,10.0,0
+2026-06-30,29,cold_coffee,Cold Coffee,40.0,250,17.0,150,no,,exam,15.0,0
+2026-06-30,29,samosa,Samosa,15.0,80,7.0,40,no,,exam,0.0,0
+2026-06-30,29,fresh_juice,Fresh Juice,45.0,250,30.0,5,no,,exam,0.0,0
+2026-07-01,30,veg_meals,Veg Meals,66.5,350,45.0,105,no,,exam,10.0,0
+2026-07-01,30,egg_fried_rice,Egg Fried Rice,58.0,300,36.0,41,no,,exam,0.0,0
+2026-07-01,30,chicken_biryani,Chicken Biryani,85.5,350,96.0,51,no,,exam,0.0,0
+2026-07-01,30,dosa,Dosa,38.0,180,24.0,126,no,,exam,15.0,0
+2026-07-01,30,chapati_kurma,Chapati Kurma,48.0,250,30.0,42,no,,exam,0.0,0
+2026-07-01,30,paneer_roll,Paneer Roll,51.5,200,57.0,28,no,,exam,0.0,0
+2026-07-01,30,salad_bowl,Salad Bowl,61.5,200,38.0,9,no,,exam,0.0,0
+2026-07-01,30,tea,Tea,11.5,150,4.0,117,no,,exam,10.0,0
+2026-07-01,30,cold_coffee,Cold Coffee,37.5,250,17.0,124,no,,exam,15.0,0
+2026-07-01,30,samosa,Samosa,14.5,80,7.0,32,no,,exam,0.0,0
+2026-07-01,30,fresh_juice,Fresh Juice,42.5,250,30.0,7,no,,exam,0.0,0
+2026-07-02,31,veg_meals,Veg Meals,73.5,350,45.0,114,no,,exam,10.0,0
+2026-07-02,31,egg_fried_rice,Egg Fried Rice,63.0,300,36.0,42,no,,exam,0.0,0
+2026-07-02,31,chicken_biryani,Chicken Biryani,95.0,350,96.0,55,no,,exam,0.0,0
+2026-07-02,31,dosa,Dosa,42.5,180,24.0,148,no,,exam,15.0,0
+2026-07-02,31,chapati_kurma,Chapati Kurma,52.5,250,30.0,32,no,,exam,0.0,0
+2026-07-02,31,paneer_roll,Paneer Roll,58.5,200,57.0,34,no,,exam,0.0,0
+2026-07-02,31,salad_bowl,Salad Bowl,68.5,200,38.0,8,no,,exam,0.0,0
+2026-07-02,31,tea,Tea,12.5,150,4.0,120,no,,exam,10.0,0
+2026-07-02,31,cold_coffee,Cold Coffee,41.5,250,17.0,135,no,,exam,15.0,0
+2026-07-02,31,samosa,Samosa,15.5,80,7.0,45,no,,exam,0.0,0
+2026-07-02,31,fresh_juice,Fresh Juice,47.5,250,30.0,6,no,,exam,0.0,0
+2026-07-03,32,veg_meals,Veg Meals,73.0,350,45.0,111,no,,exam,10.0,0
+2026-07-03,32,egg_fried_rice,Egg Fried Rice,62.5,300,36.0,49,no,,exam,0.0,0
+2026-07-03,32,chicken_biryani,Chicken Biryani,92.5,350,96.0,52,no,,exam,0.0,0
+2026-07-03,32,dosa,Dosa,41.0,180,24.0,146,no,,exam,15.0,0
+2026-07-03,32,chapati_kurma,Chapati Kurma,51.0,250,30.0,53,no,,exam,0.0,0
+2026-07-03,32,paneer_roll,Paneer Roll,57.0,200,57.0,43,no,,exam,0.0,0
+2026-07-03,32,salad_bowl,Salad Bowl,67.0,200,38.0,9,no,,exam,0.0,0
+2026-07-03,32,tea,Tea,12.5,150,4.0,115,no,,exam,10.0,0
+2026-07-03,32,cold_coffee,Cold Coffee,41.0,250,17.0,134,no,,exam,15.0,0
+2026-07-03,32,samosa,Samosa,15.5,80,7.0,54,no,,exam,0.0,0
+2026-07-03,32,fresh_juice,Fresh Juice,47.0,250,30.0,7,no,,exam,0.0,0
+2026-07-04,33,veg_meals,Veg Meals,73.5,350,45.0,57,no,,weekend,10.0,0
+2026-07-04,33,egg_fried_rice,Egg Fried Rice,63.0,300,36.0,27,no,,weekend,0.0,0
+2026-07-04,33,chicken_biryani,Chicken Biryani,93.0,350,96.0,42,no,,weekend,0.0,0
+2026-07-04,33,dosa,Dosa,41.5,180,24.0,53,no,,weekend,15.0,0
+2026-07-04,33,chapati_kurma,Chapati Kurma,52.0,250,30.0,30,no,,weekend,0.0,0
+2026-07-04,33,paneer_roll,Paneer Roll,57.5,200,57.0,27,no,,weekend,0.0,0
+2026-07-04,33,salad_bowl,Salad Bowl,68.0,200,38.0,8,no,,weekend,0.0,0
+2026-07-04,33,tea,Tea,12.5,150,4.0,57,no,,weekend,10.0,0
+2026-07-04,33,cold_coffee,Cold Coffee,43.0,250,17.0,53,no,,weekend,15.0,0
+2026-07-04,33,samosa,Samosa,15.5,80,7.0,21,no,,weekend,0.0,0
+2026-07-04,33,fresh_juice,Fresh Juice,47.0,250,30.0,7,no,,weekend,0.0,0
+2026-07-05,34,veg_meals,Veg Meals,67.0,350,45.0,58,no,,weekend,10.0,0
+2026-07-05,34,egg_fried_rice,Egg Fried Rice,58.0,300,36.0,20,no,,weekend,0.0,0
+2026-07-05,34,chicken_biryani,Chicken Biryani,85.5,350,96.0,40,no,,weekend,0.0,0
+2026-07-05,34,dosa,Dosa,37.5,180,24.0,34,no,,weekend,15.0,0
+2026-07-05,34,chapati_kurma,Chapati Kurma,47.5,250,30.0,14,no,,weekend,0.0,0
+2026-07-05,34,paneer_roll,Paneer Roll,53.0,200,57.0,21,no,,weekend,0.0,0
+2026-07-05,34,salad_bowl,Salad Bowl,63.0,200,38.0,3,no,,weekend,0.0,0
+2026-07-05,34,tea,Tea,11.5,150,4.0,49,no,,weekend,10.0,0
+2026-07-05,34,cold_coffee,Cold Coffee,38.5,250,17.0,41,no,,weekend,15.0,0
+2026-07-05,34,samosa,Samosa,14.5,80,7.0,16,no,,weekend,0.0,0
+2026-07-05,34,fresh_juice,Fresh Juice,43.5,250,30.0,8,no,,weekend,0.0,0
+2026-07-06,35,veg_meals,Veg Meals,72.5,350,45.0,94,no,,exam,10.0,0
+2026-07-06,35,egg_fried_rice,Egg Fried Rice,61.5,300,36.0,36,no,,exam,0.0,0
+2026-07-06,35,chicken_biryani,Chicken Biryani,94.0,350,96.0,89,no,,exam,15.0,0
+2026-07-06,35,dosa,Dosa,42.0,180,24.0,122,no,,exam,5.0,0
+2026-07-06,35,chapati_kurma,Chapati Kurma,51.5,250,30.0,46,no,,exam,0.0,0
+2026-07-06,35,paneer_roll,Paneer Roll,58.0,200,57.0,42,no,,exam,0.0,0
+2026-07-06,35,salad_bowl,Salad Bowl,66.5,200,38.0,14,no,,exam,0.0,0
+2026-07-06,35,tea,Tea,12.0,150,4.0,107,no,,exam,10.0,0
+2026-07-06,35,cold_coffee,Cold Coffee,41.5,250,17.0,98,no,,exam,5.0,0
+2026-07-06,35,samosa,Samosa,15.5,80,7.0,47,no,,exam,0.0,0
+2026-07-06,35,fresh_juice,Fresh Juice,45.5,250,30.0,24,no,,exam,15.0,0
+2026-07-07,36,veg_meals,Veg Meals,68.5,350,45.0,87,no,,exam,10.0,0
+2026-07-07,36,egg_fried_rice,Egg Fried Rice,58.0,300,36.0,36,no,,exam,0.0,0
+2026-07-07,36,chicken_biryani,Chicken Biryani,88.5,350,96.0,69,no,,exam,15.0,0
+2026-07-07,36,dosa,Dosa,39.5,180,24.0,134,no,,exam,5.0,0
+2026-07-07,36,chapati_kurma,Chapati Kurma,48.5,250,30.0,30,no,,exam,0.0,0
+2026-07-07,36,paneer_roll,Paneer Roll,54.0,200,57.0,35,no,,exam,0.0,0
+2026-07-07,36,salad_bowl,Salad Bowl,64.0,200,38.0,4,no,,exam,0.0,0
+2026-07-07,36,tea,Tea,12.0,150,4.0,101,no,,exam,10.0,0
+2026-07-07,36,cold_coffee,Cold Coffee,40.0,250,17.0,119,no,,exam,5.0,0
+2026-07-07,36,samosa,Samosa,15.0,80,7.0,38,no,,exam,0.0,0
+2026-07-07,36,fresh_juice,Fresh Juice,44.0,250,30.0,13,no,,exam,15.0,0
+2026-07-08,37,veg_meals,Veg Meals,68.0,350,45.0,90,no,,exam,10.0,0
+2026-07-08,37,egg_fried_rice,Egg Fried Rice,57.5,300,36.0,30,no,,exam,0.0,0
+2026-07-08,37,chicken_biryani,Chicken Biryani,88.5,350,96.0,76,no,,exam,15.0,0
+2026-07-08,37,dosa,Dosa,39.5,180,24.0,119,no,,exam,5.0,0
+2026-07-08,37,chapati_kurma,Chapati Kurma,49.5,250,30.0,37,no,,exam,0.0,0
+2026-07-08,37,paneer_roll,Paneer Roll,54.0,200,57.0,31,no,,exam,0.0,0
+2026-07-08,37,salad_bowl,Salad Bowl,64.5,200,38.0,7,no,,exam,0.0,0
+2026-07-08,37,tea,Tea,12.0,150,4.0,98,no,,exam,10.0,0
+2026-07-08,37,cold_coffee,Cold Coffee,38.5,250,17.0,100,no,,exam,5.0,0
+2026-07-08,37,samosa,Samosa,14.5,80,7.0,38,no,,exam,0.0,0
+2026-07-08,37,fresh_juice,Fresh Juice,44.5,250,30.0,14,no,,exam,15.0,0
+2026-07-09,38,veg_meals,Veg Meals,72.5,350,45.0,95,no,,exam,10.0,0
+2026-07-09,38,egg_fried_rice,Egg Fried Rice,61.0,300,36.0,50,no,,exam,0.0,0
+2026-07-09,38,chicken_biryani,Chicken Biryani,91.5,350,96.0,66,no,,exam,15.0,0
+2026-07-09,38,dosa,Dosa,40.5,180,24.0,109,no,,exam,5.0,0
+2026-07-09,38,chapati_kurma,Chapati Kurma,51.0,250,30.0,41,no,,exam,0.0,0
+2026-07-09,38,paneer_roll,Paneer Roll,56.0,200,57.0,42,no,,exam,0.0,0
+2026-07-09,38,salad_bowl,Salad Bowl,66.5,200,38.0,7,no,,exam,0.0,0
+2026-07-09,38,tea,Tea,12.0,150,4.0,114,no,,exam,10.0,0
+2026-07-09,38,cold_coffee,Cold Coffee,40.5,250,17.0,89,no,,exam,5.0,0
+2026-07-09,38,samosa,Samosa,15.0,80,7.0,43,no,,exam,0.0,0
+2026-07-09,38,fresh_juice,Fresh Juice,45.5,250,30.0,11,no,,exam,15.0,0
+2026-07-10,39,veg_meals,Veg Meals,71.5,350,45.0,101,no,,exam,10.0,0
+2026-07-10,39,egg_fried_rice,Egg Fried Rice,62.5,300,36.0,45,no,,exam,0.0,0
+2026-07-10,39,chicken_biryani,Chicken Biryani,94.5,350,96.0,68,no,,exam,15.0,0
+2026-07-10,39,dosa,Dosa,41.0,180,24.0,143,no,,exam,5.0,0
+2026-07-10,39,chapati_kurma,Chapati Kurma,51.5,250,30.0,38,no,,exam,0.0,0
+2026-07-10,39,paneer_roll,Paneer Roll,56.5,200,57.0,48,no,,exam,0.0,0
+2026-07-10,39,salad_bowl,Salad Bowl,67.5,200,38.0,8,no,,exam,0.0,0
+2026-07-10,39,tea,Tea,12.5,150,4.0,122,no,,exam,10.0,0
+2026-07-10,39,cold_coffee,Cold Coffee,41.5,250,17.0,99,no,,exam,5.0,0
+2026-07-10,39,samosa,Samosa,15.0,80,7.0,52,no,,exam,0.0,0
+2026-07-10,39,fresh_juice,Fresh Juice,47.5,250,30.0,11,no,,exam,15.0,0
+2026-07-11,40,veg_meals,Veg Meals,71.0,350,45.0,46,no,,weekend,10.0,0
+2026-07-11,40,egg_fried_rice,Egg Fried Rice,60.5,300,36.0,19,no,,weekend,0.0,0
+2026-07-11,40,chicken_biryani,Chicken Biryani,91.5,350,96.0,46,no,,weekend,15.0,0
+2026-07-11,40,dosa,Dosa,40.5,180,24.0,37,no,,weekend,5.0,0
+2026-07-11,40,chapati_kurma,Chapati Kurma,49.5,250,30.0,20,no,,weekend,0.0,0
+2026-07-11,40,paneer_roll,Paneer Roll,55.5,200,57.0,16,no,,weekend,0.0,0
+2026-07-11,40,salad_bowl,Salad Bowl,65.0,200,38.0,5,no,,weekend,0.0,0
+2026-07-11,40,tea,Tea,12.0,150,4.0,39,no,,weekend,10.0,0
+2026-07-11,40,cold_coffee,Cold Coffee,40.5,250,17.0,37,no,,weekend,5.0,0
+2026-07-11,40,samosa,Samosa,15.5,80,7.0,22,no,,weekend,0.0,0
+2026-07-11,40,fresh_juice,Fresh Juice,46.5,250,30.0,8,no,,weekend,15.0,0
+2026-07-12,41,veg_meals,Veg Meals,69.5,350,45.0,34,no,,weekend,10.0,0
+2026-07-12,41,egg_fried_rice,Egg Fried Rice,59.0,300,36.0,14,no,,weekend,0.0,0
+2026-07-12,41,chicken_biryani,Chicken Biryani,88.5,350,96.0,58,no,,weekend,15.0,0
+2026-07-12,41,dosa,Dosa,39.0,180,24.0,40,no,,weekend,5.0,0
+2026-07-12,41,chapati_kurma,Chapati Kurma,49.0,250,30.0,18,no,,weekend,0.0,0
+2026-07-12,41,paneer_roll,Paneer Roll,54.0,200,57.0,12,no,,weekend,0.0,0
+2026-07-12,41,salad_bowl,Salad Bowl,64.0,200,38.0,5,no,,weekend,0.0,0
+2026-07-12,41,tea,Tea,12.0,150,4.0,26,no,,weekend,10.0,0
+2026-07-12,41,cold_coffee,Cold Coffee,39.0,250,17.0,50,no,,weekend,5.0,0
+2026-07-12,41,samosa,Samosa,14.5,80,7.0,19,no,,weekend,0.0,0
+2026-07-12,41,fresh_juice,Fresh Juice,44.0,250,30.0,15,no,,weekend,15.0,0
+2026-07-13,42,veg_meals,Veg Meals,67.5,350,45.0,128,no,,regular,15.0,0
+2026-07-13,42,egg_fried_rice,Egg Fried Rice,58.0,300,36.0,50,no,,regular,0.0,0
+2026-07-13,42,chicken_biryani,Chicken Biryani,87.0,350,96.0,93,no,,regular,10.0,0
+2026-07-13,42,dosa,Dosa,39.5,180,24.0,108,no,,regular,0.0,0
+2026-07-13,42,chapati_kurma,Chapati Kurma,47.5,250,30.0,52,no,,regular,0.0,0
+2026-07-13,42,paneer_roll,Paneer Roll,53.0,200,57.0,40,no,,regular,0.0,0
+2026-07-13,42,salad_bowl,Salad Bowl,62.5,200,38.0,6,no,,regular,0.0,0
+2026-07-13,42,tea,Tea,11.5,150,4.0,119,no,,regular,15.0,0
+2026-07-13,42,cold_coffee,Cold Coffee,38.0,250,17.0,94,no,,regular,0.0,0
+2026-07-13,42,samosa,Samosa,14.5,80,7.0,39,no,,regular,0.0,0
+2026-07-13,42,fresh_juice,Fresh Juice,43.5,250,30.0,17,no,,regular,10.0,0
+2026-07-14,43,veg_meals,Veg Meals,74.0,350,45.0,178,no,,regular,15.0,0
+2026-07-14,43,egg_fried_rice,Egg Fried Rice,63.0,300,36.0,65,no,,regular,0.0,0
+2026-07-14,43,chicken_biryani,Chicken Biryani,96.0,350,96.0,110,no,,regular,10.0,0
+2026-07-14,43,dosa,Dosa,42.5,180,24.0,163,no,,regular,0.0,0
+2026-07-14,43,chapati_kurma,Chapati Kurma,53.0,250,30.0,54,no,,regular,0.0,0
+2026-07-14,43,paneer_roll,Paneer Roll,59.0,200,57.0,53,no,,regular,0.0,0
+2026-07-14,43,salad_bowl,Salad Bowl,69.0,200,38.0,9,no,,regular,0.0,0
+2026-07-14,43,tea,Tea,13.0,150,4.0,163,no,,regular,15.0,0
+2026-07-14,43,cold_coffee,Cold Coffee,42.5,250,17.0,118,no,,regular,0.0,0
+2026-07-14,43,samosa,Samosa,16.0,80,7.0,52,no,,regular,0.0,0
+2026-07-14,43,fresh_juice,Fresh Juice,47.5,250,30.0,20,no,,regular,10.0,0
+2026-07-15,44,veg_meals,Veg Meals,73.0,350,45.0,155,no,,regular,15.0,0
+2026-07-15,44,egg_fried_rice,Egg Fried Rice,61.0,300,36.0,78,no,,regular,0.0,0
+2026-07-15,44,chicken_biryani,Chicken Biryani,92.5,350,96.0,108,no,,regular,10.0,0
+2026-07-15,44,dosa,Dosa,41.5,180,24.0,158,no,,regular,0.0,0
+2026-07-15,44,chapati_kurma,Chapati Kurma,51.5,250,30.0,61,no,,regular,0.0,0
+2026-07-15,44,paneer_roll,Paneer Roll,55.5,200,57.0,58,no,,regular,0.0,0
+2026-07-15,44,salad_bowl,Salad Bowl,67.0,200,38.0,12,no,,regular,0.0,0
+2026-07-15,44,tea,Tea,12.5,150,4.0,156,no,,regular,15.0,0
+2026-07-15,44,cold_coffee,Cold Coffee,40.5,250,17.0,110,no,,regular,0.0,0
+2026-07-15,44,samosa,Samosa,15.5,80,7.0,56,no,,regular,0.0,0
+2026-07-15,44,fresh_juice,Fresh Juice,45.5,250,30.0,22,no,,regular,10.0,0
+2026-07-16,45,veg_meals,Veg Meals,71.5,350,45.0,146,no,,regular,15.0,0
+2026-07-16,45,egg_fried_rice,Egg Fried Rice,61.5,300,36.0,53,no,,regular,0.0,0
+2026-07-16,45,chicken_biryani,Chicken Biryani,94.0,350,96.0,119,no,,regular,10.0,0
+2026-07-16,45,dosa,Dosa,40.5,180,24.0,158,no,,regular,0.0,0
+2026-07-16,45,chapati_kurma,Chapati Kurma,52.0,250,30.0,51,no,,regular,0.0,0
+2026-07-16,45,paneer_roll,Paneer Roll,57.0,200,57.0,63,no,,regular,0.0,0
+2026-07-16,45,salad_bowl,Salad Bowl,66.5,200,38.0,5,no,,regular,0.0,0
+2026-07-16,45,tea,Tea,12.5,150,4.0,161,no,,regular,15.0,0
+2026-07-16,45,cold_coffee,Cold Coffee,41.5,250,17.0,99,no,,regular,0.0,0
+2026-07-16,45,samosa,Samosa,15.5,80,7.0,58,no,,regular,0.0,0
+2026-07-16,45,fresh_juice,Fresh Juice,46.5,250,30.0,13,no,,regular,10.0,0
+2026-07-17,46,veg_meals,Veg Meals,75.0,350,45.0,177,no,,regular,15.0,0
+2026-07-17,46,egg_fried_rice,Egg Fried Rice,63.5,300,36.0,73,no,,regular,0.0,0
+2026-07-17,46,chicken_biryani,Chicken Biryani,97.0,350,96.0,130,no,,regular,10.0,0
+2026-07-17,46,dosa,Dosa,43.0,180,24.0,193,no,,regular,0.0,0
+2026-07-17,46,chapati_kurma,Chapati Kurma,53.5,250,30.0,61,no,,regular,0.0,0
+2026-07-17,46,paneer_roll,Paneer Roll,59.0,200,57.0,58,no,,regular,0.0,0
+2026-07-17,46,salad_bowl,Salad Bowl,71.0,200,38.0,17,no,,regular,0.0,0
+2026-07-17,46,tea,Tea,13.0,150,4.0,178,no,,regular,15.0,0
+2026-07-17,46,cold_coffee,Cold Coffee,43.5,250,17.0,124,no,,regular,0.0,0
+2026-07-17,46,samosa,Samosa,16.5,80,7.0,57,no,,regular,0.0,0
+2026-07-17,46,fresh_juice,Fresh Juice,49.0,250,30.0,20,no,,regular,10.0,0
+2026-07-18,47,veg_meals,Veg Meals,68.5,350,45.0,42,no,,weekend,15.0,0
+2026-07-18,47,egg_fried_rice,Egg Fried Rice,58.0,300,36.0,18,no,,weekend,0.0,0
+2026-07-18,47,chicken_biryani,Chicken Biryani,86.0,350,96.0,48,no,,weekend,10.0,0
+2026-07-18,47,dosa,Dosa,38.5,180,24.0,32,no,,weekend,0.0,0
+2026-07-18,47,chapati_kurma,Chapati Kurma,48.5,250,30.0,14,no,,weekend,0.0,0
+2026-07-18,47,paneer_roll,Paneer Roll,53.5,200,57.0,12,no,,weekend,0.0,0
+2026-07-18,47,salad_bowl,Salad Bowl,62.0,200,38.0,7,no,,weekend,0.0,0
+2026-07-18,47,tea,Tea,11.5,150,4.0,40,no,,weekend,15.0,0
+2026-07-18,47,cold_coffee,Cold Coffee,39.0,250,17.0,34,no,,weekend,0.0,0
+2026-07-18,47,samosa,Samosa,14.5,80,7.0,18,no,,weekend,0.0,0
+2026-07-18,47,fresh_juice,Fresh Juice,43.5,250,30.0,5,no,,weekend,10.0,0
+2026-07-19,48,veg_meals,Veg Meals,77.0,350,45.0,41,no,,weekend,15.0,0
+2026-07-19,48,egg_fried_rice,Egg Fried Rice,64.5,300,36.0,25,no,,weekend,0.0,0
+2026-07-19,48,chicken_biryani,Chicken Biryani,99.5,350,96.0,58,no,,weekend,10.0,0
+2026-07-19,48,dosa,Dosa,42.5,180,24.0,63,no,,weekend,0.0,0
+2026-07-19,48,chapati_kurma,Chapati Kurma,54.0,250,30.0,27,no,,weekend,0.0,0
+2026-07-19,48,paneer_roll,Paneer Roll,59.5,200,57.0,12,no,,weekend,0.0,0
+2026-07-19,48,salad_bowl,Salad Bowl,70.0,200,38.0,8,no,,weekend,0.0,0
+2026-07-19,48,tea,Tea,12.5,150,4.0,52,no,,weekend,15.0,0
+2026-07-19,48,cold_coffee,Cold Coffee,43.5,250,17.0,36,no,,weekend,0.0,0
+2026-07-19,48,samosa,Samosa,16.0,80,7.0,22,no,,weekend,0.0,0
+2026-07-19,48,fresh_juice,Fresh Juice,49.0,250,30.0,5,no,,weekend,10.0,0
+2026-07-20,49,veg_meals,Veg Meals,75.0,350,45.0,180,no,,regular,15.0,0
+2026-07-20,49,egg_fried_rice,Egg Fried Rice,65.0,300,36.0,71,no,,regular,0.0,0
+2026-07-20,49,chicken_biryani,Chicken Biryani,96.5,350,96.0,155,no,,regular,15.0,0
+2026-07-20,49,dosa,Dosa,43.0,180,24.0,205,no,,regular,0.0,0
+2026-07-20,49,chapati_kurma,Chapati Kurma,54.5,250,30.0,83,no,,regular,0.0,0
+2026-07-20,49,paneer_roll,Paneer Roll,60.5,200,57.0,60,no,,regular,0.0,0
+2026-07-20,49,salad_bowl,Salad Bowl,70.0,200,38.0,13,no,,regular,0.0,0
+2026-07-20,49,tea,Tea,13.0,150,4.0,196,no,,regular,15.0,0
+2026-07-20,49,cold_coffee,Cold Coffee,43.0,250,17.0,133,no,,regular,0.0,0
+2026-07-20,49,samosa,Samosa,16.0,80,7.0,73,no,,regular,0.0,0
+2026-07-20,49,fresh_juice,Fresh Juice,49.0,250,30.0,26,no,,regular,15.0,0
+2026-07-21,50,veg_meals,Veg Meals,74.0,350,45.0,226,no,,event,15.0,0
+2026-07-21,50,egg_fried_rice,Egg Fried Rice,63.0,300,36.0,72,no,,event,0.0,0
+2026-07-21,50,chicken_biryani,Chicken Biryani,95.5,350,96.0,201,no,,event,15.0,0
+2026-07-21,50,dosa,Dosa,43.0,180,24.0,206,no,,event,0.0,0
+2026-07-21,50,chapati_kurma,Chapati Kurma,53.5,250,30.0,77,no,,event,0.0,0
+2026-07-21,50,paneer_roll,Paneer Roll,58.0,200,57.0,64,no,,event,0.0,0
+2026-07-21,50,salad_bowl,Salad Bowl,69.0,200,38.0,12,no,,event,0.0,0
+2026-07-21,50,tea,Tea,13.0,150,4.0,205,no,,event,15.0,0
+2026-07-21,50,cold_coffee,Cold Coffee,42.0,250,17.0,175,no,,event,0.0,0
+2026-07-21,50,samosa,Samosa,16.0,80,7.0,76,no,,event,0.0,0
+2026-07-21,50,fresh_juice,Fresh Juice,48.0,250,30.0,33,no,,event,15.0,0
+2026-07-22,51,veg_meals,Veg Meals,72.0,350,45.0,159,no,,regular,15.0,0
+2026-07-22,51,egg_fried_rice,Egg Fried Rice,62.5,300,36.0,48,no,,regular,0.0,0
+2026-07-22,51,chicken_biryani,Chicken Biryani,92.5,350,96.0,145,no,,regular,15.0,0
+2026-07-22,51,dosa,Dosa,40.5,180,24.0,169,no,,regular,0.0,0
+2026-07-22,51,chapati_kurma,Chapati Kurma,52.0,250,30.0,60,no,,regular,0.0,0
+2026-07-22,51,paneer_roll,Paneer Roll,56.5,200,57.0,43,no,,regular,0.0,0
+2026-07-22,51,salad_bowl,Salad Bowl,67.0,200,38.0,12,no,,regular,0.0,0
+2026-07-22,51,tea,Tea,12.5,150,4.0,177,no,,regular,15.0,0
+2026-07-22,51,cold_coffee,Cold Coffee,41.5,250,17.0,116,no,,regular,0.0,0
+2026-07-22,51,samosa,Samosa,15.5,80,7.0,34,no,,regular,0.0,0
+2026-07-22,51,fresh_juice,Fresh Juice,45.0,250,30.0,20,no,,regular,15.0,0
+2026-07-23,52,veg_meals,Veg Meals,67.0,350,45.0,138,no,,regular,15.0,0
+2026-07-23,52,egg_fried_rice,Egg Fried Rice,58.0,300,36.0,47,no,,regular,0.0,0
+2026-07-23,52,chicken_biryani,Chicken Biryani,86.5,350,96.0,114,no,,regular,15.0,0
+2026-07-23,52,dosa,Dosa,39.0,180,24.0,146,no,,regular,0.0,0
+2026-07-23,52,chapati_kurma,Chapati Kurma,48.5,250,30.0,42,no,,regular,0.0,0
+2026-07-23,52,paneer_roll,Paneer Roll,54.5,200,57.0,42,no,,regular,0.0,0
+2026-07-23,52,salad_bowl,Salad Bowl,63.5,200,38.0,11,no,,regular,0.0,0
+2026-07-23,52,tea,Tea,11.5,150,4.0,149,no,,regular,15.0,0
+2026-07-23,52,cold_coffee,Cold Coffee,39.0,250,17.0,110,no,,regular,0.0,0
+2026-07-23,52,samosa,Samosa,14.5,80,7.0,41,no,,regular,0.0,0
+2026-07-23,52,fresh_juice,Fresh Juice,43.5,250,30.0,20,no,,regular,15.0,0
+2026-07-24,53,veg_meals,Veg Meals,73.5,350,45.0,132,no,,regular,15.0,0
+2026-07-24,53,egg_fried_rice,Egg Fried Rice,61.5,300,36.0,56,no,,regular,0.0,0
+2026-07-24,53,chicken_biryani,Chicken Biryani,95.0,350,96.0,138,no,,regular,15.0,0
+2026-07-24,53,dosa,Dosa,41.0,180,24.0,142,no,,regular,0.0,0
+2026-07-24,53,chapati_kurma,Chapati Kurma,52.5,250,30.0,42,no,,regular,0.0,0
+2026-07-24,53,paneer_roll,Paneer Roll,57.0,200,57.0,57,no,,regular,0.0,0
+2026-07-24,53,salad_bowl,Salad Bowl,67.5,200,38.0,8,no,,regular,0.0,0
+2026-07-24,53,tea,Tea,12.5,150,4.0,150,no,,regular,15.0,0
+2026-07-24,53,cold_coffee,Cold Coffee,41.5,250,17.0,87,no,,regular,0.0,0
+2026-07-24,53,samosa,Samosa,15.5,80,7.0,49,no,,regular,0.0,0
+2026-07-24,53,fresh_juice,Fresh Juice,47.0,250,30.0,27,no,,regular,15.0,0
+2026-07-25,54,veg_meals,Veg Meals,70.0,350,45.0,48,no,,weekend,15.0,0
+2026-07-25,54,egg_fried_rice,Egg Fried Rice,59.5,300,36.0,17,no,,weekend,0.0,0
+2026-07-25,54,chicken_biryani,Chicken Biryani,89.0,350,96.0,59,no,,weekend,15.0,0
+2026-07-25,54,dosa,Dosa,40.0,180,24.0,47,no,,weekend,0.0,0
+2026-07-25,54,chapati_kurma,Chapati Kurma,48.5,250,30.0,15,no,,weekend,0.0,0
+2026-07-25,54,paneer_roll,Paneer Roll,53.5,200,57.0,16,no,,weekend,0.0,0
+2026-07-25,54,salad_bowl,Salad Bowl,64.0,200,38.0,4,no,,weekend,0.0,0
+2026-07-25,54,tea,Tea,12.0,150,4.0,49,no,,weekend,15.0,0
+2026-07-25,54,cold_coffee,Cold Coffee,39.5,250,17.0,30,no,,weekend,0.0,0
+2026-07-25,54,samosa,Samosa,15.0,80,7.0,16,no,,weekend,0.0,0
+2026-07-25,54,fresh_juice,Fresh Juice,45.0,250,30.0,20,no,,weekend,15.0,0
+2026-07-26,55,veg_meals,Veg Meals,70.0,350,45.0,39,no,,weekend,15.0,0
+2026-07-26,55,egg_fried_rice,Egg Fried Rice,60.5,300,36.0,12,no,,weekend,0.0,0
+2026-07-26,55,chicken_biryani,Chicken Biryani,90.5,350,96.0,48,no,,weekend,15.0,0
+2026-07-26,55,dosa,Dosa,39.5,180,24.0,44,no,,weekend,0.0,0
+2026-07-26,55,chapati_kurma,Chapati Kurma,50.0,250,30.0,19,no,,weekend,0.0,0
+2026-07-26,55,paneer_roll,Paneer Roll,54.0,200,57.0,12,no,,weekend,0.0,0
+2026-07-26,55,salad_bowl,Salad Bowl,66.0,200,38.0,3,no,,weekend,0.0,0
+2026-07-26,55,tea,Tea,12.0,150,4.0,44,no,,weekend,15.0,0
+2026-07-26,55,cold_coffee,Cold Coffee,40.0,250,17.0,37,no,,weekend,0.0,0
+2026-07-26,55,samosa,Samosa,15.0,80,7.0,15,no,,weekend,0.0,0
+2026-07-26,55,fresh_juice,Fresh Juice,45.0,250,30.0,13,no,,weekend,15.0,0
+2026-07-27,56,veg_meals,Veg Meals,69.0,350,45.0,114,no,,regular,0.0,0
+2026-07-27,56,egg_fried_rice,Egg Fried Rice,59.0,300,36.0,64,no,,regular,0.0,0
+2026-07-27,56,chicken_biryani,Chicken Biryani,89.0,350,96.0,90,no,,regular,5.0,0
+2026-07-27,56,dosa,Dosa,40.0,180,24.0,142,no,,regular,0.0,0
+2026-07-27,56,chapati_kurma,Chapati Kurma,50.0,250,30.0,47,no,,regular,0.0,0
+2026-07-27,56,paneer_roll,Paneer Roll,53.5,200,57.0,38,no,,regular,0.0,0
+2026-07-27,56,salad_bowl,Salad Bowl,63.5,200,38.0,12,no,,regular,0.0,0
+2026-07-27,56,tea,Tea,12.0,150,4.0,71,no,,regular,0.0,0
+2026-07-27,56,cold_coffee,Cold Coffee,39.5,250,17.0,104,no,,regular,0.0,0
+2026-07-27,56,samosa,Samosa,15.0,80,7.0,43,no,,regular,0.0,0
+2026-07-27,56,fresh_juice,Fresh Juice,44.5,250,30.0,13,no,,regular,5.0,0
+2026-07-28,57,veg_meals,Veg Meals,70.0,350,45.0,141,no,,regular,0.0,0
+2026-07-28,57,egg_fried_rice,Egg Fried Rice,61.0,300,36.0,64,no,,regular,0.0,0
+2026-07-28,57,chicken_biryani,Chicken Biryani,90.5,350,96.0,108,no,,regular,5.0,0
+2026-07-28,57,dosa,Dosa,40.0,180,24.0,160,no,,regular,0.0,0
+2026-07-28,57,chapati_kurma,Chapati Kurma,50.5,250,30.0,66,no,,regular,0.0,0
+2026-07-28,57,paneer_roll,Paneer Roll,56.5,200,57.0,35,no,,regular,0.0,0
+2026-07-28,57,salad_bowl,Salad Bowl,65.5,200,38.0,16,no,,regular,0.0,0
+2026-07-28,57,tea,Tea,12.0,150,4.0,114,no,,regular,0.0,0
+2026-07-28,57,cold_coffee,Cold Coffee,41.0,250,17.0,120,no,,regular,0.0,0
+2026-07-28,57,samosa,Samosa,15.0,80,7.0,48,no,,regular,0.0,0
+2026-07-28,57,fresh_juice,Fresh Juice,46.0,250,30.0,12,no,,regular,5.0,0
+2026-07-29,58,veg_meals,Veg Meals,74.0,350,45.0,160,no,,regular,0.0,0
+2026-07-29,58,egg_fried_rice,Egg Fried Rice,63.5,300,36.0,55,no,,regular,0.0,0
+2026-07-29,58,chicken_biryani,Chicken Biryani,95.5,350,96.0,117,no,,regular,5.0,0
+2026-07-29,58,dosa,Dosa,41.5,180,24.0,172,no,,regular,0.0,0
+2026-07-29,58,chapati_kurma,Chapati Kurma,53.5,250,30.0,58,no,,regular,0.0,0
+2026-07-29,58,paneer_roll,Paneer Roll,58.0,200,57.0,60,no,,regular,0.0,0
+2026-07-29,58,salad_bowl,Salad Bowl,68.5,200,38.0,16,no,,regular,0.0,0
+2026-07-29,58,tea,Tea,12.5,150,4.0,100,no,,regular,0.0,0
+2026-07-29,58,cold_coffee,Cold Coffee,41.5,250,17.0,128,no,,regular,0.0,0
+2026-07-29,58,samosa,Samosa,15.5,80,7.0,76,no,,regular,0.0,0
+2026-07-29,58,fresh_juice,Fresh Juice,47.5,250,30.0,15,no,,regular,5.0,0
+2026-07-30,59,veg_meals,Veg Meals,67.5,350,45.0,136,no,,regular,0.0,0
+2026-07-30,59,egg_fried_rice,Egg Fried Rice,60.0,300,36.0,55,no,,regular,0.0,0
+2026-07-30,59,chicken_biryani,Chicken Biryani,89.0,350,96.0,91,no,,regular,5.0,0
+2026-07-30,59,dosa,Dosa,38.5,180,24.0,120,no,,regular,0.0,0
+2026-07-30,59,chapati_kurma,Chapati Kurma,49.0,250,30.0,60,no,,regular,0.0,0
+2026-07-30,59,paneer_roll,Paneer Roll,53.5,200,57.0,51,no,,regular,0.0,0
+2026-07-30,59,salad_bowl,Salad Bowl,64.0,200,38.0,14,no,,regular,0.0,0
+2026-07-30,59,tea,Tea,11.5,150,4.0,91,no,,regular,0.0,0
+2026-07-30,59,cold_coffee,Cold Coffee,39.0,250,17.0,109,no,,regular,0.0,0
+2026-07-30,59,samosa,Samosa,14.5,80,7.0,49,no,,regular,0.0,0
+2026-07-30,59,fresh_juice,Fresh Juice,43.5,250,30.0,12,no,,regular,5.0,0
+2026-07-31,60,veg_meals,Veg Meals,63.0,350,45.0,146,no,,regular,0.0,1
+2026-07-31,60,egg_fried_rice,Egg Fried Rice,57.0,240,30.11,50,no,,regular,0.0,1
+2026-07-31,60,chicken_biryani,Chicken Biryani,90.0,350,96.0,72,no,,regular,5.0,1
+2026-07-31,60,dosa,Dosa,40.0,180,24.0,128,no,,regular,0.0,1
+2026-07-31,60,chapati_kurma,Chapati Kurma,52.5,310,35.63,57,no,,regular,0.0,1
+2026-07-31,60,paneer_roll,Paneer Roll,63.0,160,47.68,24,no,,regular,0.0,1
+2026-07-31,60,salad_bowl,Salad Bowl,55.0,200,38.0,19,no,,regular,0.0,1
+2026-07-31,60,tea,Tea,14.0,150,4.0,70,no,,regular,0.0,1
+2026-07-31,60,cold_coffee,Cold Coffee,40.0,250,17.0,102,no,,regular,0.0,1
+2026-07-31,60,samosa,Samosa,13.0,80,7.0,81,no,,regular,0.0,1
+2026-07-31,60,fresh_juice,Fresh Juice,51.5,250,30.0,8,no,,regular,5.0,1
+2026-08-01,61,veg_meals,Veg Meals,63.0,350,45.0,39,no,,weekend,0.0,1
+2026-08-01,61,egg_fried_rice,Egg Fried Rice,57.0,240,30.11,13,no,,weekend,0.0,1
+2026-08-01,61,chicken_biryani,Chicken Biryani,90.0,350,96.0,43,no,,weekend,5.0,1
+2026-08-01,61,dosa,Dosa,40.0,180,24.0,39,no,,weekend,0.0,1
+2026-08-01,61,chapati_kurma,Chapati Kurma,52.5,310,35.63,19,no,,weekend,0.0,1
+2026-08-01,61,paneer_roll,Paneer Roll,63.0,160,47.68,9,no,,weekend,0.0,1
+2026-08-01,61,salad_bowl,Salad Bowl,55.0,200,38.0,4,no,,weekend,0.0,1
+2026-08-01,61,tea,Tea,14.0,150,4.0,22,no,,weekend,0.0,1
+2026-08-01,61,cold_coffee,Cold Coffee,40.0,250,17.0,30,no,,weekend,0.0,1
+2026-08-01,61,samosa,Samosa,13.0,80,7.0,18,no,,weekend,0.0,1
+2026-08-01,61,fresh_juice,Fresh Juice,51.5,250,30.0,4,no,,weekend,5.0,1
+2026-08-02,62,veg_meals,Veg Meals,63.0,350,45.0,43,no,,weekend,0.0,1
+2026-08-02,62,egg_fried_rice,Egg Fried Rice,57.0,240,30.11,10,no,,weekend,0.0,1
+2026-08-02,62,chicken_biryani,Chicken Biryani,90.0,350,96.0,43,no,,weekend,5.0,1
+2026-08-02,62,dosa,Dosa,40.0,180,24.0,42,no,,weekend,0.0,1
+2026-08-02,62,chapati_kurma,Chapati Kurma,52.5,310,35.63,13,no,,weekend,0.0,1
+2026-08-02,62,paneer_roll,Paneer Roll,63.0,160,47.68,6,no,,weekend,0.0,1
+2026-08-02,62,salad_bowl,Salad Bowl,55.0,200,38.0,7,no,,weekend,0.0,1
+2026-08-02,62,tea,Tea,14.0,150,4.0,25,no,,weekend,0.0,1
+2026-08-02,62,cold_coffee,Cold Coffee,40.0,250,17.0,43,no,,weekend,0.0,1
+2026-08-02,62,samosa,Samosa,13.0,80,7.0,24,no,,weekend,0.0,1
+2026-08-02,62,fresh_juice,Fresh Juice,51.5,250,30.0,3,no,,weekend,5.0,1
+2026-08-03,63,veg_meals,Veg Meals,77.0,350,45.0,93,no,,regular,10.0,1
+2026-08-03,63,egg_fried_rice,Egg Fried Rice,57.0,375,43.04,71,no,,regular,0.0,1
+2026-08-03,63,chicken_biryani,Chicken Biryani,81.0,350,96.0,79,no,,regular,0.0,1
+2026-08-03,63,dosa,Dosa,38.0,180,24.0,139,no,,regular,15.0,1
+2026-08-03,63,chapati_kurma,Chapati Kurma,55.0,250,30.0,35,no,,regular,0.0,1
+2026-08-03,63,paneer_roll,Paneer Roll,63.0,160,47.68,34,no,,regular,0.0,1
+2026-08-03,63,salad_bowl,Salad Bowl,62.0,200,38.0,10,no,,regular,0.0,1
+2026-08-03,63,tea,Tea,12.0,150,4.0,100,no,,regular,10.0,1
+2026-08-03,63,cold_coffee,Cold Coffee,44.0,250,17.0,100,no,,regular,15.0,1
+2026-08-03,63,samosa,Samosa,13.5,80,7.0,54,no,,regular,0.0,1
+2026-08-03,63,fresh_juice,Fresh Juice,49.5,250,30.0,6,no,,regular,0.0,1
+2026-08-04,64,veg_meals,Veg Meals,77.0,350,45.0,105,no,,regular,10.0,1
+2026-08-04,64,egg_fried_rice,Egg Fried Rice,57.0,375,43.04,73,no,,regular,0.0,1
+2026-08-04,64,chicken_biryani,Chicken Biryani,81.0,350,96.0,99,no,,regular,0.0,1
+2026-08-04,64,dosa,Dosa,38.0,180,24.0,155,no,,regular,15.0,1
+2026-08-04,64,chapati_kurma,Chapati Kurma,55.0,250,30.0,27,no,,regular,0.0,1
+2026-08-04,64,paneer_roll,Paneer Roll,63.0,160,47.68,28,no,,regular,0.0,1
+2026-08-04,64,salad_bowl,Salad Bowl,62.0,200,38.0,22,no,,regular,0.0,1
+2026-08-04,64,tea,Tea,12.0,150,4.0,87,no,,regular,10.0,1
+2026-08-04,64,cold_coffee,Cold Coffee,44.0,250,17.0,119,no,,regular,15.0,1
+2026-08-04,64,samosa,Samosa,13.5,80,7.0,48,no,,regular,0.0,1
+2026-08-04,64,fresh_juice,Fresh Juice,49.5,250,30.0,4,no,,regular,0.0,1
+2026-08-05,65,veg_meals,Veg Meals,77.0,350,45.0,123,no,,regular,10.0,1
+2026-08-05,65,egg_fried_rice,Egg Fried Rice,57.0,375,43.04,94,no,,regular,0.0,1
+2026-08-05,65,chicken_biryani,Chicken Biryani,81.0,350,96.0,139,no,,regular,0.0,1
+2026-08-05,65,dosa,Dosa,38.0,180,24.0,190,no,,regular,15.0,1
+2026-08-05,65,chapati_kurma,Chapati Kurma,55.0,250,30.0,43,no,,regular,0.0,1
+2026-08-05,65,paneer_roll,Paneer Roll,63.0,160,47.68,37,no,,regular,0.0,1
+2026-08-05,65,salad_bowl,Salad Bowl,62.0,200,38.0,18,no,,regular,0.0,1
+2026-08-05,65,tea,Tea,12.0,150,4.0,123,no,,regular,10.0,1
+2026-08-05,65,cold_coffee,Cold Coffee,44.0,250,17.0,137,no,,regular,15.0,1
+2026-08-05,65,samosa,Samosa,13.5,80,7.0,69,no,,regular,0.0,1
+2026-08-05,65,fresh_juice,Fresh Juice,49.5,250,30.0,10,no,,regular,0.0,1
+2026-08-06,66,veg_meals,Veg Meals,77.0,350,45.0,129,no,,event,10.0,1
+2026-08-06,66,egg_fried_rice,Egg Fried Rice,57.0,375,43.04,85,no,,event,0.0,1
+2026-08-06,66,chicken_biryani,Chicken Biryani,81.0,350,96.0,151,no,,event,0.0,1
+2026-08-06,66,dosa,Dosa,38.0,180,24.0,177,no,,event,15.0,1
+2026-08-06,66,chapati_kurma,Chapati Kurma,55.0,250,30.0,43,no,,event,0.0,1
+2026-08-06,66,paneer_roll,Paneer Roll,63.0,160,47.68,57,no,,event,0.0,1
+2026-08-06,66,salad_bowl,Salad Bowl,62.0,200,38.0,18,no,,event,0.0,1
+2026-08-06,66,tea,Tea,12.0,150,4.0,126,no,,event,10.0,1
+2026-08-06,66,cold_coffee,Cold Coffee,44.0,250,17.0,157,no,,event,15.0,1
+2026-08-06,66,samosa,Samosa,13.5,80,7.0,75,no,,event,0.0,1
+2026-08-06,66,fresh_juice,Fresh Juice,49.5,250,30.0,11,no,,event,0.0,1
+2026-08-07,67,veg_meals,Veg Meals,77.0,350,45.0,114,no,,regular,10.0,1
+2026-08-07,67,egg_fried_rice,Egg Fried Rice,57.0,375,43.04,83,no,,regular,0.0,1
+2026-08-07,67,chicken_biryani,Chicken Biryani,81.0,350,96.0,102,no,,regular,0.0,1
+2026-08-07,67,dosa,Dosa,38.0,180,24.0,193,no,,regular,15.0,1
+2026-08-07,67,chapati_kurma,Chapati Kurma,55.0,250,30.0,55,no,,regular,0.0,1
+2026-08-07,67,paneer_roll,Paneer Roll,63.0,160,47.68,25,no,,regular,0.0,1
+2026-08-07,67,salad_bowl,Salad Bowl,62.0,200,38.0,11,no,,regular,0.0,1
+2026-08-07,67,tea,Tea,12.0,150,4.0,111,no,,regular,10.0,1
+2026-08-07,67,cold_coffee,Cold Coffee,44.0,250,17.0,149,no,,regular,15.0,1
+2026-08-07,67,samosa,Samosa,13.5,80,7.0,51,no,,regular,0.0,1
+2026-08-07,67,fresh_juice,Fresh Juice,49.5,250,30.0,6,no,,regular,0.0,1
+2026-08-08,68,veg_meals,Veg Meals,77.0,350,45.0,28,no,,weekend,10.0,1
+2026-08-08,68,egg_fried_rice,Egg Fried Rice,57.0,375,43.04,23,no,,weekend,0.0,1
+2026-08-08,68,chicken_biryani,Chicken Biryani,81.0,350,96.0,47,no,,weekend,0.0,1
+2026-08-08,68,dosa,Dosa,38.0,180,24.0,50,no,,weekend,15.0,1
+2026-08-08,68,chapati_kurma,Chapati Kurma,55.0,250,30.0,11,no,,weekend,0.0,1
+2026-08-08,68,paneer_roll,Paneer Roll,63.0,160,47.68,4,no,,weekend,0.0,1
+2026-08-08,68,salad_bowl,Salad Bowl,62.0,200,38.0,2,no,,weekend,0.0,1
+2026-08-08,68,tea,Tea,12.0,150,4.0,28,no,,weekend,10.0,1
+2026-08-08,68,cold_coffee,Cold Coffee,44.0,250,17.0,33,no,,weekend,15.0,1
+2026-08-08,68,samosa,Samosa,13.5,80,7.0,28,no,,weekend,0.0,1
+2026-08-08,68,fresh_juice,Fresh Juice,49.5,250,30.0,3,no,,weekend,0.0,1
+2026-08-09,69,veg_meals,Veg Meals,77.0,350,45.0,42,no,,weekend,10.0,1
+2026-08-09,69,egg_fried_rice,Egg Fried Rice,57.0,375,43.04,33,no,,weekend,0.0,1
+2026-08-09,69,chicken_biryani,Chicken Biryani,81.0,350,96.0,49,no,,weekend,0.0,1
+2026-08-09,69,dosa,Dosa,38.0,180,24.0,56,no,,weekend,15.0,1
+2026-08-09,69,chapati_kurma,Chapati Kurma,55.0,250,30.0,15,no,,weekend,0.0,1
+2026-08-09,69,paneer_roll,Paneer Roll,63.0,160,47.68,12,no,,weekend,0.0,1
+2026-08-09,69,salad_bowl,Salad Bowl,62.0,200,38.0,1,no,,weekend,0.0,1
+2026-08-09,69,tea,Tea,12.0,150,4.0,45,no,,weekend,10.0,1
+2026-08-09,69,cold_coffee,Cold Coffee,44.0,250,17.0,41,no,,weekend,15.0,1
+2026-08-09,69,samosa,Samosa,13.5,80,7.0,29,no,,weekend,0.0,1
+2026-08-09,69,fresh_juice,Fresh Juice,49.5,250,30.0,3,no,,weekend,0.0,1
+2026-08-10,70,veg_meals,Veg Meals,63.0,350,45.0,136,no,,regular,0.0,1
+2026-08-10,70,egg_fried_rice,Egg Fried Rice,66.0,300,36.0,35,no,,regular,0.0,1
+2026-08-10,70,chicken_biryani,Chicken Biryani,76.5,350,96.0,117,no,,regular,5.0,1
+2026-08-10,70,dosa,Dosa,46.0,180,24.0,83,no,,regular,10.0,1
+2026-08-10,70,chapati_kurma,Chapati Kurma,55.0,250,30.0,25,no,,regular,0.0,1
+2026-08-10,70,paneer_roll,Paneer Roll,49.5,200,57.0,65,no,,regular,0.0,1
+2026-08-10,70,salad_bowl,Salad Bowl,71.5,160,31.79,6,no,,regular,0.0,1
+2026-08-10,70,tea,Tea,12.5,150,4.0,72,no,,regular,0.0,1
+2026-08-10,70,cold_coffee,Cold Coffee,40.0,250,17.0,88,no,,regular,10.0,1
+2026-08-10,70,samosa,Samosa,16.5,80,7.0,34,no,,regular,0.0,1
+2026-08-10,70,fresh_juice,Fresh Juice,47.0,250,30.0,14,no,,regular,5.0,1
+2026-08-11,71,veg_meals,Veg Meals,63.0,350,45.0,138,no,,regular,0.0,1
+2026-08-11,71,egg_fried_rice,Egg Fried Rice,66.0,300,36.0,32,no,,regular,0.0,1
+2026-08-11,71,chicken_biryani,Chicken Biryani,76.5,350,96.0,135,no,,regular,5.0,1
+2026-08-11,71,dosa,Dosa,46.0,180,24.0,101,no,,regular,10.0,1
+2026-08-11,71,chapati_kurma,Chapati Kurma,55.0,250,30.0,38,no,,regular,0.0,1
+2026-08-11,71,paneer_roll,Paneer Roll,49.5,200,57.0,63,no,,regular,0.0,1
+2026-08-11,71,salad_bowl,Salad Bowl,71.5,160,31.79,10,no,,regular,0.0,1
+2026-08-11,71,tea,Tea,12.5,150,4.0,90,no,,regular,0.0,1
+2026-08-11,71,cold_coffee,Cold Coffee,40.0,250,17.0,107,no,,regular,10.0,1
+2026-08-11,71,samosa,Samosa,16.5,80,7.0,29,no,,regular,0.0,1
+2026-08-11,71,fresh_juice,Fresh Juice,47.0,250,30.0,12,no,,regular,5.0,1
+2026-08-12,72,veg_meals,Veg Meals,63.0,350,45.0,209,no,,regular,0.0,1
+2026-08-12,72,egg_fried_rice,Egg Fried Rice,66.0,300,36.0,62,no,,regular,0.0,1
+2026-08-12,72,chicken_biryani,Chicken Biryani,76.5,350,96.0,184,no,,regular,5.0,1
+2026-08-12,72,dosa,Dosa,46.0,180,24.0,153,no,,regular,10.0,1
+2026-08-12,72,chapati_kurma,Chapati Kurma,55.0,250,30.0,53,no,,regular,0.0,1
+2026-08-12,72,paneer_roll,Paneer Roll,49.5,200,57.0,75,no,,regular,0.0,1
+2026-08-12,72,salad_bowl,Salad Bowl,71.5,160,31.79,14,no,,regular,0.0,1
+2026-08-12,72,tea,Tea,12.5,150,4.0,112,no,,regular,0.0,1
+2026-08-12,72,cold_coffee,Cold Coffee,40.0,250,17.0,135,no,,regular,10.0,1
+2026-08-12,72,samosa,Samosa,16.5,80,7.0,54,no,,regular,0.0,1
+2026-08-12,72,fresh_juice,Fresh Juice,47.0,250,30.0,18,no,,regular,5.0,1
+2026-08-13,73,veg_meals,Veg Meals,63.0,350,45.0,161,no,,regular,0.0,1
+2026-08-13,73,egg_fried_rice,Egg Fried Rice,66.0,300,36.0,33,no,,regular,0.0,1
+2026-08-13,73,chicken_biryani,Chicken Biryani,76.5,350,96.0,148,no,,regular,5.0,1
+2026-08-13,73,dosa,Dosa,46.0,180,24.0,93,no,,regular,10.0,1
+2026-08-13,73,chapati_kurma,Chapati Kurma,55.0,250,30.0,45,no,,regular,0.0,1
+2026-08-13,73,paneer_roll,Paneer Roll,49.5,200,57.0,78,no,,regular,0.0,1
+2026-08-13,73,salad_bowl,Salad Bowl,71.5,160,31.79,9,no,,regular,0.0,1
+2026-08-13,73,tea,Tea,12.5,150,4.0,94,no,,regular,0.0,1
+2026-08-13,73,cold_coffee,Cold Coffee,40.0,250,17.0,102,no,,regular,10.0,1
+2026-08-13,73,samosa,Samosa,16.5,80,7.0,41,no,,regular,0.0,1
+2026-08-13,73,fresh_juice,Fresh Juice,47.0,250,30.0,10,no,,regular,5.0,1
+2026-08-14,74,veg_meals,Veg Meals,63.0,350,45.0,166,no,,regular,0.0,1
+2026-08-14,74,egg_fried_rice,Egg Fried Rice,66.0,300,36.0,49,no,,regular,0.0,1
+2026-08-14,74,chicken_biryani,Chicken Biryani,76.5,350,96.0,141,no,,regular,5.0,1
+2026-08-14,74,dosa,Dosa,46.0,180,24.0,137,no,,regular,10.0,1
+2026-08-14,74,chapati_kurma,Chapati Kurma,55.0,250,30.0,32,no,,regular,0.0,1
+2026-08-14,74,paneer_roll,Paneer Roll,49.5,200,57.0,66,no,,regular,0.0,1
+2026-08-14,74,salad_bowl,Salad Bowl,71.5,160,31.79,2,no,,regular,0.0,1
+2026-08-14,74,tea,Tea,12.5,150,4.0,97,no,,regular,0.0,1
+2026-08-14,74,cold_coffee,Cold Coffee,40.0,250,17.0,130,no,,regular,10.0,1
+2026-08-14,74,samosa,Samosa,16.5,80,7.0,38,no,,regular,0.0,1
+2026-08-14,74,fresh_juice,Fresh Juice,47.0,250,30.0,14,no,,regular,5.0,1
+2026-08-15,75,veg_meals,Veg Meals,63.0,350,45.0,51,no,,weekend,0.0,1
+2026-08-15,75,egg_fried_rice,Egg Fried Rice,66.0,300,36.0,11,no,,weekend,0.0,1
+2026-08-15,75,chicken_biryani,Chicken Biryani,76.5,350,96.0,58,no,,weekend,5.0,1
+2026-08-15,75,dosa,Dosa,46.0,180,24.0,37,no,,weekend,10.0,1
+2026-08-15,75,chapati_kurma,Chapati Kurma,55.0,250,30.0,12,no,,weekend,0.0,1
+2026-08-15,75,paneer_roll,Paneer Roll,49.5,200,57.0,22,no,,weekend,0.0,1
+2026-08-15,75,salad_bowl,Salad Bowl,71.5,160,31.79,4,no,,weekend,0.0,1
+2026-08-15,75,tea,Tea,12.5,150,4.0,29,no,,weekend,0.0,1
+2026-08-15,75,cold_coffee,Cold Coffee,40.0,250,17.0,41,no,,weekend,10.0,1
+2026-08-15,75,samosa,Samosa,16.5,80,7.0,18,no,,weekend,0.0,1
+2026-08-15,75,fresh_juice,Fresh Juice,47.0,250,30.0,10,no,,weekend,5.0,1
+2026-08-16,76,veg_meals,Veg Meals,63.0,350,45.0,41,no,,weekend,0.0,1
+2026-08-16,76,egg_fried_rice,Egg Fried Rice,66.0,300,36.0,17,no,,weekend,0.0,1
+2026-08-16,76,chicken_biryani,Chicken Biryani,76.5,350,96.0,56,no,,weekend,5.0,1
+2026-08-16,76,dosa,Dosa,46.0,180,24.0,21,no,,weekend,10.0,1
+2026-08-16,76,chapati_kurma,Chapati Kurma,55.0,250,30.0,16,no,,weekend,0.0,1
+2026-08-16,76,paneer_roll,Paneer Roll,49.5,200,57.0,21,no,,weekend,0.0,1
+2026-08-16,76,salad_bowl,Salad Bowl,71.5,160,31.79,2,no,,weekend,0.0,1
+2026-08-16,76,tea,Tea,12.5,150,4.0,22,no,,weekend,0.0,1
+2026-08-16,76,cold_coffee,Cold Coffee,40.0,250,17.0,33,no,,weekend,10.0,1
+2026-08-16,76,samosa,Samosa,16.5,80,7.0,15,no,,weekend,0.0,1
+2026-08-16,76,fresh_juice,Fresh Juice,47.0,250,30.0,8,no,,weekend,5.0,1
+2026-08-17,77,veg_meals,Veg Meals,59.5,280,37.64,168,no,,regular,10.0,1
+2026-08-17,77,egg_fried_rice,Egg Fried Rice,54.0,240,30.11,49,no,,regular,0.0,1
+2026-08-17,77,chicken_biryani,Chicken Biryani,94.5,350,96.0,94,no,,regular,10.0,1
+2026-08-17,77,dosa,Dosa,38.0,225,28.69,159,no,,regular,5.0,1
+2026-08-17,77,chapati_kurma,Chapati Kurma,47.5,250,30.0,58,no,,regular,0.0,1
+2026-08-17,77,paneer_roll,Paneer Roll,55.0,160,47.68,44,no,,regular,0.0,1
+2026-08-17,77,salad_bowl,Salad Bowl,58.5,200,38.0,13,no,,regular,0.0,1
+2026-08-17,77,tea,Tea,14.0,190,4.83,106,no,,regular,10.0,1
+2026-08-17,77,cold_coffee,Cold Coffee,40.0,250,17.0,128,no,,regular,5.0,1
+2026-08-17,77,samosa,Samosa,13.0,65,5.93,60,no,,regular,0.0,1
+2026-08-17,77,fresh_juice,Fresh Juice,45.0,250,30.0,15,no,,regular,10.0,1
+2026-08-18,78,veg_meals,Veg Meals,59.5,280,37.64,180,no,,regular,10.0,1
+2026-08-18,78,egg_fried_rice,Egg Fried Rice,54.0,240,30.11,63,no,,regular,0.0,1
+2026-08-18,78,chicken_biryani,Chicken Biryani,94.5,350,96.0,100,no,,regular,10.0,1
+2026-08-18,78,dosa,Dosa,38.0,225,28.69,190,no,,regular,5.0,1
+2026-08-18,78,chapati_kurma,Chapati Kurma,47.5,250,30.0,73,no,,regular,0.0,1
+2026-08-18,78,paneer_roll,Paneer Roll,55.0,160,47.68,42,no,,regular,0.0,1
+2026-08-18,78,salad_bowl,Salad Bowl,58.5,200,38.0,22,no,,regular,0.0,1
+2026-08-18,78,tea,Tea,14.0,190,4.83,140,no,,regular,10.0,1
+2026-08-18,78,cold_coffee,Cold Coffee,40.0,250,17.0,160,no,,regular,5.0,1
+2026-08-18,78,samosa,Samosa,13.0,65,5.93,80,no,,regular,0.0,1
+2026-08-18,78,fresh_juice,Fresh Juice,45.0,250,30.0,21,no,,regular,10.0,1
+2026-08-19,79,veg_meals,Veg Meals,59.5,280,37.64,188,no,,event,10.0,1
+2026-08-19,79,egg_fried_rice,Egg Fried Rice,54.0,240,30.11,73,no,,event,0.0,1
+2026-08-19,79,chicken_biryani,Chicken Biryani,94.5,350,96.0,138,no,,event,10.0,1
+2026-08-19,79,dosa,Dosa,38.0,225,28.69,195,no,,event,5.0,1
+2026-08-19,79,chapati_kurma,Chapati Kurma,47.5,250,30.0,70,no,,event,0.0,1
+2026-08-19,79,paneer_roll,Paneer Roll,55.0,160,47.68,57,no,,event,0.0,1
+2026-08-19,79,salad_bowl,Salad Bowl,58.5,200,38.0,18,no,,event,0.0,1
+2026-08-19,79,tea,Tea,14.0,190,4.83,119,no,,event,10.0,1
+2026-08-19,79,cold_coffee,Cold Coffee,40.0,250,17.0,193,no,,event,5.0,1
+2026-08-19,79,samosa,Samosa,13.0,65,5.93,98,no,,event,0.0,1
+2026-08-19,79,fresh_juice,Fresh Juice,45.0,250,30.0,24,no,,event,10.0,1
+2026-08-20,80,veg_meals,Veg Meals,59.5,280,37.64,192,no,,regular,10.0,1
+2026-08-20,80,egg_fried_rice,Egg Fried Rice,54.0,240,30.11,65,no,,regular,0.0,1
+2026-08-20,80,chicken_biryani,Chicken Biryani,94.5,350,96.0,90,no,,regular,10.0,1
+2026-08-20,80,dosa,Dosa,38.0,225,28.69,192,no,,regular,5.0,1
+2026-08-20,80,chapati_kurma,Chapati Kurma,47.5,250,30.0,88,no,,regular,0.0,1
+2026-08-20,80,paneer_roll,Paneer Roll,55.0,160,47.68,57,no,,regular,0.0,1
+2026-08-20,80,salad_bowl,Salad Bowl,58.5,200,38.0,18,no,,regular,0.0,1
+2026-08-20,80,tea,Tea,14.0,190,4.83,145,no,,regular,10.0,1
+2026-08-20,80,cold_coffee,Cold Coffee,40.0,250,17.0,164,no,,regular,5.0,1
+2026-08-20,80,samosa,Samosa,13.0,65,5.93,95,no,,regular,0.0,1
+2026-08-20,80,fresh_juice,Fresh Juice,45.0,250,30.0,18,no,,regular,10.0,1
+2026-08-21,81,veg_meals,Veg Meals,59.5,280,37.64,158,no,,regular,10.0,1
+2026-08-21,81,egg_fried_rice,Egg Fried Rice,54.0,240,30.11,54,no,,regular,0.0,1
+2026-08-21,81,chicken_biryani,Chicken Biryani,94.5,350,96.0,69,no,,regular,10.0,1
+2026-08-21,81,dosa,Dosa,38.0,225,28.69,145,no,,regular,5.0,1
+2026-08-21,81,chapati_kurma,Chapati Kurma,47.5,250,30.0,51,no,,regular,0.0,1
+2026-08-21,81,paneer_roll,Paneer Roll,55.0,160,47.68,36,no,,regular,0.0,1
+2026-08-21,81,salad_bowl,Salad Bowl,58.5,200,38.0,16,no,,regular,0.0,1
+2026-08-21,81,tea,Tea,14.0,190,4.83,102,no,,regular,10.0,1
+2026-08-21,81,cold_coffee,Cold Coffee,40.0,250,17.0,131,no,,regular,5.0,1
+2026-08-21,81,samosa,Samosa,13.0,65,5.93,72,no,,regular,0.0,1
+2026-08-21,81,fresh_juice,Fresh Juice,45.0,250,30.0,14,no,,regular,10.0,1
+2026-08-22,82,veg_meals,Veg Meals,59.5,280,37.64,48,no,,weekend,10.0,1
+2026-08-22,82,egg_fried_rice,Egg Fried Rice,54.0,240,30.11,22,no,,weekend,0.0,1
+2026-08-22,82,chicken_biryani,Chicken Biryani,94.5,350,96.0,39,no,,weekend,10.0,1
+2026-08-22,82,dosa,Dosa,38.0,225,28.69,43,no,,weekend,5.0,1
+2026-08-22,82,chapati_kurma,Chapati Kurma,47.5,250,30.0,20,no,,weekend,0.0,1
+2026-08-22,82,paneer_roll,Paneer Roll,55.0,160,47.68,16,no,,weekend,0.0,1
+2026-08-22,82,salad_bowl,Salad Bowl,58.5,200,38.0,4,no,,weekend,0.0,1
+2026-08-22,82,tea,Tea,14.0,190,4.83,34,no,,weekend,10.0,1
+2026-08-22,82,cold_coffee,Cold Coffee,40.0,250,17.0,42,no,,weekend,5.0,1
+2026-08-22,82,samosa,Samosa,13.0,65,5.93,27,no,,weekend,0.0,1
+2026-08-22,82,fresh_juice,Fresh Juice,45.0,250,30.0,12,no,,weekend,10.0,1
+2026-08-23,83,veg_meals,Veg Meals,59.5,280,37.64,51,no,,weekend,10.0,1
+2026-08-23,83,egg_fried_rice,Egg Fried Rice,54.0,240,30.11,23,no,,weekend,0.0,1
+2026-08-23,83,chicken_biryani,Chicken Biryani,94.5,350,96.0,38,no,,weekend,10.0,1
+2026-08-23,83,dosa,Dosa,38.0,225,28.69,59,no,,weekend,5.0,1
+2026-08-23,83,chapati_kurma,Chapati Kurma,47.5,250,30.0,16,no,,weekend,0.0,1
+2026-08-23,83,paneer_roll,Paneer Roll,55.0,160,47.68,12,no,,weekend,0.0,1
+2026-08-23,83,salad_bowl,Salad Bowl,58.5,200,38.0,5,no,,weekend,0.0,1
+2026-08-23,83,tea,Tea,14.0,190,4.83,31,no,,weekend,10.0,1
+2026-08-23,83,cold_coffee,Cold Coffee,40.0,250,17.0,47,no,,weekend,5.0,1
+2026-08-23,83,samosa,Samosa,13.0,65,5.93,25,no,,weekend,0.0,1
+2026-08-23,83,fresh_juice,Fresh Juice,45.0,250,30.0,4,no,,weekend,10.0,1
+2026-08-24,84,veg_meals,Veg Meals,77.0,280,37.64,65,no,,exam,5.0,1
+2026-08-24,84,egg_fried_rice,Egg Fried Rice,63.0,300,36.0,31,no,,exam,0.0,1
+2026-08-24,84,chicken_biryani,Chicken Biryani,90.0,350,96.0,65,no,,exam,0.0,1
+2026-08-24,84,dosa,Dosa,42.0,225,28.69,140,no,,exam,15.0,1
+2026-08-24,84,chapati_kurma,Chapati Kurma,42.5,250,30.0,58,no,,exam,0.0,1
+2026-08-24,84,paneer_roll,Paneer Roll,55.0,200,57.0,43,no,,exam,0.0,1
+2026-08-24,84,salad_bowl,Salad Bowl,62.0,200,38.0,16,no,,exam,0.0,1
+2026-08-24,84,tea,Tea,14.0,150,4.0,71,no,,exam,5.0,1
+2026-08-24,84,cold_coffee,Cold Coffee,42.0,250,17.0,127,no,,exam,15.0,1
+2026-08-24,84,samosa,Samosa,13.5,100,8.37,63,no,,exam,0.0,1
+2026-08-24,84,fresh_juice,Fresh Juice,49.5,250,30.0,8,no,,exam,0.0,1
+2026-08-25,85,veg_meals,Veg Meals,77.0,280,37.64,64,no,,exam,5.0,1
+2026-08-25,85,egg_fried_rice,Egg Fried Rice,63.0,300,36.0,23,no,,exam,0.0,1
+2026-08-25,85,chicken_biryani,Chicken Biryani,90.0,350,96.0,51,no,,exam,0.0,1
+2026-08-25,85,dosa,Dosa,42.0,225,28.69,140,no,,exam,15.0,1
+2026-08-25,85,chapati_kurma,Chapati Kurma,42.5,250,30.0,77,no,,exam,0.0,1
+2026-08-25,85,paneer_roll,Paneer Roll,55.0,200,57.0,24,no,,exam,0.0,1
+2026-08-25,85,salad_bowl,Salad Bowl,62.0,200,38.0,12,no,,exam,0.0,1
+2026-08-25,85,tea,Tea,14.0,150,4.0,59,no,,exam,5.0,1
+2026-08-25,85,cold_coffee,Cold Coffee,42.0,250,17.0,118,no,,exam,15.0,1
+2026-08-25,85,samosa,Samosa,13.5,100,8.37,48,no,,exam,0.0,1
+2026-08-25,85,fresh_juice,Fresh Juice,49.5,250,30.0,7,no,,exam,0.0,1
+2026-08-26,86,veg_meals,Veg Meals,77.0,280,37.64,53,no,,exam,5.0,1
+2026-08-26,86,egg_fried_rice,Egg Fried Rice,63.0,300,36.0,31,no,,exam,0.0,1
+2026-08-26,86,chicken_biryani,Chicken Biryani,90.0,350,96.0,52,no,,exam,0.0,1
+2026-08-26,86,dosa,Dosa,42.0,225,28.69,114,no,,exam,15.0,1
+2026-08-26,86,chapati_kurma,Chapati Kurma,42.5,250,30.0,57,no,,exam,0.0,1
+2026-08-26,86,paneer_roll,Paneer Roll,55.0,200,57.0,25,no,,exam,0.0,1
+2026-08-26,86,salad_bowl,Salad Bowl,62.0,200,38.0,10,no,,exam,0.0,1
+2026-08-26,86,tea,Tea,14.0,150,4.0,55,no,,exam,5.0,1
+2026-08-26,86,cold_coffee,Cold Coffee,42.0,250,17.0,99,no,,exam,15.0,1
+2026-08-26,86,samosa,Samosa,13.5,100,8.37,31,no,,exam,0.0,1
+2026-08-26,86,fresh_juice,Fresh Juice,49.5,250,30.0,1,no,,exam,0.0,1
+2026-08-27,87,veg_meals,Veg Meals,77.0,280,37.64,53,no,,exam,5.0,1
+2026-08-27,87,egg_fried_rice,Egg Fried Rice,63.0,300,36.0,34,no,,exam,0.0,1
+2026-08-27,87,chicken_biryani,Chicken Biryani,90.0,350,96.0,60,no,,exam,0.0,1
+2026-08-27,87,dosa,Dosa,42.0,225,28.69,126,no,,exam,15.0,1
+2026-08-27,87,chapati_kurma,Chapati Kurma,42.5,250,30.0,70,no,,exam,0.0,1
+2026-08-27,87,paneer_roll,Paneer Roll,55.0,200,57.0,28,no,,exam,0.0,1
+2026-08-27,87,salad_bowl,Salad Bowl,62.0,200,38.0,6,no,,exam,0.0,1
+2026-08-27,87,tea,Tea,14.0,150,4.0,55,no,,exam,5.0,1
+2026-08-27,87,cold_coffee,Cold Coffee,42.0,250,17.0,106,no,,exam,15.0,1
+2026-08-27,87,samosa,Samosa,13.5,100,8.37,59,no,,exam,0.0,1
+2026-08-27,87,fresh_juice,Fresh Juice,49.5,250,30.0,5,no,,exam,0.0,1
+2026-08-28,88,veg_meals,Veg Meals,77.0,280,37.64,44,no,,exam,5.0,1
+2026-08-28,88,egg_fried_rice,Egg Fried Rice,63.0,300,36.0,33,no,,exam,0.0,1
+2026-08-28,88,chicken_biryani,Chicken Biryani,90.0,350,96.0,66,no,,exam,0.0,1
+2026-08-28,88,dosa,Dosa,42.0,225,28.69,106,no,,exam,15.0,1
+2026-08-28,88,chapati_kurma,Chapati Kurma,42.5,250,30.0,47,no,,exam,0.0,1
+2026-08-28,88,paneer_roll,Paneer Roll,55.0,200,57.0,39,no,,exam,0.0,1
+2026-08-28,88,salad_bowl,Salad Bowl,62.0,200,38.0,13,no,,exam,0.0,1
+2026-08-28,88,tea,Tea,14.0,150,4.0,58,no,,exam,5.0,1
+2026-08-28,88,cold_coffee,Cold Coffee,42.0,250,17.0,79,no,,exam,15.0,1
+2026-08-28,88,samosa,Samosa,13.5,100,8.37,60,no,,exam,0.0,1
+2026-08-28,88,fresh_juice,Fresh Juice,49.5,250,30.0,1,no,,exam,0.0,1
+2026-08-29,89,veg_meals,Veg Meals,77.0,280,37.64,29,no,,weekend,5.0,1
+2026-08-29,89,egg_fried_rice,Egg Fried Rice,63.0,300,36.0,24,no,,weekend,0.0,1
+2026-08-29,89,chicken_biryani,Chicken Biryani,90.0,350,96.0,37,no,,weekend,0.0,1
+2026-08-29,89,dosa,Dosa,42.0,225,28.69,63,no,,weekend,15.0,1
+2026-08-29,89,chapati_kurma,Chapati Kurma,42.5,250,30.0,22,no,,weekend,0.0,1
+2026-08-29,89,paneer_roll,Paneer Roll,55.0,200,57.0,16,no,,weekend,0.0,1
+2026-08-29,89,salad_bowl,Salad Bowl,62.0,200,38.0,7,no,,weekend,0.0,1
+2026-08-29,89,tea,Tea,14.0,150,4.0,22,no,,weekend,5.0,1
+2026-08-29,89,cold_coffee,Cold Coffee,42.0,250,17.0,54,no,,weekend,15.0,1
+2026-08-29,89,samosa,Samosa,13.5,100,8.37,30,no,,weekend,0.0,1
+2026-08-29,89,fresh_juice,Fresh Juice,49.5,250,30.0,6,no,,weekend,0.0,1
+2026-08-30,90,veg_meals,Veg Meals,77.0,280,37.64,33,no,,weekend,5.0,1
+2026-08-30,90,egg_fried_rice,Egg Fried Rice,63.0,300,36.0,20,no,,weekend,0.0,1
+2026-08-30,90,chicken_biryani,Chicken Biryani,90.0,350,96.0,35,no,,weekend,0.0,1
+2026-08-30,90,dosa,Dosa,42.0,225,28.69,42,no,,weekend,15.0,1
+2026-08-30,90,chapati_kurma,Chapati Kurma,42.5,250,30.0,29,no,,weekend,0.0,1
+2026-08-30,90,paneer_roll,Paneer Roll,55.0,200,57.0,17,no,,weekend,0.0,1
+2026-08-30,90,salad_bowl,Salad Bowl,62.0,200,38.0,6,no,,weekend,0.0,1
+2026-08-30,90,tea,Tea,14.0,150,4.0,24,no,,weekend,5.0,1
+2026-08-30,90,cold_coffee,Cold Coffee,42.0,250,17.0,42,no,,weekend,15.0,1
+2026-08-30,90,samosa,Samosa,13.5,100,8.37,20,no,,weekend,0.0,1
+2026-08-30,90,fresh_juice,Fresh Juice,49.5,250,30.0,2,no,,weekend,0.0,1
+2026-08-31,91,veg_meals,Veg Meals,66.5,440,54.04,137,no,,exam,15.0,1
+2026-08-31,91,egg_fried_rice,Egg Fried Rice,69.0,300,36.0,14,no,,exam,0.0,1
+2026-08-31,91,chicken_biryani,Chicken Biryani,85.5,440,115.29,66,no,,exam,0.0,1
+2026-08-31,91,dosa,Dosa,44.0,180,24.0,84,no,,exam,5.0,1
+2026-08-31,91,chapati_kurma,Chapati Kurma,55.0,250,30.0,27,no,,exam,0.0,1
+2026-08-31,91,paneer_roll,Paneer Roll,60.5,200,57.0,21,no,,exam,0.0,1
+2026-08-31,91,salad_bowl,Salad Bowl,68.0,160,31.79,2,no,,exam,0.0,1
+2026-08-31,91,tea,Tea,10.0,150,4.0,149,no,,exam,15.0,1
+2026-08-31,91,cold_coffee,Cold Coffee,36.0,250,17.0,86,no,,exam,5.0,1
+2026-08-31,91,samosa,Samosa,17.0,65,5.93,19,no,,exam,0.0,1
+2026-08-31,91,fresh_juice,Fresh Juice,49.5,250,30.0,2,no,,exam,0.0,1
+2026-09-01,92,veg_meals,Veg Meals,66.5,440,54.04,105,no,,exam,15.0,1
+2026-09-01,92,egg_fried_rice,Egg Fried Rice,69.0,300,36.0,22,no,,exam,0.0,1
+2026-09-01,92,chicken_biryani,Chicken Biryani,85.5,440,115.29,48,no,,exam,0.0,1
+2026-09-01,92,dosa,Dosa,44.0,180,24.0,90,no,,exam,5.0,1
+2026-09-01,92,chapati_kurma,Chapati Kurma,55.0,250,30.0,16,no,,exam,0.0,1
+2026-09-01,92,paneer_roll,Paneer Roll,60.5,200,57.0,24,no,,exam,0.0,1
+2026-09-01,92,salad_bowl,Salad Bowl,68.0,160,31.79,8,no,,exam,0.0,1
+2026-09-01,92,tea,Tea,10.0,150,4.0,131,no,,exam,15.0,1
+2026-09-01,92,cold_coffee,Cold Coffee,36.0,250,17.0,85,no,,exam,5.0,1
+2026-09-01,92,samosa,Samosa,17.0,65,5.93,12,no,,exam,0.0,1
+2026-09-01,92,fresh_juice,Fresh Juice,49.5,250,30.0,0,no,,exam,0.0,1
+2026-09-02,93,veg_meals,Veg Meals,66.5,440,54.04,147,no,,exam,15.0,1
+2026-09-02,93,egg_fried_rice,Egg Fried Rice,69.0,300,36.0,19,no,,exam,0.0,1
+2026-09-02,93,chicken_biryani,Chicken Biryani,85.5,440,115.29,69,no,,exam,0.0,1
+2026-09-02,93,dosa,Dosa,44.0,180,24.0,79,no,,exam,5.0,1
+2026-09-02,93,chapati_kurma,Chapati Kurma,55.0,250,30.0,37,no,,exam,0.0,1
+2026-09-02,93,paneer_roll,Paneer Roll,60.5,200,57.0,22,no,,exam,0.0,1
+2026-09-02,93,salad_bowl,Salad Bowl,68.0,160,31.79,12,no,,exam,0.0,1
+2026-09-02,93,tea,Tea,10.0,150,4.0,163,no,,exam,15.0,1
+2026-09-02,93,cold_coffee,Cold Coffee,36.0,250,17.0,83,no,,exam,5.0,1
+2026-09-02,93,samosa,Samosa,17.0,65,5.93,17,no,,exam,0.0,1
+2026-09-02,93,fresh_juice,Fresh Juice,49.5,250,30.0,4,no,,exam,0.0,1
+2026-09-03,94,veg_meals,Veg Meals,66.5,440,54.04,156,no,,exam,15.0,1
+2026-09-03,94,egg_fried_rice,Egg Fried Rice,69.0,300,36.0,21,no,,exam,0.0,1
+2026-09-03,94,chicken_biryani,Chicken Biryani,85.5,440,115.29,76,no,,exam,0.0,1
+2026-09-03,94,dosa,Dosa,44.0,180,24.0,97,no,,exam,5.0,1
+2026-09-03,94,chapati_kurma,Chapati Kurma,55.0,250,30.0,27,no,,exam,0.0,1
+2026-09-03,94,paneer_roll,Paneer Roll,60.5,200,57.0,30,no,,exam,0.0,1
+2026-09-03,94,salad_bowl,Salad Bowl,68.0,160,31.79,5,no,,exam,0.0,1
+2026-09-03,94,tea,Tea,10.0,150,4.0,171,no,,exam,15.0,1
+2026-09-03,94,cold_coffee,Cold Coffee,36.0,250,17.0,113,no,,exam,5.0,1
+2026-09-03,94,samosa,Samosa,17.0,65,5.93,18,no,,exam,0.0,1
+2026-09-03,94,fresh_juice,Fresh Juice,49.5,250,30.0,3,no,,exam,0.0,1
+2026-09-04,95,veg_meals,Veg Meals,66.5,440,54.04,176,no,,exam,15.0,1
+2026-09-04,95,egg_fried_rice,Egg Fried Rice,69.0,300,36.0,30,no,,exam,0.0,1
+2026-09-04,95,chicken_biryani,Chicken Biryani,85.5,440,115.29,85,no,,exam,0.0,1
+2026-09-04,95,dosa,Dosa,44.0,180,24.0,126,no,,exam,5.0,1
+2026-09-04,95,chapati_kurma,Chapati Kurma,55.0,250,30.0,49,no,,exam,0.0,1
+2026-09-04,95,paneer_roll,Paneer Roll,60.5,200,57.0,32,no,,exam,0.0,1
+2026-09-04,95,salad_bowl,Salad Bowl,68.0,160,31.79,13,no,,exam,0.0,1
+2026-09-04,95,tea,Tea,10.0,150,4.0,217,no,,exam,15.0,1
+2026-09-04,95,cold_coffee,Cold Coffee,36.0,250,17.0,118,no,,exam,5.0,1
+2026-09-04,95,samosa,Samosa,17.0,65,5.93,33,no,,exam,0.0,1
+2026-09-04,95,fresh_juice,Fresh Juice,49.5,250,30.0,5,no,,exam,0.0,1
+2026-09-05,96,veg_meals,Veg Meals,66.5,440,54.04,66,no,,weekend,15.0,1
+2026-09-05,96,egg_fried_rice,Egg Fried Rice,69.0,300,36.0,10,no,,weekend,0.0,1
+2026-09-05,96,chicken_biryani,Chicken Biryani,85.5,440,115.29,59,no,,weekend,0.0,1
+2026-09-05,96,dosa,Dosa,44.0,180,24.0,44,no,,weekend,5.0,1
+2026-09-05,96,chapati_kurma,Chapati Kurma,55.0,250,30.0,11,no,,weekend,0.0,1
+2026-09-05,96,paneer_roll,Paneer Roll,60.5,200,57.0,15,no,,weekend,0.0,1
+2026-09-05,96,salad_bowl,Salad Bowl,68.0,160,31.79,5,no,,weekend,0.0,1
+2026-09-05,96,tea,Tea,10.0,150,4.0,66,no,,weekend,15.0,1
+2026-09-05,96,cold_coffee,Cold Coffee,36.0,250,17.0,50,no,,weekend,5.0,1
+2026-09-05,96,samosa,Samosa,17.0,65,5.93,9,no,,weekend,0.0,1
+2026-09-05,96,fresh_juice,Fresh Juice,49.5,250,30.0,8,no,,weekend,0.0,1
+2026-09-06,97,veg_meals,Veg Meals,66.5,440,54.04,50,no,,weekend,15.0,1
+2026-09-06,97,egg_fried_rice,Egg Fried Rice,69.0,300,36.0,18,no,,weekend,0.0,1
+2026-09-06,97,chicken_biryani,Chicken Biryani,85.5,440,115.29,52,no,,weekend,0.0,1
+2026-09-06,97,dosa,Dosa,44.0,180,24.0,30,no,,weekend,5.0,1
+2026-09-06,97,chapati_kurma,Chapati Kurma,55.0,250,30.0,9,no,,weekend,0.0,1
+2026-09-06,97,paneer_roll,Paneer Roll,60.5,200,57.0,10,no,,weekend,0.0,1
+2026-09-06,97,salad_bowl,Salad Bowl,68.0,160,31.79,4,no,,weekend,0.0,1
+2026-09-06,97,tea,Tea,10.0,150,4.0,50,no,,weekend,15.0,1
+2026-09-06,97,cold_coffee,Cold Coffee,36.0,250,17.0,41,no,,weekend,5.0,1
+2026-09-06,97,samosa,Samosa,17.0,65,5.93,9,no,,weekend,0.0,1
+2026-09-06,97,fresh_juice,Fresh Juice,49.5,250,30.0,4,no,,weekend,0.0,1
+2026-09-07,98,veg_meals,Veg Meals,70.0,440,54.04,120,no,,regular,15.0,1
+2026-09-07,98,egg_fried_rice,Egg Fried Rice,66.0,300,36.0,31,no,,regular,0.0,1
+2026-09-07,98,chicken_biryani,Chicken Biryani,94.5,350,96.0,56,no,,regular,0.0,1
+2026-09-07,98,dosa,Dosa,44.0,225,28.69,112,no,,regular,15.0,1
+2026-09-07,98,chapati_kurma,Chapati Kurma,50.0,250,30.0,54,no,,regular,0.0,1
+2026-09-07,98,paneer_roll,Paneer Roll,47.0,160,47.68,67,no,,regular,0.0,1
+2026-09-07,98,salad_bowl,Salad Bowl,62.0,160,31.79,18,no,,regular,0.0,1
+2026-09-07,98,tea,Tea,11.0,150,4.0,135,no,,regular,15.0,1
+2026-09-07,98,cold_coffee,Cold Coffee,46.0,250,17.0,72,no,,regular,15.0,1
+2026-09-07,98,samosa,Samosa,17.0,65,5.93,27,no,,regular,0.0,1
+2026-09-07,98,fresh_juice,Fresh Juice,40.5,250,30.0,16,no,,regular,0.0,1
+2026-09-08,99,veg_meals,Veg Meals,70.0,440,54.04,155,no,,regular,15.0,1
+2026-09-08,99,egg_fried_rice,Egg Fried Rice,66.0,300,36.0,36,no,,regular,0.0,1
+2026-09-08,99,chicken_biryani,Chicken Biryani,94.5,350,96.0,61,no,,regular,0.0,1
+2026-09-08,99,dosa,Dosa,44.0,225,28.69,114,no,,regular,15.0,1
+2026-09-08,99,chapati_kurma,Chapati Kurma,50.0,250,30.0,38,no,,regular,0.0,1
+2026-09-08,99,paneer_roll,Paneer Roll,47.0,160,47.68,61,no,,regular,0.0,1
+2026-09-08,99,salad_bowl,Salad Bowl,62.0,160,31.79,12,no,,regular,0.0,1
+2026-09-08,99,tea,Tea,11.0,150,4.0,162,no,,regular,15.0,1
+2026-09-08,99,cold_coffee,Cold Coffee,46.0,250,17.0,68,no,,regular,15.0,1
+2026-09-08,99,samosa,Samosa,17.0,65,5.93,30,no,,regular,0.0,1
+2026-09-08,99,fresh_juice,Fresh Juice,40.5,250,30.0,7,no,,regular,0.0,1
+2026-09-09,100,veg_meals,Veg Meals,70.0,440,54.04,161,no,,event,15.0,1
+2026-09-09,100,egg_fried_rice,Egg Fried Rice,66.0,300,36.0,42,no,,event,0.0,1
+2026-09-09,100,chicken_biryani,Chicken Biryani,94.5,350,96.0,90,no,,event,0.0,1
+2026-09-09,100,dosa,Dosa,44.0,225,28.69,146,no,,event,15.0,1
+2026-09-09,100,chapati_kurma,Chapati Kurma,50.0,250,30.0,47,no,,event,0.0,1
+2026-09-09,100,paneer_roll,Paneer Roll,47.0,160,47.68,66,no,,event,0.0,1
+2026-09-09,100,salad_bowl,Salad Bowl,62.0,160,31.79,10,no,,event,0.0,1
+2026-09-09,100,tea,Tea,11.0,150,4.0,176,no,,event,15.0,1
+2026-09-09,100,cold_coffee,Cold Coffee,46.0,250,17.0,127,no,,event,15.0,1
+2026-09-09,100,samosa,Samosa,17.0,65,5.93,41,no,,event,0.0,1
+2026-09-09,100,fresh_juice,Fresh Juice,40.5,250,30.0,13,no,,event,0.0,1
+2026-09-10,101,veg_meals,Veg Meals,70.0,440,54.04,158,no,,regular,15.0,1
+2026-09-10,101,egg_fried_rice,Egg Fried Rice,66.0,300,36.0,31,no,,regular,0.0,1
+2026-09-10,101,chicken_biryani,Chicken Biryani,94.5,350,96.0,62,no,,regular,0.0,1
+2026-09-10,101,dosa,Dosa,44.0,225,28.69,134,no,,regular,15.0,1
+2026-09-10,101,chapati_kurma,Chapati Kurma,50.0,250,30.0,59,no,,regular,0.0,1
+2026-09-10,101,paneer_roll,Paneer Roll,47.0,160,47.68,62,no,,regular,0.0,1
+2026-09-10,101,salad_bowl,Salad Bowl,62.0,160,31.79,14,no,,regular,0.0,1
+2026-09-10,101,tea,Tea,11.0,150,4.0,171,no,,regular,15.0,1
+2026-09-10,101,cold_coffee,Cold Coffee,46.0,250,17.0,105,no,,regular,15.0,1
+2026-09-10,101,samosa,Samosa,17.0,65,5.93,34,no,,regular,0.0,1
+2026-09-10,101,fresh_juice,Fresh Juice,40.5,250,30.0,12,no,,regular,0.0,1
+2026-09-11,102,veg_meals,Veg Meals,70.0,440,54.04,181,no,,regular,15.0,1
+2026-09-11,102,egg_fried_rice,Egg Fried Rice,66.0,300,36.0,41,no,,regular,0.0,1
+2026-09-11,102,chicken_biryani,Chicken Biryani,94.5,350,96.0,82,no,,regular,0.0,1
+2026-09-11,102,dosa,Dosa,44.0,225,28.69,167,no,,regular,15.0,1
+2026-09-11,102,chapati_kurma,Chapati Kurma,50.0,250,30.0,61,no,,regular,0.0,1
+2026-09-11,102,paneer_roll,Paneer Roll,47.0,160,47.68,67,no,,regular,0.0,1
+2026-09-11,102,salad_bowl,Salad Bowl,62.0,160,31.79,10,no,,regular,0.0,1
+2026-09-11,102,tea,Tea,11.0,150,4.0,201,no,,regular,15.0,1
+2026-09-11,102,cold_coffee,Cold Coffee,46.0,250,17.0,116,no,,regular,15.0,1
+2026-09-11,102,samosa,Samosa,17.0,65,5.93,41,no,,regular,0.0,1
+2026-09-11,102,fresh_juice,Fresh Juice,40.5,250,30.0,10,no,,regular,0.0,1
+2026-09-12,103,veg_meals,Veg Meals,70.0,440,54.04,53,no,,weekend,15.0,1
+2026-09-12,103,egg_fried_rice,Egg Fried Rice,66.0,300,36.0,18,no,,weekend,0.0,1
+2026-09-12,103,chicken_biryani,Chicken Biryani,94.5,350,96.0,27,no,,weekend,0.0,1
+2026-09-12,103,dosa,Dosa,44.0,225,28.69,36,no,,weekend,15.0,1
+2026-09-12,103,chapati_kurma,Chapati Kurma,50.0,250,30.0,16,no,,weekend,0.0,1
+2026-09-12,103,paneer_roll,Paneer Roll,47.0,160,47.68,18,no,,weekend,0.0,1
+2026-09-12,103,salad_bowl,Salad Bowl,62.0,160,31.79,1,no,,weekend,0.0,1
+2026-09-12,103,tea,Tea,11.0,150,4.0,60,no,,weekend,15.0,1
+2026-09-12,103,cold_coffee,Cold Coffee,46.0,250,17.0,28,no,,weekend,15.0,1
+2026-09-12,103,samosa,Samosa,17.0,65,5.93,3,no,,weekend,0.0,1
+2026-09-12,103,fresh_juice,Fresh Juice,40.5,250,30.0,5,no,,weekend,0.0,1
+2026-09-13,104,veg_meals,Veg Meals,70.0,440,54.04,60,no,,weekend,15.0,1
+2026-09-13,104,egg_fried_rice,Egg Fried Rice,66.0,300,36.0,17,no,,weekend,0.0,1
+2026-09-13,104,chicken_biryani,Chicken Biryani,94.5,350,96.0,46,no,,weekend,0.0,1
+2026-09-13,104,dosa,Dosa,44.0,225,28.69,52,no,,weekend,15.0,1
+2026-09-13,104,chapati_kurma,Chapati Kurma,50.0,250,30.0,21,no,,weekend,0.0,1
+2026-09-13,104,paneer_roll,Paneer Roll,47.0,160,47.68,23,no,,weekend,0.0,1
+2026-09-13,104,salad_bowl,Salad Bowl,62.0,160,31.79,6,no,,weekend,0.0,1
+2026-09-13,104,tea,Tea,11.0,150,4.0,64,no,,weekend,15.0,1
+2026-09-13,104,cold_coffee,Cold Coffee,46.0,250,17.0,48,no,,weekend,15.0,1
+2026-09-13,104,samosa,Samosa,17.0,65,5.93,15,no,,weekend,0.0,1
+2026-09-13,104,fresh_juice,Fresh Juice,40.5,250,30.0,8,no,,weekend,0.0,1
+2026-09-14,105,veg_meals,Veg Meals,80.5,350,45.0,93,no,,regular,10.0,1
+2026-09-14,105,egg_fried_rice,Egg Fried Rice,57.0,300,36.0,62,no,,regular,0.0,1
+2026-09-14,105,chicken_biryani,Chicken Biryani,81.0,350,96.0,97,no,,regular,0.0,1
+2026-09-14,105,dosa,Dosa,36.0,180,24.0,172,no,,regular,0.0,1
+2026-09-14,105,chapati_kurma,Chapati Kurma,50.0,250,30.0,48,no,,regular,0.0,1
+2026-09-14,105,paneer_roll,Paneer Roll,49.5,160,47.68,51,no,,regular,0.0,1
+2026-09-14,105,salad_bowl,Salad Bowl,58.5,200,38.0,20,no,,regular,0.0,1
+2026-09-14,105,tea,Tea,12.5,150,4.0,102,no,,regular,10.0,1
+2026-09-14,105,cold_coffee,Cold Coffee,38.0,250,17.0,144,no,,regular,0.0,1
+2026-09-14,105,samosa,Samosa,16.0,65,5.93,41,no,,regular,0.0,1
+2026-09-14,105,fresh_juice,Fresh Juice,38.0,200,25.1,20,no,,regular,0.0,1
+2026-09-15,106,veg_meals,Veg Meals,80.5,350,45.0,92,no,,regular,10.0,1
+2026-09-15,106,egg_fried_rice,Egg Fried Rice,57.0,300,36.0,46,no,,regular,0.0,1
+2026-09-15,106,chicken_biryani,Chicken Biryani,81.0,350,96.0,105,no,,regular,0.0,1
+2026-09-15,106,dosa,Dosa,36.0,180,24.0,174,no,,regular,0.0,1
+2026-09-15,106,chapati_kurma,Chapati Kurma,50.0,250,30.0,46,no,,regular,0.0,1
+2026-09-15,106,paneer_roll,Paneer Roll,49.5,160,47.68,47,no,,regular,0.0,1
+2026-09-15,106,salad_bowl,Salad Bowl,58.5,200,38.0,18,no,,regular,0.0,1
+2026-09-15,106,tea,Tea,12.5,150,4.0,90,no,,regular,10.0,1
+2026-09-15,106,cold_coffee,Cold Coffee,38.0,250,17.0,141,no,,regular,0.0,1
+2026-09-15,106,samosa,Samosa,16.0,65,5.93,47,no,,regular,0.0,1
+2026-09-15,106,fresh_juice,Fresh Juice,38.0,200,25.1,20,no,,regular,0.0,1
+2026-09-16,107,veg_meals,Veg Meals,80.5,350,45.0,99,no,,regular,10.0,1
+2026-09-16,107,egg_fried_rice,Egg Fried Rice,57.0,300,36.0,70,no,,regular,0.0,1
+2026-09-16,107,chicken_biryani,Chicken Biryani,81.0,350,96.0,116,no,,regular,0.0,1
+2026-09-16,107,dosa,Dosa,36.0,180,24.0,188,no,,regular,0.0,1
+2026-09-16,107,chapati_kurma,Chapati Kurma,50.0,250,30.0,54,no,,regular,0.0,1
+2026-09-16,107,paneer_roll,Paneer Roll,49.5,160,47.68,66,no,,regular,0.0,1
+2026-09-16,107,salad_bowl,Salad Bowl,58.5,200,38.0,11,no,,regular,0.0,1
+2026-09-16,107,tea,Tea,12.5,150,4.0,99,no,,regular,10.0,1
+2026-09-16,107,cold_coffee,Cold Coffee,38.0,250,17.0,165,no,,regular,0.0,1
+2026-09-16,107,samosa,Samosa,16.0,65,5.93,52,no,,regular,0.0,1
+2026-09-16,107,fresh_juice,Fresh Juice,38.0,200,25.1,17,no,,regular,0.0,1
+2026-09-17,108,veg_meals,Veg Meals,80.5,350,45.0,104,no,,regular,10.0,1
+2026-09-17,108,egg_fried_rice,Egg Fried Rice,57.0,300,36.0,60,no,,regular,0.0,1
+2026-09-17,108,chicken_biryani,Chicken Biryani,81.0,350,96.0,119,no,,regular,0.0,1
+2026-09-17,108,dosa,Dosa,36.0,180,24.0,186,no,,regular,0.0,1
+2026-09-17,108,chapati_kurma,Chapati Kurma,50.0,250,30.0,55,no,,regular,0.0,1
+2026-09-17,108,paneer_roll,Paneer Roll,49.5,160,47.68,51,no,,regular,0.0,1
+2026-09-17,108,salad_bowl,Salad Bowl,58.5,200,38.0,18,no,,regular,0.0,1
+2026-09-17,108,tea,Tea,12.5,150,4.0,110,no,,regular,10.0,1
+2026-09-17,108,cold_coffee,Cold Coffee,38.0,250,17.0,160,no,,regular,0.0,1
+2026-09-17,108,samosa,Samosa,16.0,65,5.93,41,no,,regular,0.0,1
+2026-09-17,108,fresh_juice,Fresh Juice,38.0,200,25.1,23,no,,regular,0.0,1
+2026-09-18,109,veg_meals,Veg Meals,80.5,350,45.0,99,no,,regular,10.0,1
+2026-09-18,109,egg_fried_rice,Egg Fried Rice,57.0,300,36.0,57,no,,regular,0.0,1
+2026-09-18,109,chicken_biryani,Chicken Biryani,81.0,350,96.0,117,no,,regular,0.0,1
+2026-09-18,109,dosa,Dosa,36.0,180,24.0,195,no,,regular,0.0,1
+2026-09-18,109,chapati_kurma,Chapati Kurma,50.0,250,30.0,65,no,,regular,0.0,1
+2026-09-18,109,paneer_roll,Paneer Roll,49.5,160,47.68,58,no,,regular,0.0,1
+2026-09-18,109,salad_bowl,Salad Bowl,58.5,200,38.0,11,no,,regular,0.0,1
+2026-09-18,109,tea,Tea,12.5,150,4.0,101,no,,regular,10.0,1
+2026-09-18,109,cold_coffee,Cold Coffee,38.0,250,17.0,174,no,,regular,0.0,1
+2026-09-18,109,samosa,Samosa,16.0,65,5.93,41,no,,regular,0.0,1
+2026-09-18,109,fresh_juice,Fresh Juice,38.0,200,25.1,17,no,,regular,0.0,1
+2026-09-19,110,veg_meals,Veg Meals,80.5,350,45.0,20,no,,weekend,10.0,1
+2026-09-19,110,egg_fried_rice,Egg Fried Rice,57.0,300,36.0,22,no,,weekend,0.0,1
+2026-09-19,110,chicken_biryani,Chicken Biryani,81.0,350,96.0,42,no,,weekend,0.0,1
+2026-09-19,110,dosa,Dosa,36.0,180,24.0,43,no,,weekend,0.0,1
+2026-09-19,110,chapati_kurma,Chapati Kurma,50.0,250,30.0,21,no,,weekend,0.0,1
+2026-09-19,110,paneer_roll,Paneer Roll,49.5,160,47.68,15,no,,weekend,0.0,1
+2026-09-19,110,salad_bowl,Salad Bowl,58.5,200,38.0,3,no,,weekend,0.0,1
+2026-09-19,110,tea,Tea,12.5,150,4.0,32,no,,weekend,10.0,1
+2026-09-19,110,cold_coffee,Cold Coffee,38.0,250,17.0,33,no,,weekend,0.0,1
+2026-09-19,110,samosa,Samosa,16.0,65,5.93,13,no,,weekend,0.0,1
+2026-09-19,110,fresh_juice,Fresh Juice,38.0,200,25.1,8,no,,weekend,0.0,1
+2026-09-20,111,veg_meals,Veg Meals,80.5,350,45.0,24,no,,weekend,10.0,1
+2026-09-20,111,egg_fried_rice,Egg Fried Rice,57.0,300,36.0,15,no,,weekend,0.0,1
+2026-09-20,111,chicken_biryani,Chicken Biryani,81.0,350,96.0,34,no,,weekend,0.0,1
+2026-09-20,111,dosa,Dosa,36.0,180,24.0,35,no,,weekend,0.0,1
+2026-09-20,111,chapati_kurma,Chapati Kurma,50.0,250,30.0,12,no,,weekend,0.0,1
+2026-09-20,111,paneer_roll,Paneer Roll,49.5,160,47.68,12,no,,weekend,0.0,1
+2026-09-20,111,salad_bowl,Salad Bowl,58.5,200,38.0,4,no,,weekend,0.0,1
+2026-09-20,111,tea,Tea,12.5,150,4.0,36,no,,weekend,10.0,1
+2026-09-20,111,cold_coffee,Cold Coffee,38.0,250,17.0,31,no,,weekend,0.0,1
+2026-09-20,111,samosa,Samosa,16.0,65,5.93,11,no,,weekend,0.0,1
+2026-09-20,111,fresh_juice,Fresh Juice,38.0,200,25.1,5,no,,weekend,0.0,1
+2026-09-21,112,veg_meals,Veg Meals,59.5,350,45.0,137,no,,regular,5.0,1
+2026-09-21,112,egg_fried_rice,Egg Fried Rice,54.0,375,43.04,64,no,,regular,0.0,1
+2026-09-21,112,chicken_biryani,Chicken Biryani,85.5,280,80.31,97,no,,regular,15.0,1
+2026-09-21,112,dosa,Dosa,36.0,180,24.0,135,no,,regular,5.0,1
+2026-09-21,112,chapati_kurma,Chapati Kurma,47.5,310,35.63,62,no,,regular,0.0,1
+2026-09-21,112,paneer_roll,Paneer Roll,63.0,200,57.0,22,no,,regular,0.0,1
+2026-09-21,112,salad_bowl,Salad Bowl,65.0,250,45.43,13,no,,regular,0.0,1
+2026-09-21,112,tea,Tea,12.5,150,4.0,87,no,,regular,5.0,1
+2026-09-21,112,cold_coffee,Cold Coffee,44.0,310,20.19,100,no,,regular,5.0,1
+2026-09-21,112,samosa,Samosa,13.5,80,7.0,63,no,,regular,0.0,1
+2026-09-21,112,fresh_juice,Fresh Juice,40.5,250,30.0,26,no,,regular,15.0,1
+2026-09-22,113,veg_meals,Veg Meals,59.5,350,45.0,144,no,,regular,5.0,1
+2026-09-22,113,egg_fried_rice,Egg Fried Rice,54.0,375,43.04,57,no,,regular,0.0,1
+2026-09-22,113,chicken_biryani,Chicken Biryani,85.5,280,80.31,97,no,,regular,15.0,1
+2026-09-22,113,dosa,Dosa,36.0,180,24.0,144,no,,regular,5.0,1
+2026-09-22,113,chapati_kurma,Chapati Kurma,47.5,310,35.63,51,no,,regular,0.0,1
+2026-09-22,113,paneer_roll,Paneer Roll,63.0,200,57.0,19,no,,regular,0.0,1
+2026-09-22,113,salad_bowl,Salad Bowl,65.0,250,45.43,13,no,,regular,0.0,1
+2026-09-22,113,tea,Tea,12.5,150,4.0,94,no,,regular,5.0,1
+2026-09-22,113,cold_coffee,Cold Coffee,44.0,310,20.19,104,no,,regular,5.0,1
+2026-09-22,113,samosa,Samosa,13.5,80,7.0,51,no,,regular,0.0,1
+2026-09-22,113,fresh_juice,Fresh Juice,40.5,250,30.0,32,no,,regular,15.0,1
+2026-09-23,114,veg_meals,Veg Meals,59.5,350,45.0,154,no,,regular,5.0,1
+2026-09-23,114,egg_fried_rice,Egg Fried Rice,54.0,375,43.04,54,no,,regular,0.0,1
+2026-09-23,114,chicken_biryani,Chicken Biryani,85.5,280,80.31,105,no,,regular,15.0,1
+2026-09-23,114,dosa,Dosa,36.0,180,24.0,145,no,,regular,5.0,1
+2026-09-23,114,chapati_kurma,Chapati Kurma,47.5,310,35.63,44,no,,regular,0.0,1
+2026-09-23,114,paneer_roll,Paneer Roll,63.0,200,57.0,27,no,,regular,0.0,1
+2026-09-23,114,salad_bowl,Salad Bowl,65.0,250,45.43,14,no,,regular,0.0,1
+2026-09-23,114,tea,Tea,12.5,150,4.0,99,no,,regular,5.0,1
+2026-09-23,114,cold_coffee,Cold Coffee,44.0,310,20.19,113,no,,regular,5.0,1
+2026-09-23,114,samosa,Samosa,13.5,80,7.0,59,no,,regular,0.0,1
+2026-09-23,114,fresh_juice,Fresh Juice,40.5,250,30.0,27,no,,regular,15.0,1
+2026-09-24,115,veg_meals,Veg Meals,59.5,350,45.0,196,no,,regular,5.0,1
+2026-09-24,115,egg_fried_rice,Egg Fried Rice,54.0,375,43.04,81,no,,regular,0.0,1
+2026-09-24,115,chicken_biryani,Chicken Biryani,85.5,280,80.31,118,no,,regular,15.0,1
+2026-09-24,115,dosa,Dosa,36.0,180,24.0,204,no,,regular,5.0,1
+2026-09-24,115,chapati_kurma,Chapati Kurma,47.5,310,35.63,76,no,,regular,0.0,1
+2026-09-24,115,paneer_roll,Paneer Roll,63.0,200,57.0,34,no,,regular,0.0,1
+2026-09-24,115,salad_bowl,Salad Bowl,65.0,250,45.43,18,no,,regular,0.0,1
+2026-09-24,115,tea,Tea,12.5,150,4.0,129,no,,regular,5.0,1
+2026-09-24,115,cold_coffee,Cold Coffee,44.0,310,20.19,137,no,,regular,5.0,1
+2026-09-24,115,samosa,Samosa,13.5,80,7.0,85,no,,regular,0.0,1
+2026-09-24,115,fresh_juice,Fresh Juice,40.5,250,30.0,38,no,,regular,15.0,1
+2026-09-25,116,veg_meals,Veg Meals,59.5,350,45.0,139,no,,regular,5.0,1
+2026-09-25,116,egg_fried_rice,Egg Fried Rice,54.0,375,43.04,66,no,,regular,0.0,1
+2026-09-25,116,chicken_biryani,Chicken Biryani,85.5,280,80.31,93,no,,regular,15.0,1
+2026-09-25,116,dosa,Dosa,36.0,180,24.0,105,no,,regular,5.0,1
+2026-09-25,116,chapati_kurma,Chapati Kurma,47.5,310,35.63,57,no,,regular,0.0,1
+2026-09-25,116,paneer_roll,Paneer Roll,63.0,200,57.0,23,no,,regular,0.0,1
+2026-09-25,116,salad_bowl,Salad Bowl,65.0,250,45.43,9,no,,regular,0.0,1
+2026-09-25,116,tea,Tea,12.5,150,4.0,79,no,,regular,5.0,1
+2026-09-25,116,cold_coffee,Cold Coffee,44.0,310,20.19,81,no,,regular,5.0,1
+2026-09-25,116,samosa,Samosa,13.5,80,7.0,50,no,,regular,0.0,1
+2026-09-25,116,fresh_juice,Fresh Juice,40.5,250,30.0,26,no,,regular,15.0,1
+2026-09-26,117,veg_meals,Veg Meals,59.5,350,45.0,47,no,,weekend,5.0,1
+2026-09-26,117,egg_fried_rice,Egg Fried Rice,54.0,375,43.04,24,no,,weekend,0.0,1
+2026-09-26,117,chicken_biryani,Chicken Biryani,85.5,280,80.31,47,no,,weekend,15.0,1
+2026-09-26,117,dosa,Dosa,36.0,180,24.0,29,no,,weekend,5.0,1
+2026-09-26,117,chapati_kurma,Chapati Kurma,47.5,310,35.63,17,no,,weekend,0.0,1
+2026-09-26,117,paneer_roll,Paneer Roll,63.0,200,57.0,10,no,,weekend,0.0,1
+2026-09-26,117,salad_bowl,Salad Bowl,65.0,250,45.43,4,no,,weekend,0.0,1
+2026-09-26,117,tea,Tea,12.5,150,4.0,45,no,,weekend,5.0,1
+2026-09-26,117,cold_coffee,Cold Coffee,44.0,310,20.19,20,no,,weekend,5.0,1
+2026-09-26,117,samosa,Samosa,13.5,80,7.0,27,no,,weekend,0.0,1
+2026-09-26,117,fresh_juice,Fresh Juice,40.5,250,30.0,20,no,,weekend,15.0,1
+2026-09-27,118,veg_meals,Veg Meals,59.5,350,45.0,58,no,,weekend,5.0,1
+2026-09-27,118,egg_fried_rice,Egg Fried Rice,54.0,375,43.04,29,no,,weekend,0.0,1
+2026-09-27,118,chicken_biryani,Chicken Biryani,85.5,280,80.31,51,no,,weekend,15.0,1
+2026-09-27,118,dosa,Dosa,36.0,180,24.0,53,no,,weekend,5.0,1
+2026-09-27,118,chapati_kurma,Chapati Kurma,47.5,310,35.63,27,no,,weekend,0.0,1
+2026-09-27,118,paneer_roll,Paneer Roll,63.0,200,57.0,16,no,,weekend,0.0,1
+2026-09-27,118,salad_bowl,Salad Bowl,65.0,250,45.43,4,no,,weekend,0.0,1
+2026-09-27,118,tea,Tea,12.5,150,4.0,40,no,,weekend,5.0,1
+2026-09-27,118,cold_coffee,Cold Coffee,44.0,310,20.19,38,no,,weekend,5.0,1
+2026-09-27,118,samosa,Samosa,13.5,80,7.0,27,no,,weekend,0.0,1
+2026-09-27,118,fresh_juice,Fresh Juice,40.5,250,30.0,22,no,,weekend,15.0,1
+2026-09-28,119,veg_meals,Veg Meals,66.5,350,45.0,150,no,,regular,10.0,1
+2026-09-28,119,egg_fried_rice,Egg Fried Rice,63.0,300,36.0,49,no,,regular,0.0,1
+2026-09-28,119,chicken_biryani,Chicken Biryani,90.0,440,115.29,120,no,,regular,15.0,1
+2026-09-28,119,dosa,Dosa,34.0,180,24.0,204,no,,regular,5.0,1
+2026-09-28,119,chapati_kurma,Chapati Kurma,52.5,250,30.0,29,no,,regular,0.0,1
+2026-09-28,119,paneer_roll,Paneer Roll,63.0,160,47.68,26,no,,regular,0.0,1
+2026-09-28,119,salad_bowl,Salad Bowl,65.0,200,38.0,10,no,,regular,0.0,1
+2026-09-28,119,tea,Tea,14.0,190,4.83,112,no,,regular,10.0,1
+2026-09-28,119,cold_coffee,Cold Coffee,38.0,250,17.0,169,no,,regular,5.0,1
+2026-09-28,119,samosa,Samosa,14.0,80,7.0,59,no,,regular,0.0,1
+2026-09-28,119,fresh_juice,Fresh Juice,43.0,250,30.0,22,no,,regular,15.0,1
+2026-06-01,0,combo_veg_tea,Veg Meals + Tea,79.5,500,49.0,38,yes,veg_meals+tea,regular,0.0,0
+2026-06-01,0,combo_dosa_cc,Dosa + Cold Coffee,68.85,430,41.0,104,yes,dosa+cold_coffee,regular,10.0,0
+2026-06-01,0,combo_bir_juice,Chicken Biryani + Fresh Juice,124.92,600,126.0,11,yes,chicken_biryani+fresh_juice,regular,5.0,0
+2026-06-02,1,combo_veg_tea,Veg Meals + Tea,83.0,500,49.0,25,yes,veg_meals+tea,regular,0.0,0
+2026-06-02,1,combo_dosa_cc,Dosa + Cold Coffee,72.0,430,41.0,127,yes,dosa+cold_coffee,regular,10.0,0
+2026-06-02,1,combo_bir_juice,Chicken Biryani + Fresh Juice,129.2,600,126.0,6,yes,chicken_biryani+fresh_juice,regular,5.0,0
+2026-06-03,2,combo_veg_tea,Veg Meals + Tea,74.5,500,49.0,27,yes,veg_meals+tea,regular,0.0,0
+2026-06-03,2,combo_dosa_cc,Dosa + Cold Coffee,66.6,430,41.0,82,yes,dosa+cold_coffee,regular,10.0,0
+2026-06-03,2,combo_bir_juice,Chicken Biryani + Fresh Juice,116.85,600,126.0,7,yes,chicken_biryani+fresh_juice,regular,5.0,0
+2026-06-04,3,combo_veg_tea,Veg Meals + Tea,87.5,500,49.0,31,yes,veg_meals+tea,regular,0.0,0
+2026-06-04,3,combo_dosa_cc,Dosa + Cold Coffee,76.05,430,41.0,115,yes,dosa+cold_coffee,regular,10.0,0
+2026-06-04,3,combo_bir_juice,Chicken Biryani + Fresh Juice,136.8,600,126.0,5,yes,chicken_biryani+fresh_juice,regular,5.0,0
+2026-06-05,4,combo_veg_tea,Veg Meals + Tea,84.5,500,49.0,45,yes,veg_meals+tea,regular,0.0,0
+2026-06-05,4,combo_dosa_cc,Dosa + Cold Coffee,72.9,430,41.0,115,yes,dosa+cold_coffee,regular,10.0,0
+2026-06-05,4,combo_bir_juice,Chicken Biryani + Fresh Juice,131.1,600,126.0,7,yes,chicken_biryani+fresh_juice,regular,5.0,0
+2026-06-06,5,combo_veg_tea,Veg Meals + Tea,82.0,500,49.0,12,yes,veg_meals+tea,weekend,0.0,0
+2026-06-06,5,combo_dosa_cc,Dosa + Cold Coffee,70.65,430,41.0,24,yes,dosa+cold_coffee,weekend,10.0,0
+2026-06-06,5,combo_bir_juice,Chicken Biryani + Fresh Juice,126.82,600,126.0,5,yes,chicken_biryani+fresh_juice,weekend,5.0,0
+2026-06-07,6,combo_veg_tea,Veg Meals + Tea,80.5,500,49.0,7,yes,veg_meals+tea,weekend,0.0,0
+2026-06-07,6,combo_dosa_cc,Dosa + Cold Coffee,70.65,430,41.0,35,yes,dosa+cold_coffee,weekend,10.0,0
+2026-06-07,6,combo_bir_juice,Chicken Biryani + Fresh Juice,128.25,600,126.0,5,yes,chicken_biryani+fresh_juice,weekend,5.0,0
+2026-06-08,7,combo_veg_tea,Veg Meals + Tea,79.8,500,49.0,52,yes,veg_meals+tea,regular,5.0,0
+2026-06-08,7,combo_dosa_cc,Dosa + Cold Coffee,68.85,430,41.0,107,yes,dosa+cold_coffee,regular,15.0,0
+2026-06-08,7,combo_bir_juice,Chicken Biryani + Fresh Juice,121.95,600,126.0,15,yes,chicken_biryani+fresh_juice,regular,10.0,0
+2026-06-09,8,combo_veg_tea,Veg Meals + Tea,76.47,500,49.0,49,yes,veg_meals+tea,regular,5.0,0
+2026-06-09,8,combo_dosa_cc,Dosa + Cold Coffee,68.0,430,41.0,99,yes,dosa+cold_coffee,regular,15.0,0
+2026-06-09,8,combo_bir_juice,Chicken Biryani + Fresh Juice,119.7,600,126.0,11,yes,chicken_biryani+fresh_juice,regular,10.0,0
+2026-06-10,9,combo_veg_tea,Veg Meals + Tea,76.95,500,49.0,59,yes,veg_meals+tea,event,5.0,0
+2026-06-10,9,combo_dosa_cc,Dosa + Cold Coffee,67.15,430,41.0,148,yes,dosa+cold_coffee,event,15.0,0
+2026-06-10,9,combo_bir_juice,Chicken Biryani + Fresh Juice,120.15,600,126.0,15,yes,chicken_biryani+fresh_juice,event,10.0,0
+2026-06-11,10,combo_veg_tea,Veg Meals + Tea,79.33,500,49.0,60,yes,veg_meals+tea,regular,5.0,0
+2026-06-11,10,combo_dosa_cc,Dosa + Cold Coffee,70.97,430,41.0,115,yes,dosa+cold_coffee,regular,15.0,0
+2026-06-11,10,combo_bir_juice,Chicken Biryani + Fresh Juice,125.1,600,126.0,11,yes,chicken_biryani+fresh_juice,regular,10.0,0
+2026-06-12,11,combo_veg_tea,Veg Meals + Tea,80.27,500,49.0,42,yes,veg_meals+tea,regular,5.0,0
+2026-06-12,11,combo_dosa_cc,Dosa + Cold Coffee,69.7,430,41.0,122,yes,dosa+cold_coffee,regular,15.0,0
+2026-06-12,11,combo_bir_juice,Chicken Biryani + Fresh Juice,124.2,600,126.0,12,yes,chicken_biryani+fresh_juice,regular,10.0,0
+2026-06-13,12,combo_veg_tea,Veg Meals + Tea,76.95,500,49.0,14,yes,veg_meals+tea,weekend,5.0,0
+2026-06-13,12,combo_dosa_cc,Dosa + Cold Coffee,68.0,430,41.0,33,yes,dosa+cold_coffee,weekend,15.0,0
+2026-06-13,12,combo_bir_juice,Chicken Biryani + Fresh Juice,120.15,600,126.0,7,yes,chicken_biryani+fresh_juice,weekend,10.0,0
+2026-06-14,13,combo_veg_tea,Veg Meals + Tea,77.9,500,49.0,12,yes,veg_meals+tea,weekend,5.0,0
+2026-06-14,13,combo_dosa_cc,Dosa + Cold Coffee,67.15,430,41.0,44,yes,dosa+cold_coffee,weekend,15.0,0
+2026-06-14,13,combo_bir_juice,Chicken Biryani + Fresh Juice,119.7,600,126.0,9,yes,chicken_biryani+fresh_juice,weekend,10.0,0
+2026-06-15,14,combo_veg_tea,Veg Meals + Tea,78.38,500,49.0,62,yes,veg_meals+tea,regular,5.0,0
+2026-06-15,14,combo_dosa_cc,Dosa + Cold Coffee,68.85,430,41.0,114,yes,dosa+cold_coffee,regular,15.0,0
+2026-06-15,14,combo_bir_juice,Chicken Biryani + Fresh Juice,127.77,600,126.0,4,yes,chicken_biryani+fresh_juice,regular,5.0,0
+2026-06-16,15,combo_veg_tea,Veg Meals + Tea,75.52,500,49.0,42,yes,veg_meals+tea,regular,5.0,0
+2026-06-16,15,combo_dosa_cc,Dosa + Cold Coffee,67.15,430,41.0,106,yes,dosa+cold_coffee,regular,15.0,0
+2026-06-16,15,combo_bir_juice,Chicken Biryani + Fresh Juice,125.88,600,126.0,7,yes,chicken_biryani+fresh_juice,regular,5.0,0
+2026-06-17,16,combo_veg_tea,Veg Meals + Tea,75.52,500,49.0,52,yes,veg_meals+tea,regular,5.0,0
+2026-06-17,16,combo_dosa_cc,Dosa + Cold Coffee,67.15,430,41.0,110,yes,dosa+cold_coffee,regular,15.0,0
+2026-06-17,16,combo_bir_juice,Chicken Biryani + Fresh Juice,126.35,600,126.0,8,yes,chicken_biryani+fresh_juice,regular,5.0,0
+2026-06-18,17,combo_veg_tea,Veg Meals + Tea,79.8,500,49.0,56,yes,veg_meals+tea,regular,5.0,0
+2026-06-18,17,combo_dosa_cc,Dosa + Cold Coffee,69.27,430,41.0,123,yes,dosa+cold_coffee,regular,15.0,0
+2026-06-18,17,combo_bir_juice,Chicken Biryani + Fresh Juice,130.15,600,126.0,12,yes,chicken_biryani+fresh_juice,regular,5.0,0
+2026-06-19,18,combo_veg_tea,Veg Meals + Tea,76.47,500,49.0,40,yes,veg_meals+tea,regular,5.0,0
+2026-06-19,18,combo_dosa_cc,Dosa + Cold Coffee,67.58,430,41.0,107,yes,dosa+cold_coffee,regular,15.0,0
+2026-06-19,18,combo_bir_juice,Chicken Biryani + Fresh Juice,126.82,600,126.0,6,yes,chicken_biryani+fresh_juice,regular,5.0,0
+2026-06-20,19,combo_veg_tea,Veg Meals + Tea,73.62,500,49.0,13,yes,veg_meals+tea,weekend,5.0,0
+2026-06-20,19,combo_dosa_cc,Dosa + Cold Coffee,64.17,430,41.0,30,yes,dosa+cold_coffee,weekend,15.0,0
+2026-06-20,19,combo_bir_juice,Chicken Biryani + Fresh Juice,121.12,600,126.0,2,yes,chicken_biryani+fresh_juice,weekend,5.0,0
+2026-06-21,20,combo_veg_tea,Veg Meals + Tea,76.95,500,49.0,18,yes,veg_meals+tea,weekend,5.0,0
+2026-06-21,20,combo_dosa_cc,Dosa + Cold Coffee,66.3,430,41.0,29,yes,dosa+cold_coffee,weekend,15.0,0
+2026-06-21,20,combo_bir_juice,Chicken Biryani + Fresh Juice,126.35,600,126.0,4,yes,chicken_biryani+fresh_juice,weekend,5.0,0
+2026-06-22,21,combo_veg_tea,Veg Meals + Tea,70.97,500,49.0,105,yes,veg_meals+tea,regular,15.0,0
+2026-06-22,21,combo_dosa_cc,Dosa + Cold Coffee,78.38,430,41.0,88,yes,dosa+cold_coffee,regular,5.0,0
+2026-06-22,21,combo_bir_juice,Chicken Biryani + Fresh Juice,131.57,600,126.0,6,yes,chicken_biryani+fresh_juice,regular,5.0,0
+2026-06-23,22,combo_veg_tea,Veg Meals + Tea,68.85,500,49.0,93,yes,veg_meals+tea,regular,15.0,0
+2026-06-23,22,combo_dosa_cc,Dosa + Cold Coffee,75.05,430,41.0,85,yes,dosa+cold_coffee,regular,5.0,0
+2026-06-23,22,combo_bir_juice,Chicken Biryani + Fresh Juice,128.25,600,126.0,7,yes,chicken_biryani+fresh_juice,regular,5.0,0
+2026-06-24,23,combo_veg_tea,Veg Meals + Tea,69.7,500,49.0,100,yes,veg_meals+tea,regular,15.0,0
+2026-06-24,23,combo_dosa_cc,Dosa + Cold Coffee,75.52,430,41.0,81,yes,dosa+cold_coffee,regular,5.0,0
+2026-06-24,23,combo_bir_juice,Chicken Biryani + Fresh Juice,128.72,600,126.0,9,yes,chicken_biryani+fresh_juice,regular,5.0,0
+2026-06-25,24,combo_veg_tea,Veg Meals + Tea,72.67,500,49.0,91,yes,veg_meals+tea,regular,15.0,0
+2026-06-25,24,combo_dosa_cc,Dosa + Cold Coffee,77.9,430,41.0,97,yes,dosa+cold_coffee,regular,5.0,0
+2026-06-25,24,combo_bir_juice,Chicken Biryani + Fresh Juice,132.05,600,126.0,14,yes,chicken_biryani+fresh_juice,regular,5.0,0
+2026-06-26,25,combo_veg_tea,Veg Meals + Tea,74.38,500,49.0,94,yes,veg_meals+tea,regular,15.0,0
+2026-06-26,25,combo_dosa_cc,Dosa + Cold Coffee,81.22,430,41.0,97,yes,dosa+cold_coffee,regular,5.0,0
+2026-06-26,25,combo_bir_juice,Chicken Biryani + Fresh Juice,137.28,600,126.0,7,yes,chicken_biryani+fresh_juice,regular,5.0,0
+2026-06-27,26,combo_veg_tea,Veg Meals + Tea,67.15,500,49.0,26,yes,veg_meals+tea,weekend,15.0,0
+2026-06-27,26,combo_dosa_cc,Dosa + Cold Coffee,73.15,430,41.0,28,yes,dosa+cold_coffee,weekend,5.0,0
+2026-06-27,26,combo_bir_juice,Chicken Biryani + Fresh Juice,124.45,600,126.0,4,yes,chicken_biryani+fresh_juice,weekend,5.0,0
+2026-06-28,27,combo_veg_tea,Veg Meals + Tea,73.52,500,49.0,28,yes,veg_meals+tea,weekend,15.0,0
+2026-06-28,27,combo_dosa_cc,Dosa + Cold Coffee,80.75,430,41.0,31,yes,dosa+cold_coffee,weekend,5.0,0
+2026-06-28,27,combo_bir_juice,Chicken Biryani + Fresh Juice,134.42,600,126.0,4,yes,chicken_biryani+fresh_juice,weekend,5.0,0
+2026-06-29,28,combo_veg_tea,Veg Meals + Tea,69.75,500,49.0,53,yes,veg_meals+tea,exam,10.0,0
+2026-06-29,28,combo_dosa_cc,Dosa + Cold Coffee,65.02,430,41.0,80,yes,dosa+cold_coffee,exam,15.0,0
+2026-06-29,28,combo_bir_juice,Chicken Biryani + Fresh Juice,129.5,600,126.0,5,yes,chicken_biryani+fresh_juice,exam,0.0,0
+2026-06-30,29,combo_veg_tea,Veg Meals + Tea,74.7,500,49.0,54,yes,veg_meals+tea,exam,10.0,0
+2026-06-30,29,combo_dosa_cc,Dosa + Cold Coffee,68.0,430,41.0,110,yes,dosa+cold_coffee,exam,15.0,0
+2026-06-30,29,combo_bir_juice,Chicken Biryani + Fresh Juice,135.0,600,126.0,2,yes,chicken_biryani+fresh_juice,exam,0.0,0
+2026-07-01,30,combo_veg_tea,Veg Meals + Tea,70.2,500,49.0,61,yes,veg_meals+tea,exam,10.0,0
+2026-07-01,30,combo_dosa_cc,Dosa + Cold Coffee,64.17,430,41.0,99,yes,dosa+cold_coffee,exam,15.0,0
+2026-07-01,30,combo_bir_juice,Chicken Biryani + Fresh Juice,128.0,600,126.0,5,yes,chicken_biryani+fresh_juice,exam,0.0,0
+2026-07-02,31,combo_veg_tea,Veg Meals + Tea,77.4,500,49.0,62,yes,veg_meals+tea,exam,10.0,0
+2026-07-02,31,combo_dosa_cc,Dosa + Cold Coffee,71.4,430,41.0,107,yes,dosa+cold_coffee,exam,15.0,0
+2026-07-02,31,combo_bir_juice,Chicken Biryani + Fresh Juice,142.5,600,126.0,4,yes,chicken_biryani+fresh_juice,exam,0.0,0
+2026-07-03,32,combo_veg_tea,Veg Meals + Tea,76.95,500,49.0,53,yes,veg_meals+tea,exam,10.0,0
+2026-07-03,32,combo_dosa_cc,Dosa + Cold Coffee,69.7,430,41.0,99,yes,dosa+cold_coffee,exam,15.0,0
+2026-07-03,32,combo_bir_juice,Chicken Biryani + Fresh Juice,139.5,600,126.0,4,yes,chicken_biryani+fresh_juice,exam,0.0,0
+2026-07-04,33,combo_veg_tea,Veg Meals + Tea,77.4,500,49.0,32,yes,veg_meals+tea,weekend,10.0,0
+2026-07-04,33,combo_dosa_cc,Dosa + Cold Coffee,71.83,430,41.0,34,yes,dosa+cold_coffee,weekend,15.0,0
+2026-07-04,33,combo_bir_juice,Chicken Biryani + Fresh Juice,140.0,600,126.0,4,yes,chicken_biryani+fresh_juice,weekend,0.0,0
+2026-07-05,34,combo_veg_tea,Veg Meals + Tea,70.65,500,49.0,31,yes,veg_meals+tea,weekend,10.0,0
+2026-07-05,34,combo_dosa_cc,Dosa + Cold Coffee,64.6,430,41.0,27,yes,dosa+cold_coffee,weekend,15.0,0
+2026-07-05,34,combo_bir_juice,Chicken Biryani + Fresh Juice,129.0,600,126.0,5,yes,chicken_biryani+fresh_juice,weekend,0.0,0
+2026-07-06,35,combo_veg_tea,Veg Meals + Tea,76.05,500,49.0,59,yes,veg_meals+tea,exam,10.0,0
+2026-07-06,35,combo_dosa_cc,Dosa + Cold Coffee,79.33,430,41.0,72,yes,dosa+cold_coffee,exam,5.0,0
+2026-07-06,35,combo_bir_juice,Chicken Biryani + Fresh Juice,118.58,600,126.0,17,yes,chicken_biryani+fresh_juice,exam,15.0,0
+2026-07-07,36,combo_veg_tea,Veg Meals + Tea,72.45,500,49.0,49,yes,veg_meals+tea,exam,10.0,0
+2026-07-07,36,combo_dosa_cc,Dosa + Cold Coffee,75.52,430,41.0,95,yes,dosa+cold_coffee,exam,5.0,0
+2026-07-07,36,combo_bir_juice,Chicken Biryani + Fresh Juice,112.62,600,126.0,11,yes,chicken_biryani+fresh_juice,exam,15.0,0
+2026-07-08,37,combo_veg_tea,Veg Meals + Tea,72.0,500,49.0,44,yes,veg_meals+tea,exam,10.0,0
+2026-07-08,37,combo_dosa_cc,Dosa + Cold Coffee,74.1,430,41.0,79,yes,dosa+cold_coffee,exam,5.0,0
+2026-07-08,37,combo_bir_juice,Chicken Biryani + Fresh Juice,113.05,600,126.0,9,yes,chicken_biryani+fresh_juice,exam,15.0,0
+2026-07-09,38,combo_veg_tea,Veg Meals + Tea,76.05,500,49.0,51,yes,veg_meals+tea,exam,10.0,0
+2026-07-09,38,combo_dosa_cc,Dosa + Cold Coffee,76.95,430,41.0,59,yes,dosa+cold_coffee,exam,5.0,0
+2026-07-09,38,combo_bir_juice,Chicken Biryani + Fresh Juice,116.45,600,126.0,8,yes,chicken_biryani+fresh_juice,exam,15.0,0
+2026-07-10,39,combo_veg_tea,Veg Meals + Tea,75.6,500,49.0,56,yes,veg_meals+tea,exam,10.0,0
+2026-07-10,39,combo_dosa_cc,Dosa + Cold Coffee,78.38,430,41.0,75,yes,dosa+cold_coffee,exam,5.0,0
+2026-07-10,39,combo_bir_juice,Chicken Biryani + Fresh Juice,120.7,600,126.0,8,yes,chicken_biryani+fresh_juice,exam,15.0,0
+2026-07-11,40,combo_veg_tea,Veg Meals + Tea,74.7,500,49.0,22,yes,veg_meals+tea,weekend,10.0,0
+2026-07-11,40,combo_dosa_cc,Dosa + Cold Coffee,76.95,430,41.0,29,yes,dosa+cold_coffee,weekend,5.0,0
+2026-07-11,40,combo_bir_juice,Chicken Biryani + Fresh Juice,117.3,600,126.0,6,yes,chicken_biryani+fresh_juice,weekend,15.0,0
+2026-07-12,41,combo_veg_tea,Veg Meals + Tea,73.35,500,49.0,11,yes,veg_meals+tea,weekend,10.0,0
+2026-07-12,41,combo_dosa_cc,Dosa + Cold Coffee,74.1,430,41.0,28,yes,dosa+cold_coffee,weekend,5.0,0
+2026-07-12,41,combo_bir_juice,Chicken Biryani + Fresh Juice,112.62,600,126.0,13,yes,chicken_biryani+fresh_juice,weekend,15.0,0
+2026-07-13,42,combo_veg_tea,Veg Meals + Tea,67.15,500,49.0,78,yes,veg_meals+tea,regular,15.0,0
+2026-07-13,42,combo_dosa_cc,Dosa + Cold Coffee,77.5,430,41.0,64,yes,dosa+cold_coffee,regular,0.0,0
+2026-07-13,42,combo_bir_juice,Chicken Biryani + Fresh Juice,117.45,600,126.0,11,yes,chicken_biryani+fresh_juice,regular,10.0,0
+2026-07-14,43,combo_veg_tea,Veg Meals + Tea,73.95,500,49.0,101,yes,veg_meals+tea,regular,15.0,0
+2026-07-14,43,combo_dosa_cc,Dosa + Cold Coffee,85.0,430,41.0,84,yes,dosa+cold_coffee,regular,0.0,0
+2026-07-14,43,combo_bir_juice,Chicken Biryani + Fresh Juice,129.15,600,126.0,17,yes,chicken_biryani+fresh_juice,regular,10.0,0
+2026-07-15,44,combo_veg_tea,Veg Meals + Tea,72.67,500,49.0,90,yes,veg_meals+tea,regular,15.0,0
+2026-07-15,44,combo_dosa_cc,Dosa + Cold Coffee,82.0,430,41.0,77,yes,dosa+cold_coffee,regular,0.0,0
+2026-07-15,44,combo_bir_juice,Chicken Biryani + Fresh Juice,124.2,600,126.0,14,yes,chicken_biryani+fresh_juice,regular,10.0,0
+2026-07-16,45,combo_veg_tea,Veg Meals + Tea,71.4,500,49.0,92,yes,veg_meals+tea,regular,15.0,0
+2026-07-16,45,combo_dosa_cc,Dosa + Cold Coffee,82.0,430,41.0,72,yes,dosa+cold_coffee,regular,0.0,0
+2026-07-16,45,combo_bir_juice,Chicken Biryani + Fresh Juice,126.45,600,126.0,10,yes,chicken_biryani+fresh_juice,regular,10.0,0
+2026-07-17,46,combo_veg_tea,Veg Meals + Tea,74.8,500,49.0,99,yes,veg_meals+tea,regular,15.0,0
+2026-07-17,46,combo_dosa_cc,Dosa + Cold Coffee,86.5,430,41.0,86,yes,dosa+cold_coffee,regular,0.0,0
+2026-07-17,46,combo_bir_juice,Chicken Biryani + Fresh Juice,131.4,600,126.0,13,yes,chicken_biryani+fresh_juice,regular,10.0,0
+2026-07-18,47,combo_veg_tea,Veg Meals + Tea,68.0,500,49.0,29,yes,veg_meals+tea,weekend,15.0,0
+2026-07-18,47,combo_dosa_cc,Dosa + Cold Coffee,77.5,430,41.0,20,yes,dosa+cold_coffee,weekend,0.0,0
+2026-07-18,47,combo_bir_juice,Chicken Biryani + Fresh Juice,116.55,600,126.0,3,yes,chicken_biryani+fresh_juice,weekend,10.0,0
+2026-07-19,48,combo_veg_tea,Veg Meals + Tea,76.08,500,49.0,25,yes,veg_meals+tea,weekend,15.0,0
+2026-07-19,48,combo_dosa_cc,Dosa + Cold Coffee,86.0,430,41.0,27,yes,dosa+cold_coffee,weekend,0.0,0
+2026-07-19,48,combo_bir_juice,Chicken Biryani + Fresh Juice,133.65,600,126.0,5,yes,chicken_biryani+fresh_juice,weekend,10.0,0
+2026-07-20,49,combo_veg_tea,Veg Meals + Tea,74.8,500,49.0,109,yes,veg_meals+tea,regular,15.0,0
+2026-07-20,49,combo_dosa_cc,Dosa + Cold Coffee,86.0,430,41.0,93,yes,dosa+cold_coffee,regular,0.0,0
+2026-07-20,49,combo_bir_juice,Chicken Biryani + Fresh Juice,123.67,600,126.0,23,yes,chicken_biryani+fresh_juice,regular,15.0,0
+2026-07-21,50,combo_veg_tea,Veg Meals + Tea,73.95,500,49.0,130,yes,veg_meals+tea,event,15.0,0
+2026-07-21,50,combo_dosa_cc,Dosa + Cold Coffee,85.0,430,41.0,114,yes,dosa+cold_coffee,event,0.0,0
+2026-07-21,50,combo_bir_juice,Chicken Biryani + Fresh Juice,121.97,600,126.0,31,yes,chicken_biryani+fresh_juice,event,15.0,0
+2026-07-22,51,combo_veg_tea,Veg Meals + Tea,71.83,500,49.0,95,yes,veg_meals+tea,regular,15.0,0
+2026-07-22,51,combo_dosa_cc,Dosa + Cold Coffee,82.0,430,41.0,87,yes,dosa+cold_coffee,regular,0.0,0
+2026-07-22,51,combo_bir_juice,Chicken Biryani + Fresh Juice,116.88,600,126.0,17,yes,chicken_biryani+fresh_juice,regular,15.0,0
+2026-07-23,52,combo_veg_tea,Veg Meals + Tea,66.72,500,49.0,85,yes,veg_meals+tea,regular,15.0,0
+2026-07-23,52,combo_dosa_cc,Dosa + Cold Coffee,78.0,430,41.0,75,yes,dosa+cold_coffee,regular,0.0,0
+2026-07-23,52,combo_bir_juice,Chicken Biryani + Fresh Juice,110.5,600,126.0,16,yes,chicken_biryani+fresh_juice,regular,15.0,0
+2026-07-24,53,combo_veg_tea,Veg Meals + Tea,73.1,500,49.0,83,yes,veg_meals+tea,regular,15.0,0
+2026-07-24,53,combo_dosa_cc,Dosa + Cold Coffee,82.5,430,41.0,66,yes,dosa+cold_coffee,regular,0.0,0
+2026-07-24,53,combo_bir_juice,Chicken Biryani + Fresh Juice,120.7,600,126.0,21,yes,chicken_biryani+fresh_juice,regular,15.0,0
+2026-07-25,54,combo_veg_tea,Veg Meals + Tea,69.7,500,49.0,27,yes,veg_meals+tea,weekend,15.0,0
+2026-07-25,54,combo_dosa_cc,Dosa + Cold Coffee,79.5,430,41.0,18,yes,dosa+cold_coffee,weekend,0.0,0
+2026-07-25,54,combo_bir_juice,Chicken Biryani + Fresh Juice,113.9,600,126.0,17,yes,chicken_biryani+fresh_juice,weekend,15.0,0
+2026-07-26,55,combo_veg_tea,Veg Meals + Tea,69.7,500,49.0,21,yes,veg_meals+tea,weekend,15.0,0
+2026-07-26,55,combo_dosa_cc,Dosa + Cold Coffee,79.5,430,41.0,29,yes,dosa+cold_coffee,weekend,0.0,0
+2026-07-26,55,combo_bir_juice,Chicken Biryani + Fresh Juice,115.17,600,126.0,10,yes,chicken_biryani+fresh_juice,weekend,15.0,0
+2026-07-27,56,combo_veg_tea,Veg Meals + Tea,81.0,500,49.0,20,yes,veg_meals+tea,regular,0.0,0
+2026-07-27,56,combo_dosa_cc,Dosa + Cold Coffee,79.5,430,41.0,76,yes,dosa+cold_coffee,regular,0.0,0
+2026-07-27,56,combo_bir_juice,Chicken Biryani + Fresh Juice,126.82,600,126.0,11,yes,chicken_biryani+fresh_juice,regular,5.0,0
+2026-07-28,57,combo_veg_tea,Veg Meals + Tea,82.0,500,49.0,43,yes,veg_meals+tea,regular,0.0,0
+2026-07-28,57,combo_dosa_cc,Dosa + Cold Coffee,81.0,430,41.0,94,yes,dosa+cold_coffee,regular,0.0,0
+2026-07-28,57,combo_bir_juice,Chicken Biryani + Fresh Juice,129.67,600,126.0,8,yes,chicken_biryani+fresh_juice,regular,5.0,0
+2026-07-29,58,combo_veg_tea,Veg Meals + Tea,86.5,500,49.0,38,yes,veg_meals+tea,regular,0.0,0
+2026-07-29,58,combo_dosa_cc,Dosa + Cold Coffee,83.0,430,41.0,80,yes,dosa+cold_coffee,regular,0.0,0
+2026-07-29,58,combo_bir_juice,Chicken Biryani + Fresh Juice,135.85,600,126.0,12,yes,chicken_biryani+fresh_juice,regular,5.0,0
+2026-07-30,59,combo_veg_tea,Veg Meals + Tea,79.0,500,49.0,32,yes,veg_meals+tea,regular,0.0,0
+2026-07-30,59,combo_dosa_cc,Dosa + Cold Coffee,77.5,430,41.0,72,yes,dosa+cold_coffee,regular,0.0,0
+2026-07-30,59,combo_bir_juice,Chicken Biryani + Fresh Juice,125.88,600,126.0,7,yes,chicken_biryani+fresh_juice,regular,5.0,0
+2026-07-31,60,combo_veg_tea,Veg Meals + Tea,77.0,500,49.0,37,yes,veg_meals+tea,regular,0.0,1
+2026-07-31,60,combo_dosa_cc,Dosa + Cold Coffee,80.0,430,41.0,65,yes,dosa+cold_coffee,regular,0.0,1
+2026-07-31,60,combo_bir_juice,Chicken Biryani + Fresh Juice,134.42,600,126.0,6,yes,chicken_biryani+fresh_juice,regular,5.0,1
+2026-08-01,61,combo_veg_tea,Veg Meals + Tea,77.0,500,49.0,10,yes,veg_meals+tea,weekend,0.0,1
+2026-08-01,61,combo_dosa_cc,Dosa + Cold Coffee,80.0,430,41.0,20,yes,dosa+cold_coffee,weekend,0.0,1
+2026-08-01,61,combo_bir_juice,Chicken Biryani + Fresh Juice,134.42,600,126.0,3,yes,chicken_biryani+fresh_juice,weekend,5.0,1
+2026-08-02,62,combo_veg_tea,Veg Meals + Tea,77.0,500,49.0,12,yes,veg_meals+tea,weekend,0.0,1
+2026-08-02,62,combo_dosa_cc,Dosa + Cold Coffee,80.0,430,41.0,24,yes,dosa+cold_coffee,weekend,0.0,1
+2026-08-02,62,combo_bir_juice,Chicken Biryani + Fresh Juice,134.42,600,126.0,2,yes,chicken_biryani+fresh_juice,weekend,5.0,1
+2026-08-03,63,combo_veg_tea,Veg Meals + Tea,80.1,500,49.0,51,yes,veg_meals+tea,regular,10.0,1
+2026-08-03,63,combo_dosa_cc,Dosa + Cold Coffee,69.7,430,41.0,83,yes,dosa+cold_coffee,regular,15.0,1
+2026-08-03,63,combo_bir_juice,Chicken Biryani + Fresh Juice,130.5,600,126.0,4,yes,chicken_biryani+fresh_juice,regular,0.0,1
+2026-08-04,64,combo_veg_tea,Veg Meals + Tea,80.1,500,49.0,47,yes,veg_meals+tea,regular,10.0,1
+2026-08-04,64,combo_dosa_cc,Dosa + Cold Coffee,69.7,430,41.0,96,yes,dosa+cold_coffee,regular,15.0,1
+2026-08-04,64,combo_bir_juice,Chicken Biryani + Fresh Juice,130.5,600,126.0,2,yes,chicken_biryani+fresh_juice,regular,0.0,1
+2026-08-05,65,combo_veg_tea,Veg Meals + Tea,80.1,500,49.0,54,yes,veg_meals+tea,regular,10.0,1
+2026-08-05,65,combo_dosa_cc,Dosa + Cold Coffee,69.7,430,41.0,111,yes,dosa+cold_coffee,regular,15.0,1
+2026-08-05,65,combo_bir_juice,Chicken Biryani + Fresh Juice,130.5,600,126.0,5,yes,chicken_biryani+fresh_juice,regular,0.0,1
+2026-08-06,66,combo_veg_tea,Veg Meals + Tea,80.1,500,49.0,56,yes,veg_meals+tea,event,10.0,1
+2026-08-06,66,combo_dosa_cc,Dosa + Cold Coffee,69.7,430,41.0,115,yes,dosa+cold_coffee,event,15.0,1
+2026-08-06,66,combo_bir_juice,Chicken Biryani + Fresh Juice,130.5,600,126.0,7,yes,chicken_biryani+fresh_juice,event,0.0,1
+2026-08-07,67,combo_veg_tea,Veg Meals + Tea,80.1,500,49.0,59,yes,veg_meals+tea,regular,10.0,1
+2026-08-07,67,combo_dosa_cc,Dosa + Cold Coffee,69.7,430,41.0,127,yes,dosa+cold_coffee,regular,15.0,1
+2026-08-07,67,combo_bir_juice,Chicken Biryani + Fresh Juice,130.5,600,126.0,1,yes,chicken_biryani+fresh_juice,regular,0.0,1
+2026-08-08,68,combo_veg_tea,Veg Meals + Tea,80.1,500,49.0,15,yes,veg_meals+tea,weekend,10.0,1
+2026-08-08,68,combo_dosa_cc,Dosa + Cold Coffee,69.7,430,41.0,26,yes,dosa+cold_coffee,weekend,15.0,1
+2026-08-08,68,combo_bir_juice,Chicken Biryani + Fresh Juice,130.5,600,126.0,2,yes,chicken_biryani+fresh_juice,weekend,0.0,1
+2026-08-09,69,combo_veg_tea,Veg Meals + Tea,80.1,500,49.0,21,yes,veg_meals+tea,weekend,10.0,1
+2026-08-09,69,combo_dosa_cc,Dosa + Cold Coffee,69.7,430,41.0,31,yes,dosa+cold_coffee,weekend,15.0,1
+2026-08-09,69,combo_bir_juice,Chicken Biryani + Fresh Juice,130.5,600,126.0,3,yes,chicken_biryani+fresh_juice,weekend,0.0,1
+2026-08-10,70,combo_veg_tea,Veg Meals + Tea,75.5,500,49.0,36,yes,veg_meals+tea,regular,0.0,1
+2026-08-10,70,combo_dosa_cc,Dosa + Cold Coffee,77.4,430,41.0,52,yes,dosa+cold_coffee,regular,10.0,1
+2026-08-10,70,combo_bir_juice,Chicken Biryani + Fresh Juice,117.32,600,126.0,10,yes,chicken_biryani+fresh_juice,regular,5.0,1
+2026-08-11,71,combo_veg_tea,Veg Meals + Tea,75.5,500,49.0,29,yes,veg_meals+tea,regular,0.0,1
+2026-08-11,71,combo_dosa_cc,Dosa + Cold Coffee,77.4,430,41.0,69,yes,dosa+cold_coffee,regular,10.0,1
+2026-08-11,71,combo_bir_juice,Chicken Biryani + Fresh Juice,117.32,600,126.0,12,yes,chicken_biryani+fresh_juice,regular,5.0,1
+2026-08-12,72,combo_veg_tea,Veg Meals + Tea,75.5,500,49.0,43,yes,veg_meals+tea,regular,0.0,1
+2026-08-12,72,combo_dosa_cc,Dosa + Cold Coffee,77.4,430,41.0,89,yes,dosa+cold_coffee,regular,10.0,1
+2026-08-12,72,combo_bir_juice,Chicken Biryani + Fresh Juice,117.32,600,126.0,14,yes,chicken_biryani+fresh_juice,regular,5.0,1
+2026-08-13,73,combo_veg_tea,Veg Meals + Tea,75.5,500,49.0,42,yes,veg_meals+tea,regular,0.0,1
+2026-08-13,73,combo_dosa_cc,Dosa + Cold Coffee,77.4,430,41.0,67,yes,dosa+cold_coffee,regular,10.0,1
+2026-08-13,73,combo_bir_juice,Chicken Biryani + Fresh Juice,117.32,600,126.0,9,yes,chicken_biryani+fresh_juice,regular,5.0,1
+2026-08-14,74,combo_veg_tea,Veg Meals + Tea,75.5,500,49.0,37,yes,veg_meals+tea,regular,0.0,1
+2026-08-14,74,combo_dosa_cc,Dosa + Cold Coffee,77.4,430,41.0,92,yes,dosa+cold_coffee,regular,10.0,1
+2026-08-14,74,combo_bir_juice,Chicken Biryani + Fresh Juice,117.32,600,126.0,10,yes,chicken_biryani+fresh_juice,regular,5.0,1
+2026-08-15,75,combo_veg_tea,Veg Meals + Tea,75.5,500,49.0,11,yes,veg_meals+tea,weekend,0.0,1
+2026-08-15,75,combo_dosa_cc,Dosa + Cold Coffee,77.4,430,41.0,22,yes,dosa+cold_coffee,weekend,10.0,1
+2026-08-15,75,combo_bir_juice,Chicken Biryani + Fresh Juice,117.32,600,126.0,6,yes,chicken_biryani+fresh_juice,weekend,5.0,1
+2026-08-16,76,combo_veg_tea,Veg Meals + Tea,75.5,500,49.0,12,yes,veg_meals+tea,weekend,0.0,1
+2026-08-16,76,combo_dosa_cc,Dosa + Cold Coffee,77.4,430,41.0,13,yes,dosa+cold_coffee,weekend,10.0,1
+2026-08-16,76,combo_bir_juice,Chicken Biryani + Fresh Juice,117.32,600,126.0,8,yes,chicken_biryani+fresh_juice,weekend,5.0,1
+2026-08-17,77,combo_veg_tea,Veg Meals + Tea,66.15,470,42.48,71,yes,veg_meals+tea,regular,10.0,1
+2026-08-17,77,combo_dosa_cc,Dosa + Cold Coffee,74.1,475,45.69,101,yes,dosa+cold_coffee,regular,5.0,1
+2026-08-17,77,combo_bir_juice,Chicken Biryani + Fresh Juice,125.55,600,126.0,10,yes,chicken_biryani+fresh_juice,regular,10.0,1
+2026-08-18,78,combo_veg_tea,Veg Meals + Tea,66.15,470,42.48,84,yes,veg_meals+tea,regular,10.0,1
+2026-08-18,78,combo_dosa_cc,Dosa + Cold Coffee,74.1,475,45.69,125,yes,dosa+cold_coffee,regular,5.0,1
+2026-08-18,78,combo_bir_juice,Chicken Biryani + Fresh Juice,125.55,600,126.0,11,yes,chicken_biryani+fresh_juice,regular,10.0,1
+2026-08-19,79,combo_veg_tea,Veg Meals + Tea,66.15,470,42.48,71,yes,veg_meals+tea,event,10.0,1
+2026-08-19,79,combo_dosa_cc,Dosa + Cold Coffee,74.1,475,45.69,135,yes,dosa+cold_coffee,event,5.0,1
+2026-08-19,79,combo_bir_juice,Chicken Biryani + Fresh Juice,125.55,600,126.0,20,yes,chicken_biryani+fresh_juice,event,10.0,1
+2026-08-20,80,combo_veg_tea,Veg Meals + Tea,66.15,470,42.48,82,yes,veg_meals+tea,regular,10.0,1
+2026-08-20,80,combo_dosa_cc,Dosa + Cold Coffee,74.1,475,45.69,117,yes,dosa+cold_coffee,regular,5.0,1
+2026-08-20,80,combo_bir_juice,Chicken Biryani + Fresh Juice,125.55,600,126.0,10,yes,chicken_biryani+fresh_juice,regular,10.0,1
+2026-08-21,81,combo_veg_tea,Veg Meals + Tea,66.15,470,42.48,61,yes,veg_meals+tea,regular,10.0,1
+2026-08-21,81,combo_dosa_cc,Dosa + Cold Coffee,74.1,475,45.69,94,yes,dosa+cold_coffee,regular,5.0,1
+2026-08-21,81,combo_bir_juice,Chicken Biryani + Fresh Juice,125.55,600,126.0,10,yes,chicken_biryani+fresh_juice,regular,10.0,1
+2026-08-22,82,combo_veg_tea,Veg Meals + Tea,66.15,470,42.48,20,yes,veg_meals+tea,weekend,10.0,1
+2026-08-22,82,combo_dosa_cc,Dosa + Cold Coffee,74.1,475,45.69,26,yes,dosa+cold_coffee,weekend,5.0,1
+2026-08-22,82,combo_bir_juice,Chicken Biryani + Fresh Juice,125.55,600,126.0,10,yes,chicken_biryani+fresh_juice,weekend,10.0,1
+2026-08-23,83,combo_veg_tea,Veg Meals + Tea,66.15,470,42.48,19,yes,veg_meals+tea,weekend,10.0,1
+2026-08-23,83,combo_dosa_cc,Dosa + Cold Coffee,74.1,475,45.69,37,yes,dosa+cold_coffee,weekend,5.0,1
+2026-08-23,83,combo_bir_juice,Chicken Biryani + Fresh Juice,125.55,600,126.0,2,yes,chicken_biryani+fresh_juice,weekend,10.0,1
+2026-08-24,84,combo_veg_tea,Veg Meals + Tea,86.45,430,41.64,20,yes,veg_meals+tea,exam,5.0,1
+2026-08-24,84,combo_dosa_cc,Dosa + Cold Coffee,71.4,475,45.69,94,yes,dosa+cold_coffee,exam,15.0,1
+2026-08-24,84,combo_bir_juice,Chicken Biryani + Fresh Juice,139.5,600,126.0,4,yes,chicken_biryani+fresh_juice,exam,0.0,1
+2026-08-25,85,combo_veg_tea,Veg Meals + Tea,86.45,430,41.64,21,yes,veg_meals+tea,exam,5.0,1
+2026-08-25,85,combo_dosa_cc,Dosa + Cold Coffee,71.4,475,45.69,96,yes,dosa+cold_coffee,exam,15.0,1
+2026-08-25,85,combo_bir_juice,Chicken Biryani + Fresh Juice,139.5,600,126.0,4,yes,chicken_biryani+fresh_juice,exam,0.0,1
+2026-08-26,86,combo_veg_tea,Veg Meals + Tea,86.45,430,41.64,17,yes,veg_meals+tea,exam,5.0,1
+2026-08-26,86,combo_dosa_cc,Dosa + Cold Coffee,71.4,475,45.69,77,yes,dosa+cold_coffee,exam,15.0,1
+2026-08-26,86,combo_bir_juice,Chicken Biryani + Fresh Juice,139.5,600,126.0,0,yes,chicken_biryani+fresh_juice,exam,0.0,1
+2026-08-27,87,combo_veg_tea,Veg Meals + Tea,86.45,430,41.64,14,yes,veg_meals+tea,exam,5.0,1
+2026-08-27,87,combo_dosa_cc,Dosa + Cold Coffee,71.4,475,45.69,86,yes,dosa+cold_coffee,exam,15.0,1
+2026-08-27,87,combo_bir_juice,Chicken Biryani + Fresh Juice,139.5,600,126.0,2,yes,chicken_biryani+fresh_juice,exam,0.0,1
+2026-08-28,88,combo_veg_tea,Veg Meals + Tea,86.45,430,41.64,17,yes,veg_meals+tea,exam,5.0,1
+2026-08-28,88,combo_dosa_cc,Dosa + Cold Coffee,71.4,475,45.69,67,yes,dosa+cold_coffee,exam,15.0,1
+2026-08-28,88,combo_bir_juice,Chicken Biryani + Fresh Juice,139.5,600,126.0,0,yes,chicken_biryani+fresh_juice,exam,0.0,1
+2026-08-29,89,combo_veg_tea,Veg Meals + Tea,86.45,430,41.64,9,yes,veg_meals+tea,weekend,5.0,1
+2026-08-29,89,combo_dosa_cc,Dosa + Cold Coffee,71.4,475,45.69,41,yes,dosa+cold_coffee,weekend,15.0,1
+2026-08-29,89,combo_bir_juice,Chicken Biryani + Fresh Juice,139.5,600,126.0,5,yes,chicken_biryani+fresh_juice,weekend,0.0,1
+2026-08-30,90,combo_veg_tea,Veg Meals + Tea,86.45,430,41.64,8,yes,veg_meals+tea,weekend,5.0,1
+2026-08-30,90,combo_dosa_cc,Dosa + Cold Coffee,71.4,475,45.69,29,yes,dosa+cold_coffee,weekend,15.0,1
+2026-08-30,90,combo_bir_juice,Chicken Biryani + Fresh Juice,139.5,600,126.0,0,yes,chicken_biryani+fresh_juice,weekend,0.0,1
+2026-08-31,91,combo_veg_tea,Veg Meals + Tea,65.02,590,58.04,104,yes,veg_meals+tea,exam,15.0,1
+2026-08-31,91,combo_dosa_cc,Dosa + Cold Coffee,76.0,430,41.0,58,yes,dosa+cold_coffee,exam,5.0,1
+2026-08-31,91,combo_bir_juice,Chicken Biryani + Fresh Juice,135.0,690,145.29,1,yes,chicken_biryani+fresh_juice,exam,0.0,1
+2026-09-01,92,combo_veg_tea,Veg Meals + Tea,65.02,590,58.04,75,yes,veg_meals+tea,exam,15.0,1
+2026-09-01,92,combo_dosa_cc,Dosa + Cold Coffee,76.0,430,41.0,60,yes,dosa+cold_coffee,exam,5.0,1
+2026-09-01,92,combo_bir_juice,Chicken Biryani + Fresh Juice,135.0,690,145.29,0,yes,chicken_biryani+fresh_juice,exam,0.0,1
+2026-09-02,93,combo_veg_tea,Veg Meals + Tea,65.02,590,58.04,112,yes,veg_meals+tea,exam,15.0,1
+2026-09-02,93,combo_dosa_cc,Dosa + Cold Coffee,76.0,430,41.0,55,yes,dosa+cold_coffee,exam,5.0,1
+2026-09-02,93,combo_bir_juice,Chicken Biryani + Fresh Juice,135.0,690,145.29,2,yes,chicken_biryani+fresh_juice,exam,0.0,1
+2026-09-03,94,combo_veg_tea,Veg Meals + Tea,65.02,590,58.04,110,yes,veg_meals+tea,exam,15.0,1
+2026-09-03,94,combo_dosa_cc,Dosa + Cold Coffee,76.0,430,41.0,70,yes,dosa+cold_coffee,exam,5.0,1
+2026-09-03,94,combo_bir_juice,Chicken Biryani + Fresh Juice,135.0,690,145.29,2,yes,chicken_biryani+fresh_juice,exam,0.0,1
+2026-09-04,95,combo_veg_tea,Veg Meals + Tea,65.02,590,58.04,131,yes,veg_meals+tea,exam,15.0,1
+2026-09-04,95,combo_dosa_cc,Dosa + Cold Coffee,76.0,430,41.0,79,yes,dosa+cold_coffee,exam,5.0,1
+2026-09-04,95,combo_bir_juice,Chicken Biryani + Fresh Juice,135.0,690,145.29,3,yes,chicken_biryani+fresh_juice,exam,0.0,1
+2026-09-05,96,combo_veg_tea,Veg Meals + Tea,65.02,590,58.04,46,yes,veg_meals+tea,weekend,15.0,1
+2026-09-05,96,combo_dosa_cc,Dosa + Cold Coffee,76.0,430,41.0,29,yes,dosa+cold_coffee,weekend,5.0,1
+2026-09-05,96,combo_bir_juice,Chicken Biryani + Fresh Juice,135.0,690,145.29,6,yes,chicken_biryani+fresh_juice,weekend,0.0,1
+2026-09-06,97,combo_veg_tea,Veg Meals + Tea,65.02,590,58.04,31,yes,veg_meals+tea,weekend,15.0,1
+2026-09-06,97,combo_dosa_cc,Dosa + Cold Coffee,76.0,430,41.0,22,yes,dosa+cold_coffee,weekend,5.0,1
+2026-09-06,97,combo_bir_juice,Chicken Biryani + Fresh Juice,135.0,690,145.29,2,yes,chicken_biryani+fresh_juice,weekend,0.0,1
+2026-09-07,98,combo_veg_tea,Veg Meals + Tea,68.85,590,58.04,81,yes,veg_meals+tea,regular,15.0,1
+2026-09-07,98,combo_dosa_cc,Dosa + Cold Coffee,76.5,475,45.69,62,yes,dosa+cold_coffee,regular,15.0,1
+2026-09-07,98,combo_bir_juice,Chicken Biryani + Fresh Juice,135.0,600,126.0,5,yes,chicken_biryani+fresh_juice,regular,0.0,1
+2026-09-08,99,combo_veg_tea,Veg Meals + Tea,68.85,590,58.04,103,yes,veg_meals+tea,regular,15.0,1
+2026-09-08,99,combo_dosa_cc,Dosa + Cold Coffee,76.5,475,45.69,58,yes,dosa+cold_coffee,regular,15.0,1
+2026-09-08,99,combo_bir_juice,Chicken Biryani + Fresh Juice,135.0,600,126.0,3,yes,chicken_biryani+fresh_juice,regular,0.0,1
+2026-09-09,100,combo_veg_tea,Veg Meals + Tea,68.85,590,58.04,106,yes,veg_meals+tea,event,15.0,1
+2026-09-09,100,combo_dosa_cc,Dosa + Cold Coffee,76.5,475,45.69,102,yes,dosa+cold_coffee,event,15.0,1
+2026-09-09,100,combo_bir_juice,Chicken Biryani + Fresh Juice,135.0,600,126.0,7,yes,chicken_biryani+fresh_juice,event,0.0,1
+2026-09-10,101,combo_veg_tea,Veg Meals + Tea,68.85,590,58.04,115,yes,veg_meals+tea,regular,15.0,1
+2026-09-10,101,combo_dosa_cc,Dosa + Cold Coffee,76.5,475,45.69,82,yes,dosa+cold_coffee,regular,15.0,1
+2026-09-10,101,combo_bir_juice,Chicken Biryani + Fresh Juice,135.0,600,126.0,6,yes,chicken_biryani+fresh_juice,regular,0.0,1
+2026-09-11,102,combo_veg_tea,Veg Meals + Tea,68.85,590,58.04,121,yes,veg_meals+tea,regular,15.0,1
+2026-09-11,102,combo_dosa_cc,Dosa + Cold Coffee,76.5,475,45.69,95,yes,dosa+cold_coffee,regular,15.0,1
+2026-09-11,102,combo_bir_juice,Chicken Biryani + Fresh Juice,135.0,600,126.0,6,yes,chicken_biryani+fresh_juice,regular,0.0,1
+2026-09-12,103,combo_veg_tea,Veg Meals + Tea,68.85,590,58.04,38,yes,veg_meals+tea,weekend,15.0,1
+2026-09-12,103,combo_dosa_cc,Dosa + Cold Coffee,76.5,475,45.69,20,yes,dosa+cold_coffee,weekend,15.0,1
+2026-09-12,103,combo_bir_juice,Chicken Biryani + Fresh Juice,135.0,600,126.0,2,yes,chicken_biryani+fresh_juice,weekend,0.0,1
+2026-09-13,104,combo_veg_tea,Veg Meals + Tea,68.85,590,58.04,37,yes,veg_meals+tea,weekend,15.0,1
+2026-09-13,104,combo_dosa_cc,Dosa + Cold Coffee,76.5,475,45.69,34,yes,dosa+cold_coffee,weekend,15.0,1
+2026-09-13,104,combo_bir_juice,Chicken Biryani + Fresh Juice,135.0,600,126.0,5,yes,chicken_biryani+fresh_juice,weekend,0.0,1
+2026-09-14,105,combo_veg_tea,Veg Meals + Tea,83.7,500,49.0,40,yes,veg_meals+tea,regular,10.0,1
+2026-09-14,105,combo_dosa_cc,Dosa + Cold Coffee,74.0,430,41.0,102,yes,dosa+cold_coffee,regular,0.0,1
+2026-09-14,105,combo_bir_juice,Chicken Biryani + Fresh Juice,119.0,550,121.1,10,yes,chicken_biryani+fresh_juice,regular,0.0,1
+2026-09-15,106,combo_veg_tea,Veg Meals + Tea,83.7,500,49.0,43,yes,veg_meals+tea,regular,10.0,1
+2026-09-15,106,combo_dosa_cc,Dosa + Cold Coffee,74.0,430,41.0,105,yes,dosa+cold_coffee,regular,0.0,1
+2026-09-15,106,combo_bir_juice,Chicken Biryani + Fresh Juice,119.0,550,121.1,7,yes,chicken_biryani+fresh_juice,regular,0.0,1
+2026-09-16,107,combo_veg_tea,Veg Meals + Tea,83.7,500,49.0,49,yes,veg_meals+tea,regular,10.0,1
+2026-09-16,107,combo_dosa_cc,Dosa + Cold Coffee,74.0,430,41.0,126,yes,dosa+cold_coffee,regular,0.0,1
+2026-09-16,107,combo_bir_juice,Chicken Biryani + Fresh Juice,119.0,550,121.1,8,yes,chicken_biryani+fresh_juice,regular,0.0,1
+2026-09-17,108,combo_veg_tea,Veg Meals + Tea,83.7,500,49.0,49,yes,veg_meals+tea,regular,10.0,1
+2026-09-17,108,combo_dosa_cc,Dosa + Cold Coffee,74.0,430,41.0,117,yes,dosa+cold_coffee,regular,0.0,1
+2026-09-17,108,combo_bir_juice,Chicken Biryani + Fresh Juice,119.0,550,121.1,14,yes,chicken_biryani+fresh_juice,regular,0.0,1
+2026-09-18,109,combo_veg_tea,Veg Meals + Tea,83.7,500,49.0,41,yes,veg_meals+tea,regular,10.0,1
+2026-09-18,109,combo_dosa_cc,Dosa + Cold Coffee,74.0,430,41.0,126,yes,dosa+cold_coffee,regular,0.0,1
+2026-09-18,109,combo_bir_juice,Chicken Biryani + Fresh Juice,119.0,550,121.1,9,yes,chicken_biryani+fresh_juice,regular,0.0,1
+2026-09-19,110,combo_veg_tea,Veg Meals + Tea,83.7,500,49.0,11,yes,veg_meals+tea,weekend,10.0,1
+2026-09-19,110,combo_dosa_cc,Dosa + Cold Coffee,74.0,430,41.0,25,yes,dosa+cold_coffee,weekend,0.0,1
+2026-09-19,110,combo_bir_juice,Chicken Biryani + Fresh Juice,119.0,550,121.1,6,yes,chicken_biryani+fresh_juice,weekend,0.0,1
+2026-09-20,111,combo_veg_tea,Veg Meals + Tea,83.7,500,49.0,15,yes,veg_meals+tea,weekend,10.0,1
+2026-09-20,111,combo_dosa_cc,Dosa + Cold Coffee,74.0,430,41.0,19,yes,dosa+cold_coffee,weekend,0.0,1
+2026-09-20,111,combo_bir_juice,Chicken Biryani + Fresh Juice,119.0,550,121.1,3,yes,chicken_biryani+fresh_juice,weekend,0.0,1
+2026-09-21,112,combo_veg_tea,Veg Meals + Tea,68.4,500,49.0,40,yes,veg_meals+tea,regular,5.0,1
+2026-09-21,112,combo_dosa_cc,Dosa + Cold Coffee,76.0,490,44.19,70,yes,dosa+cold_coffee,regular,5.0,1
+2026-09-21,112,combo_bir_juice,Chicken Biryani + Fresh Juice,107.1,530,110.31,18,yes,chicken_biryani+fresh_juice,regular,15.0,1
+2026-09-22,113,combo_veg_tea,Veg Meals + Tea,68.4,500,49.0,45,yes,veg_meals+tea,regular,5.0,1
+2026-09-22,113,combo_dosa_cc,Dosa + Cold Coffee,76.0,490,44.19,80,yes,dosa+cold_coffee,regular,5.0,1
+2026-09-22,113,combo_bir_juice,Chicken Biryani + Fresh Juice,107.1,530,110.31,25,yes,chicken_biryani+fresh_juice,regular,15.0,1
+2026-09-23,114,combo_veg_tea,Veg Meals + Tea,68.4,500,49.0,53,yes,veg_meals+tea,regular,5.0,1
+2026-09-23,114,combo_dosa_cc,Dosa + Cold Coffee,76.0,490,44.19,83,yes,dosa+cold_coffee,regular,5.0,1
+2026-09-23,114,combo_bir_juice,Chicken Biryani + Fresh Juice,107.1,530,110.31,20,yes,chicken_biryani+fresh_juice,regular,15.0,1
+2026-09-24,115,combo_veg_tea,Veg Meals + Tea,68.4,500,49.0,62,yes,veg_meals+tea,regular,5.0,1
+2026-09-24,115,combo_dosa_cc,Dosa + Cold Coffee,76.0,490,44.19,109,yes,dosa+cold_coffee,regular,5.0,1
+2026-09-24,115,combo_bir_juice,Chicken Biryani + Fresh Juice,107.1,530,110.31,28,yes,chicken_biryani+fresh_juice,regular,15.0,1
+2026-09-25,116,combo_veg_tea,Veg Meals + Tea,68.4,500,49.0,32,yes,veg_meals+tea,regular,5.0,1
+2026-09-25,116,combo_dosa_cc,Dosa + Cold Coffee,76.0,490,44.19,59,yes,dosa+cold_coffee,regular,5.0,1
+2026-09-25,116,combo_bir_juice,Chicken Biryani + Fresh Juice,107.1,530,110.31,18,yes,chicken_biryani+fresh_juice,regular,15.0,1
+2026-09-26,117,combo_veg_tea,Veg Meals + Tea,68.4,500,49.0,19,yes,veg_meals+tea,weekend,5.0,1
+2026-09-26,117,combo_dosa_cc,Dosa + Cold Coffee,76.0,490,44.19,12,yes,dosa+cold_coffee,weekend,5.0,1
+2026-09-26,117,combo_bir_juice,Chicken Biryani + Fresh Juice,107.1,530,110.31,16,yes,chicken_biryani+fresh_juice,weekend,15.0,1
+2026-09-27,118,combo_veg_tea,Veg Meals + Tea,68.4,500,49.0,22,yes,veg_meals+tea,weekend,5.0,1
+2026-09-27,118,combo_dosa_cc,Dosa + Cold Coffee,76.0,490,44.19,29,yes,dosa+cold_coffee,weekend,5.0,1
+2026-09-27,118,combo_bir_juice,Chicken Biryani + Fresh Juice,107.1,530,110.31,17,yes,chicken_biryani+fresh_juice,weekend,15.0,1
+2026-09-28,119,combo_veg_tea,Veg Meals + Tea,72.45,540,49.83,60,yes,veg_meals+tea,regular,10.0,1
+2026-09-28,119,combo_dosa_cc,Dosa + Cold Coffee,68.4,430,41.0,135,yes,dosa+cold_coffee,regular,5.0,1
+2026-09-28,119,combo_bir_juice,Chicken Biryani + Fresh Juice,113.05,690,145.29,18,yes,chicken_biryani+fresh_juice,regular,15.0,1

@@ -1,0 +1,56 @@
+{
+  "seed": 2026,
+  "price_elasticity": {
+    "veg_meals": -2.4000000062095683,
+    "egg_fried_rice": -2.700000000000895,
+    "chicken_biryani": -2.3000000426601943,
+    "dosa": -1.6999999996296509,
+    "chapati_kurma": -2.2000000000000615,
+    "paneer_roll": -2.9000000000000763,
+    "salad_bowl": -3.100000000000012,
+    "tea": -1.599999999989941,
+    "cold_coffee": -2.1999888234368563,
+    "samosa": -2.4000000000001975,
+    "fresh_juice": -3.1000000021679663
+  },
+  "portion_effect": {
+    "veg_meals": 0.5633277708228894,
+    "egg_fried_rice": 0.5501237710106459,
+    "chicken_biryani": 0.576365454365226,
+    "dosa": 0.3829617510652469,
+    "chapati_kurma": 0.5494716613630194,
+    "paneer_roll": 0.5557047031384925,
+    "salad_bowl": 0.4905963008743477,
+    "tea": 0.0,
+    "cold_coffee": 0.0,
+    "samosa": 0.0,
+    "fresh_juice": 0.0
+  },
+  "combos": {
+    "combo_veg_tea": {
+      "attach_lift_logit_per_10pct": 0.9,
+      "main_traffic_lift_per_10pct": 0.12
+    },
+    "combo_dosa_cc": {
+      "attach_lift_logit_per_10pct": 0.25,
+      "main_traffic_lift_per_10pct": 0.03
+    },
+    "combo_bir_juice": {
+      "attach_lift_logit_per_10pct": 0.4,
+      "main_traffic_lift_per_10pct": 0.3
+    }
+  },
+  "average_units_per_day": {
+    "veg_meals": 100.00000000000001,
+    "egg_fried_rice": 45.0,
+    "chicken_biryani": 70.0,
+    "dosa": 119.99999999999997,
+    "chapati_kurma": 45.0,
+    "paneer_roll": 40.0,
+    "salad_bowl": 10.0,
+    "tea": 75.72,
+    "cold_coffee": 95.325,
+    "samosa": 44.5,
+    "fresh_juice": 8.827000000000002
+  }
+}

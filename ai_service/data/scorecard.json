@@ -1,0 +1,121 @@
+{
+  "model_version": "campusprice-ai-1.0.0",
+  "data_source": "synthetic",
+  "holdout_direction_hit_rate": 0.781,
+  "holdout_direction_hit_rate_naive": 0.7762,
+  "holdout_unit_wape": 0.1916,
+  "tau_beta": 0.3,
+  "n_boot": 200,
+  "fit_seconds": 5.3,
+  "elasticity_coverage": "7/11",
+  "elasticity_rows": [
+    {
+      "item_id": "veg_meals",
+      "true": -2.4,
+      "point": -2.281,
+      "p10": -2.569,
+      "p90": -1.734,
+      "covered": true
+    },
+    {
+      "item_id": "egg_fried_rice",
+      "true": -2.7,
+      "point": -2.391,
+      "p10": -2.838,
+      "p90": -1.902,
+      "covered": true
+    },
+    {
+      "item_id": "chicken_biryani",
+      "true": -2.3,
+      "point": -2.677,
+      "p10": -2.882,
+      "p90": -2.397,
+      "covered": false
+    },
+    {
+      "item_id": "dosa",
+      "true": -1.7,
+      "point": -1.984,
+      "p10": -2.383,
+      "p90": -1.55,
+      "covered": true
+    },
+    {
+      "item_id": "chapati_kurma",
+      "true": -2.2,
+      "point": -2.648,
+      "p10": -2.884,
+      "p90": -2.217,
+      "covered": false
+    },
+    {
+      "item_id": "paneer_roll",
+      "true": -2.9,
+      "point": -2.675,
+      "p10": -3.031,
+      "p90": -2.358,
+      "covered": true
+    },
+    {
+      "item_id": "salad_bowl",
+      "true": -3.1,
+      "point": -2.466,
+      "p10": -2.789,
+      "p90": -1.992,
+      "covered": false
+    },
+    {
+      "item_id": "tea",
+      "true": -1.6,
+      "point": -2.275,
+      "p10": -2.665,
+      "p90": -1.745,
+      "covered": false
+    },
+    {
+      "item_id": "cold_coffee",
+      "true": -2.2,
+      "point": -2.138,
+      "p10": -3.139,
+      "p90": -1.6,
+      "covered": true
+    },
+    {
+      "item_id": "samosa",
+      "true": -2.4,
+      "point": -2.72,
+      "p10": -2.939,
+      "p90": -2.214,
+      "covered": true
+    },
+    {
+      "item_id": "fresh_juice",
+      "true": -3.1,
+      "point": -2.614,
+      "p10": -3.156,
+      "p90": -2.077,
+      "covered": true
+    }
+  ],
+  "apply_gate_precision": 0.0,
+  "n_apply_recs": 0,
+  "price_monotone_violations": 0,
+  "break_even_check": 0.6429,
+  "planted_cases": {
+    "chicken_biryani_loss_maker": true,
+    "paneer_roll_loss_maker": true,
+    "dosa_not_loss_maker": true,
+    "salad_bowl_units_le25": true,
+    "fresh_juice_units_le25": true,
+    "biryani_units_50_100": true
+  },
+  "challenger": {
+    "fitted": true,
+    "n_rows": 660,
+    "train_rmse": 14.528,
+    "disagree_with_monotone_pct": 0.0,
+    "disagree_items": [],
+    "note": "Challenger GBM with price-monotone constraint. Disagree% > 0 means the unconstrained model (before constraint) would predict rising demand on price rise; the constraint forced it to 0%. This validates the constraint is doing its job."
+  }
+}

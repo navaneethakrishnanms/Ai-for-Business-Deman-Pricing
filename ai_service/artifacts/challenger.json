@@ -1,0 +1,8 @@
+{
+  "fitted": true,
+  "n_rows": 660,
+  "train_rmse": 14.528,
+  "disagree_with_monotone_pct": 0.0,
+  "disagree_items": [],
+  "note": "Challenger GBM with price-monotone constraint. Disagree% > 0 means the unconstrained model (before constraint) would predict rising demand on price rise; the constraint forced it to 0%. This validates the constraint is doing its job."
+}
