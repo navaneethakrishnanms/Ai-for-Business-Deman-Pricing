@@ -20,7 +20,6 @@ export const DemandLab = ({ preselectedItemId }) => {
   const { guardrails } = useGuardrailsContext();
   const { prediction, loading, runPrediction } = useDemandPredict();
 
-  // Selected item state
   const [selectedItemId, setSelectedItemId] = useState(preselectedItemId || (items[0]?.item_id || 'item_biryani'));
   const [price, setPrice] = useState(120);
   const [portionSizeG, setPortionSizeG] = useState(380);
@@ -51,42 +50,41 @@ export const DemandLab = ({ preselectedItemId }) => {
     }
   }, [selectedItemId, price, portionSizeG, discountPct, dayType, runPrediction]);
 
-  // Delta calculations vs baseline
   const baselineProfit = prediction?.baseline?.profit || (currentItem ? currentItem.units_per_day * (currentItem.price - currentItem.cost) : 0);
   const currentPredProfit = prediction?.profit?.mean || baselineProfit;
   const profitDelta = currentPredProfit - baselineProfit;
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', width: '100%', maxWidth: '1440px', margin: '0 auto' }}>
       {/* Header */}
       <div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
           <span className="badge badge-neutral">
             Part B · POST /predict
           </span>
-          <span style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>Layer 1 Demand Modeling & Elasticity</span>
+          <span style={{ fontSize: '0.72rem', color: '#8a94a6' }}>Layer 1 Demand Modeling & Elasticity</span>
         </div>
-        <h2 style={{ fontSize: '1.45rem', fontWeight: 700, color: 'var(--text-primary)', margin: 0 }}>
+        <h2 style={{ fontSize: '1.45rem', fontWeight: 700, color: '#ffffff', margin: 0 }}>
           Demand Lab & Elasticity Simulator
         </h2>
-        <p style={{ fontSize: '0.82rem', color: 'var(--text-tertiary)', marginTop: '3px' }}>
+        <p style={{ fontSize: '0.82rem', color: '#8a94a6', marginTop: '3px' }}>
           Simulate single-dish price & portion variations with posterior uncertainty bounds [p10, p90] and guardrail enforcement.
         </p>
       </div>
 
-      {/* Main Grid: Controls on Left, Visualizations & Metrics on Right */}
+      {/* Main Grid: Controls on Left, Visualizations on Right */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '1.25rem' }}>
         
         {/* Left Column: Interactive Simulation Controls */}
-        <div className="panel" style={{ padding: '1.25rem', display: 'flex', flexDirection: 'column', gap: '1.15rem' }}>
+        <div className="bento-card" style={{ padding: '1.25rem', display: 'flex', flexDirection: 'column', gap: '1.15rem' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', borderBottom: '1px solid var(--border-subtle)', paddingBottom: '0.65rem' }}>
-            <Sliders size={15} color="var(--accent-blue)" />
-            <h3 style={{ fontSize: '0.95rem', margin: 0 }}>Simulation Parameters</h3>
+            <Sliders size={16} color="#34d399" />
+            <h3 style={{ fontSize: '1rem', color: '#ffffff', margin: 0 }}>Simulation Parameters</h3>
           </div>
 
           {/* Item Selector */}
           <div>
-            <label style={{ fontSize: '0.78rem', color: 'var(--text-muted)', display: 'block', marginBottom: '4px' }}>
+            <label style={{ fontSize: '0.78rem', color: '#8a94a6', display: 'block', marginBottom: '6px' }}>
               Selected Menu Item:
             </label>
             <select
@@ -102,11 +100,11 @@ export const DemandLab = ({ preselectedItemId }) => {
             </select>
           </div>
 
-          {/* Price Slider & Number Input */}
+          {/* Price Slider */}
           <div>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '4px' }}>
-              <label style={{ fontSize: '0.78rem', fontWeight: 600, color: 'var(--text-secondary)' }}>Proposed Unit Price</label>
-              <span className="mono" style={{ fontSize: '1.05rem', fontWeight: 700, color: 'var(--text-primary)' }}>
+              <label style={{ fontSize: '0.82rem', fontWeight: 600, color: '#cbd5e1' }}>Proposed Unit Price</label>
+              <span className="mono" style={{ fontSize: '1.15rem', fontWeight: 800, color: '#34d399' }}>
                 {formatINR(price, 0)}
               </span>
             </div>
@@ -119,7 +117,7 @@ export const DemandLab = ({ preselectedItemId }) => {
               onChange={(e) => setPrice(parseFloat(e.target.value))}
               style={{ width: '100%', cursor: 'pointer' }}
             />
-            <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.7rem', color: 'var(--text-muted)', marginTop: '2px' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.7rem', color: '#8a94a6', marginTop: '2px' }}>
               <span>Base: {formatINR(currentItem?.price || 0, 0)}</span>
               <span>Unit Cost: {formatINR(currentItem?.cost || 0, 0)}</span>
               <span>Cap: {formatINR(guardrails.student_price_cap, 0)}</span>
@@ -129,8 +127,8 @@ export const DemandLab = ({ preselectedItemId }) => {
           {/* Portion Size Slider */}
           <div>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '4px' }}>
-              <label style={{ fontSize: '0.78rem', fontWeight: 600, color: 'var(--text-secondary)' }}>Portion Size (grams)</label>
-              <span className="mono" style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--accent-blue)' }}>
+              <label style={{ fontSize: '0.82rem', fontWeight: 600, color: '#cbd5e1' }}>Portion Size (grams)</label>
+              <span className="mono" style={{ fontSize: '1rem', fontWeight: 700, color: '#38bdf8' }}>
                 {portionSizeG}g
               </span>
             </div>
@@ -143,7 +141,7 @@ export const DemandLab = ({ preselectedItemId }) => {
               onChange={(e) => setPortionSizeG(parseInt(e.target.value, 10))}
               style={{ width: '100%', cursor: 'pointer' }}
             />
-            <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.7rem', color: 'var(--text-muted)', marginTop: '2px' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.7rem', color: '#8a94a6', marginTop: '2px' }}>
               <span>Default: {currentItem?.portion_size_g || 0}g</span>
               <span>Delta: {portionSizeG > (currentItem?.portion_size_g || 0) ? `+${portionSizeG - (currentItem?.portion_size_g || 0)}g` : `${portionSizeG - (currentItem?.portion_size_g || 0)}g`}</span>
             </div>
@@ -152,8 +150,8 @@ export const DemandLab = ({ preselectedItemId }) => {
           {/* Offer Discount % */}
           <div>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '4px' }}>
-              <label style={{ fontSize: '0.78rem', fontWeight: 600, color: 'var(--text-secondary)' }}>Promotion / Offer Discount (%)</label>
-              <span className="mono" style={{ fontSize: '0.92rem', fontWeight: 700, color: 'var(--accent-amber)' }}>
+              <label style={{ fontSize: '0.82rem', fontWeight: 600, color: '#cbd5e1' }}>Offer Discount (%)</label>
+              <span className="mono" style={{ fontSize: '0.95rem', fontWeight: 700, color: '#fbbf24' }}>
                 {discountPct}%
               </span>
             </div>
@@ -170,8 +168,8 @@ export const DemandLab = ({ preselectedItemId }) => {
 
           {/* Day Type Selector */}
           <div>
-            <label style={{ fontSize: '0.78rem', color: 'var(--text-muted)', display: 'block', marginBottom: '4px' }}>
-              Day Operating Context:
+            <label style={{ fontSize: '0.78rem', color: '#8a94a6', display: 'block', marginBottom: '6px' }}>
+              Operating Context:
             </label>
             <DayTypeSelector
               selected={dayType}
@@ -183,15 +181,15 @@ export const DemandLab = ({ preselectedItemId }) => {
           {/* Guardrail Violation Alerts */}
           {prediction?.flags && prediction.flags.length > 0 && (
             <div style={{
-              padding: '8px 10px',
-              borderRadius: 'var(--radius-sm)',
-              backgroundColor: 'var(--accent-rose-subtle)',
-              border: '1px solid var(--accent-rose-border)',
+              padding: '10px 12px',
+              borderRadius: '12px',
+              backgroundColor: 'rgba(248, 113, 113, 0.12)',
+              border: '1px solid rgba(248, 113, 113, 0.3)',
               display: 'flex',
               flexDirection: 'column',
-              gap: '4px'
+              gap: '6px'
             }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: 'var(--accent-rose)', fontSize: '0.75rem', fontWeight: 600 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#f87171', fontSize: '0.75rem', fontWeight: 700 }}>
                 <ShieldAlert size={14} />
                 <span>Active Guardrail Alerts</span>
               </div>
@@ -205,16 +203,17 @@ export const DemandLab = ({ preselectedItemId }) => {
         </div>
 
         {/* Right Column: Output Metrics & Demand Curve */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.15rem' }}>
           
           {/* Key Output Metrics */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(170px, 1fr))', gap: '0.75rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(170px, 1fr))', gap: '0.85rem' }}>
             <MetricCard
               title="Predicted Demand"
               range={prediction?.units}
               isCurrency={false}
               unit=" units/d"
               subtext={`Baseline: ${prediction?.baseline?.units || 0} /day`}
+              color="#38bdf8"
             />
 
             <MetricCard
@@ -222,7 +221,7 @@ export const DemandLab = ({ preselectedItemId }) => {
               range={prediction?.revenue}
               isCurrency={true}
               subtext={`Baseline: ${formatINR(prediction?.baseline?.revenue || 0, 0)}`}
-              color="var(--accent-blue)"
+              color="#ffffff"
             />
 
             <MetricCard
@@ -231,26 +230,26 @@ export const DemandLab = ({ preselectedItemId }) => {
               isCurrency={true}
               delta={Math.round(profitDelta)}
               subtext="vs Current Menu"
-              color="var(--accent-emerald)"
+              color="#34d399"
             />
 
             <MetricCard
               title="Simulated Margin %"
               value={formatPct(prediction?.margin_pct || 0)}
               subtext={`Floor: ${guardrails.margin_floor_pct}%`}
-              color={prediction?.margin_pct < guardrails.margin_floor_pct ? 'var(--accent-rose)' : 'var(--accent-emerald)'}
+              color={prediction?.margin_pct < guardrails.margin_floor_pct ? '#f87171' : '#34d399'}
             />
           </div>
 
           {/* Elasticity Metadata Header */}
-          <div className="panel" style={{ padding: '0.75rem 1rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '8px' }}>
+          <div className="bento-card" style={{ padding: '0.85rem 1.25rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '8px' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <TrendingUp size={14} color="var(--accent-blue)" />
-              <span style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>Price Elasticity (price_effect):</span>
-              <span className="mono" style={{ fontWeight: 700, color: 'var(--text-primary)', fontSize: '0.85rem' }}>
+              <TrendingUp size={15} color="#34d399" />
+              <span style={{ fontSize: '0.82rem', color: '#8a94a6' }}>Price Elasticity (price_effect):</span>
+              <span className="mono" style={{ fontWeight: 800, color: '#34d399', fontSize: '0.92rem' }}>
                 {prediction?.price_effect?.mean ? Number(prediction.price_effect.mean).toFixed(2) : '-1.35'}
               </span>
-              <span style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>
+              <span style={{ fontSize: '0.72rem', color: '#8a94a6' }}>
                 [90% CI: {prediction?.price_effect?.p10 ? Number(prediction.price_effect.p10).toFixed(2) : '-1.55'} to {prediction?.price_effect?.p90 ? Number(prediction.price_effect.p90).toFixed(2) : '-1.15'}]
               </span>
             </div>
@@ -260,11 +259,12 @@ export const DemandLab = ({ preselectedItemId }) => {
                 onClick={() => setActiveTab('chart')}
                 style={{
                   backgroundColor: activeTab === 'chart' ? 'var(--bg-surface-elevated)' : 'transparent',
-                  color: activeTab === 'chart' ? 'var(--text-primary)' : 'var(--text-muted)',
+                  color: activeTab === 'chart' ? 'var(--text-primary)' : 'var(--text-secondary)',
                   border: activeTab === 'chart' ? '1px solid var(--border-medium)' : '1px solid transparent',
-                  borderRadius: 'var(--radius-sm)',
-                  padding: '3px 8px',
-                  fontSize: '0.72rem',
+                  borderRadius: 'var(--radius-pill)',
+                  padding: '4px 10px',
+                  fontSize: '0.75rem',
+                  fontWeight: 600,
                   cursor: 'pointer'
                 }}
               >
@@ -274,11 +274,12 @@ export const DemandLab = ({ preselectedItemId }) => {
                 onClick={() => setActiveTab('table')}
                 style={{
                   backgroundColor: activeTab === 'table' ? 'var(--bg-surface-elevated)' : 'transparent',
-                  color: activeTab === 'table' ? 'var(--text-primary)' : 'var(--text-muted)',
+                  color: activeTab === 'table' ? 'var(--text-primary)' : 'var(--text-secondary)',
                   border: activeTab === 'table' ? '1px solid var(--border-medium)' : '1px solid transparent',
-                  borderRadius: 'var(--radius-sm)',
-                  padding: '3px 8px',
-                  fontSize: '0.72rem',
+                  borderRadius: 'var(--radius-pill)',
+                  padding: '4px 10px',
+                  fontSize: '0.75rem',
+                  fontWeight: 600,
                   cursor: 'pointer'
                 }}
               >
@@ -288,12 +289,12 @@ export const DemandLab = ({ preselectedItemId }) => {
           </div>
 
           {/* Visualization or Sensitivity Table Panel */}
-          <div className="panel" style={{ padding: '1.1rem' }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.65rem' }}>
-              <h4 style={{ fontSize: '0.88rem', margin: 0, color: 'var(--text-secondary)' }}>
+          <div className="bento-card" style={{ padding: '1.25rem' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.75rem' }}>
+              <h4 style={{ fontSize: '0.95rem', margin: 0, color: '#ffffff' }}>
                 Demand & Profit Response Curve across Allowed Price Band
               </h4>
-              <span style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>
+              <span style={{ fontSize: '0.72rem', color: '#8a94a6' }}>
                 Posterior distribution with 90% confidence envelope
               </span>
             </div>

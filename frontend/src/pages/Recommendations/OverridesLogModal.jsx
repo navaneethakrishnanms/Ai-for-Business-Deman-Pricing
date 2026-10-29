@@ -35,7 +35,7 @@ export const OverridesLogModal = ({ isOpen, onClose, overrides = [] }) => {
                 style={{
                   padding: '10px 14px',
                   borderRadius: '8px',
-                  backgroundColor: 'rgba(0, 0, 0, 0.3)',
+                  backgroundColor: 'var(--bg-surface-inset)',
                   border: '1px solid var(--border-subtle)',
                   display: 'flex',
                   flexDirection: 'column',

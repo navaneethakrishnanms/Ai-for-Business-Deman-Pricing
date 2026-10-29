@@ -1,342 +1,240 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { 
-  Activity, 
+  Store, 
   Sliders, 
   TrendingUp, 
-  ShoppingBag, 
-  CheckCircle, 
+  Layers, 
+  Sparkles, 
   Smartphone, 
-  ShieldCheck, 
+  Settings, 
   Terminal,
-  History,
-  ChevronLeft,
-  ChevronRight,
-  Database,
-  Cpu
+  Sun,
+  Moon
 } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
-import { useModelStatus } from '../../hooks/useModelStatus';
+import { useTheme } from '../../context/ThemeContext';
 import { SCREENS } from './Navbar';
 
 export const Sidebar = ({ 
   activeScreen, 
   setActiveScreen, 
   onOpenGuardrails, 
-  onOpenAssistant, 
-  isCollapsed, 
-  setIsCollapsed 
+  onOpenAssistant 
 }) => {
   const { setActiveRole } = useAuth();
-  const { status } = useModelStatus();
+  const { isDark, toggleTheme } = useTheme();
 
-  const navGroups = [
-    {
-      group: 'PRICING & REVENUE LABS',
-      items: [
-        { id: SCREENS.MENU_HEALTH, label: 'Menu Health', icon: Activity, role: 'owner', tag: 'Part A' },
-        { id: SCREENS.DEMAND_LAB, label: 'Demand Lab', icon: Sliders, role: 'owner', tag: 'Part B' },
-        { id: SCREENS.SCENARIOS, label: 'Scenario Compare', icon: TrendingUp, role: 'owner', tag: 'Part C' },
-        { id: SCREENS.COMBO_STUDIO, label: 'Combo Studio', icon: ShoppingBag, role: 'owner', tag: 'Part D' },
-        { id: SCREENS.RECOMMENDATIONS, label: 'Recommendations', icon: CheckCircle, role: 'owner', tag: 'Part E' }
-      ]
-    },
-    {
-      group: 'STUDENT ACCESSIBILITY',
-      items: [
-        { id: SCREENS.STUDENT_BUDGET, label: 'Student Portal', icon: Smartphone, role: 'student', tag: 'Part F', highlight: true }
-      ]
-    }
+  const navItems = [
+    { id: SCREENS.MENU_HEALTH, label: 'Menu Health & Sales', icon: Store, role: 'owner' },
+    { id: SCREENS.DEMAND_LAB, label: 'Demand Lab', icon: Sliders, role: 'owner' },
+    { id: SCREENS.SCENARIOS, label: 'Scenario Compare', icon: TrendingUp, role: 'owner' },
+    { id: SCREENS.COMBO_STUDIO, label: 'Combo Studio', icon: Layers, role: 'owner' },
+    { id: SCREENS.RECOMMENDATIONS, label: 'Recommendations', icon: Sparkles, role: 'owner' },
+    { id: SCREENS.STUDENT_BUDGET, label: 'Student View', icon: Smartphone, role: 'student' }
   ];
 
   return (
     <aside style={{
-      width: isCollapsed ? '72px' : '260px',
-      backgroundColor: 'var(--bg-sidebar)',
-      borderRight: '1px solid rgba(255, 255, 255, 0.08)',
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'space-between',
+      width: '84px',
       height: '100vh',
       position: 'sticky',
       top: 0,
-      zIndex: 40,
-      transition: 'width 0.2s cubic-bezier(0.4, 0, 0.2, 1)',
-      userSelect: 'none',
-      flexShrink: 0
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      padding: '1.25rem 0',
+      backgroundColor: 'var(--bg-canvas)',
+      flexShrink: 0,
+      zIndex: 50,
+      userSelect: 'none'
     }}>
-      {/* Top Brand Banner */}
-      <div>
-        <div style={{
-          padding: '1rem',
-          borderBottom: '1px solid rgba(255, 255, 255, 0.08)',
+      {/* Top Brand Logo Mark (Matching stylized curve in screenshot) */}
+      <div 
+        onClick={() => {
+          setActiveScreen(SCREENS.MENU_HEALTH);
+          setActiveRole('owner');
+        }}
+        style={{
+          width: '38px',
+          height: '38px',
           display: 'flex',
           alignItems: 'center',
-          justifyContent: isCollapsed ? 'center' : 'space-between',
-          minHeight: '64px'
-        }}>
-          {!isCollapsed ? (
-            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', overflow: 'hidden' }}>
-              <div style={{
-                width: '32px',
-                height: '32px',
-                borderRadius: '8px',
-                backgroundColor: 'var(--accent-blue)',
+          justifyContent: 'center',
+          cursor: 'pointer'
+        }}
+        title="CampusPrice Executive Dashboard"
+      >
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+          <path d="M7 4C4.23858 4 2 6.23858 2 9V19C2 21.7614 4.23858 24 7 24C9.76142 24 12 21.7614 12 19V9C12 6.23858 9.76142 4 7 4Z" fill="var(--text-primary)"/>
+          <path d="M19 4C16.2386 4 14 6.23858 14 9V14C14 16.7614 16.2386 19 19 19C21.7614 19 24 16.7614 24 14V9C24 6.23858 21.7614 4 19 4Z" fill="var(--text-primary)"/>
+          <circle cx="21" cy="21" r="3" fill="var(--accent-green)"/>
+        </svg>
+      </div>
+
+      {/* Center Floating Dock Capsule (Exact rounded dark capsule from screenshot) */}
+      <nav style={{
+        backgroundColor: 'var(--bg-surface-elevated)',
+        border: '1px solid var(--border-medium)',
+        borderRadius: '30px',
+        padding: '8px 6px',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        gap: '8px',
+        boxShadow: 'var(--shadow-dock)'
+      }}>
+        {navItems.map((item) => {
+          const Icon = item.icon;
+          const isActive = activeScreen === item.id;
+
+          return (
+            <button
+              key={item.id}
+              onClick={() => {
+                setActiveScreen(item.id);
+                setActiveRole(item.role);
+              }}
+              style={{
+                width: '42px',
+                height: '42px',
+                borderRadius: '14px',
+                border: 'none',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                color: '#ffffff',
-                fontWeight: 800,
-                fontSize: '0.9rem',
-                flexShrink: 0
-              }}>
-                CP
-              </div>
-              <div style={{ overflow: 'hidden', whiteSpace: 'nowrap' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                  <span style={{ fontSize: '0.92rem', fontWeight: 700, color: '#ffffff', letterSpacing: '-0.02em' }}>
-                    CampusPrice
-                  </span>
-                  <span style={{
-                    fontSize: '0.62rem',
-                    fontWeight: 700,
-                    backgroundColor: 'rgba(255, 255, 255, 0.12)',
-                    color: '#94a3b8',
-                    padding: '1px 4px',
-                    borderRadius: '3px'
-                  }}>
-                    2.4
-                  </span>
-                </div>
-                <div style={{ fontSize: '0.68rem', color: '#94a3b8' }}>
-                  Decision Support Engine
-                </div>
-              </div>
-            </div>
-          ) : (
-            <div style={{
-              width: '32px',
-              height: '32px',
-              borderRadius: '8px',
-              backgroundColor: 'var(--accent-blue)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              color: '#ffffff',
-              fontWeight: 800,
-              fontSize: '0.9rem'
-            }}>
-              CP
-            </div>
-          )}
-
-          <button
-            onClick={() => setIsCollapsed(!isCollapsed)}
-            style={{
-              background: 'transparent',
-              border: 'none',
-              color: '#94a3b8',
-              cursor: 'pointer',
-              padding: '4px',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              borderRadius: '4px'
-            }}
-            title={isCollapsed ? 'Expand Sidebar' : 'Collapse Sidebar'}
-          >
-            {isCollapsed ? <ChevronRight size={16} /> : <ChevronLeft size={16} />}
-          </button>
-        </div>
-
-        {/* Navigation Items */}
-        <div style={{ padding: '0.85rem 0.65rem', display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
-          {navGroups.map((group, gIdx) => (
-            <div key={gIdx} style={{ display: 'flex', flexDirection: 'column', gap: '3px' }}>
-              {!isCollapsed && (
-                <div style={{
-                  fontSize: '0.65rem',
-                  fontWeight: 700,
-                  color: '#64748b',
-                  letterSpacing: '0.06em',
-                  textTransform: 'uppercase',
-                  padding: '0.25rem 0.5rem',
-                  marginBottom: '2px'
-                }}>
-                  {group.group}
-                </div>
-              )}
-
-              {group.items.map((item) => {
-                const Icon = item.icon;
-                const isActive = activeScreen === item.id;
-
-                return (
-                  <button
-                    key={item.id}
-                    onClick={() => {
-                      setActiveScreen(item.id);
-                      setActiveRole(item.role);
-                    }}
-                    style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: isCollapsed ? 'center' : 'space-between',
-                      gap: '10px',
-                      padding: isCollapsed ? '0.65rem 0' : '0.55rem 0.75rem',
-                      borderRadius: 'var(--radius-md)',
-                      fontSize: '0.82rem',
-                      fontWeight: isActive ? 600 : 500,
-                      cursor: 'pointer',
-                      border: 'none',
-                      transition: 'all 0.12s ease',
-                      backgroundColor: isActive ? 'var(--bg-sidebar-active)' : 'transparent',
-                      color: isActive ? '#ffffff' : '#cbd5e1',
-                      width: '100%',
-                      textAlign: 'left'
-                    }}
-                    title={isCollapsed ? item.label : undefined}
-                    onMouseEnter={(e) => {
-                      if (!isActive) e.currentTarget.style.backgroundColor = 'var(--bg-sidebar-hover)';
-                    }}
-                    onMouseLeave={(e) => {
-                      if (!isActive) e.currentTarget.style.backgroundColor = 'transparent';
-                    }}
-                  >
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                      <Icon size={16} color={isActive ? '#ffffff' : item.highlight ? '#38bdf8' : '#94a3b8'} />
-                      {!isCollapsed && <span>{item.label}</span>}
-                    </div>
-
-                    {!isCollapsed && item.tag && (
-                      <span style={{
-                        fontSize: '0.62rem',
-                        padding: '1px 5px',
-                        borderRadius: '3px',
-                        backgroundColor: isActive ? 'rgba(255, 255, 255, 0.2)' : 'rgba(255, 255, 255, 0.06)',
-                        color: isActive ? '#ffffff' : '#94a3b8'
-                      }}>
-                        {item.tag}
-                      </span>
-                    )}
-                  </button>
-                );
-              })}
-            </div>
-          ))}
-
-          {/* Governance & Tools Group */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '3px' }}>
-            {!isCollapsed && (
-              <div style={{
-                fontSize: '0.65rem',
-                fontWeight: 700,
-                color: '#64748b',
-                letterSpacing: '0.06em',
-                textTransform: 'uppercase',
-                padding: '0.25rem 0.5rem',
-                marginBottom: '2px'
-              }}>
-                CONTROLS & QUERIES
-              </div>
-            )}
-
-            <button
-              onClick={onOpenGuardrails}
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: isCollapsed ? 'center' : 'flex-start',
-                gap: '10px',
-                padding: isCollapsed ? '0.65rem 0' : '0.55rem 0.75rem',
-                borderRadius: 'var(--radius-md)',
-                fontSize: '0.82rem',
-                fontWeight: 500,
                 cursor: 'pointer',
-                border: 'none',
-                backgroundColor: 'transparent',
-                color: '#cbd5e1',
-                width: '100%'
+                transition: 'all 0.15s ease',
+                backgroundColor: isActive ? 'var(--nav-btn-active-bg)' : 'transparent',
+                color: isActive ? 'var(--nav-btn-active-color)' : 'var(--text-secondary)',
+                boxShadow: isActive ? '0 4px 14px rgba(0, 0, 0, 0.15)' : 'none'
               }}
-              title="Guardrails Config"
-              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'var(--bg-sidebar-hover)'}
-              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
-            >
-              <ShieldCheck size={16} color="var(--accent-emerald)" />
-              {!isCollapsed && <span>Guardrails Config</span>}
-            </button>
-
-            <button
-              onClick={onOpenAssistant}
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: isCollapsed ? 'center' : 'flex-start',
-                gap: '10px',
-                padding: isCollapsed ? '0.65rem 0' : '0.55rem 0.75rem',
-                borderRadius: 'var(--radius-md)',
-                fontSize: '0.82rem',
-                fontWeight: 500,
-                cursor: 'pointer',
-                border: 'none',
-                backgroundColor: 'transparent',
-                color: '#cbd5e1',
-                width: '100%'
+              title={item.label}
+              onMouseEnter={(e) => {
+                if (!isActive) {
+                  e.currentTarget.style.backgroundColor = 'var(--bg-surface-hover)';
+                  e.currentTarget.style.color = 'var(--text-primary)';
+                }
               }}
-              title="What-If Query"
-              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'var(--bg-sidebar-hover)'}
-              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
+              onMouseLeave={(e) => {
+                if (!isActive) {
+                  e.currentTarget.style.backgroundColor = 'transparent';
+                  e.currentTarget.style.color = 'var(--text-secondary)';
+                }
+              }}
             >
-              <Terminal size={16} color="#38bdf8" />
-              {!isCollapsed && <span>What-If Query</span>}
+              <Icon size={19} strokeWidth={isActive ? 2.5 : 2} />
             </button>
-          </div>
-        </div>
-      </div>
+          );
+        })}
 
-      {/* Sidebar Bottom / Health Widget */}
-      {!isCollapsed ? (
+        {/* Separator */}
+        <div style={{ width: '20px', height: '1px', backgroundColor: 'var(--border-subtle)', margin: '2px 0' }} />
+
+        {/* Assistant / What-If trigger */}
+        <button
+          onClick={onOpenAssistant}
+          style={{
+            width: '42px',
+            height: '42px',
+            borderRadius: '14px',
+            border: 'none',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            cursor: 'pointer',
+            backgroundColor: 'transparent',
+            color: 'var(--accent-green)',
+            transition: 'all 0.15s ease'
+          }}
+          title="What-If AI Co-pilot"
+          onMouseEnter={(e) => {
+            e.currentTarget.style.backgroundColor = 'var(--accent-green-subtle)';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.backgroundColor = 'transparent';
+          }}
+        >
+          <Terminal size={18} />
+        </button>
+      </nav>
+
+      {/* Bottom Profile Avatar, Theme Switcher & Settings Dock */}
+      <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        gap: '8px'
+      }}>
+        {/* Quick Theme Toggle Pill in Dock */}
+        <button
+          onClick={toggleTheme}
+          style={{
+            width: '34px',
+            height: '34px',
+            borderRadius: '10px',
+            backgroundColor: 'var(--bg-surface-elevated)',
+            border: '1px solid var(--border-subtle)',
+            color: isDark ? '#fbbf24' : '#6366f1',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            cursor: 'pointer',
+            transition: 'all 0.15s ease'
+          }}
+          title={isDark ? "Switch to Light Theme" : "Switch to Dark Theme"}
+        >
+          {isDark ? <Sun size={16} /> : <Moon size={16} />}
+        </button>
+
+        {/* User avatar */}
         <div style={{
-          padding: '0.85rem',
-          margin: '0.65rem',
-          borderRadius: 'var(--radius-md)',
-          backgroundColor: 'rgba(255, 255, 255, 0.04)',
-          border: '1px solid rgba(255, 255, 255, 0.08)',
-          fontSize: '0.72rem',
-          display: 'flex',
-          flexDirection: 'column',
-          gap: '4px'
-        }}>
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-            <span style={{ color: '#94a3b8', display: 'flex', alignItems: 'center', gap: '5px' }}>
-              <Cpu size={13} color="var(--accent-emerald)" />
-              <span>Model State</span>
-            </span>
-            <span style={{
-              width: '6px',
-              height: '6px',
-              borderRadius: '50%',
-              backgroundColor: 'var(--accent-emerald)',
-              display: 'inline-block'
-            }} />
-          </div>
-          <div className="mono" style={{ color: '#ffffff', fontWeight: 600, fontSize: '0.75rem' }}>
-            {status?.model_version || 'v2.4-bayes'}
-          </div>
-          <div style={{ color: '#64748b', fontSize: '0.68rem' }}>
-            120-Day Synthetic Calibration
-          </div>
+          width: '38px',
+          height: '38px',
+          borderRadius: '12px',
+          overflow: 'hidden',
+          border: '1px solid var(--border-medium)',
+          cursor: 'pointer',
+          backgroundColor: 'var(--bg-surface-elevated)'
+        }}
+        title="Owner Session"
+        >
+          <img 
+            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&h=120&q=80" 
+            alt="Owner"
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          />
         </div>
-      ) : (
-        <div style={{ padding: '0.75rem', display: 'flex', justifyContent: 'center' }}>
-          <span style={{
-            width: '8px',
-            height: '8px',
-            borderRadius: '50%',
-            backgroundColor: 'var(--accent-emerald)',
-            display: 'inline-block'
-          }} title="Model Engine Active" />
-        </div>
-      )}
+
+        {/* Settings Pill */}
+        <button
+          onClick={onOpenGuardrails}
+          style={{
+            width: '34px',
+            height: '34px',
+            borderRadius: '10px',
+            backgroundColor: 'var(--bg-surface-elevated)',
+            border: '1px solid var(--border-subtle)',
+            color: 'var(--text-secondary)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            cursor: 'pointer',
+            transition: 'all 0.15s ease'
+          }}
+          title="Guardrails & Settings"
+          onMouseEnter={(e) => {
+            e.currentTarget.style.color = 'var(--text-primary)';
+            e.currentTarget.style.borderColor = 'var(--border-strong)';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.color = 'var(--text-secondary)';
+            e.currentTarget.style.borderColor = 'var(--border-subtle)';
+          }}
+        >
+          <Settings size={16} />
+        </button>
+      </div>
     </aside>
   );
 };

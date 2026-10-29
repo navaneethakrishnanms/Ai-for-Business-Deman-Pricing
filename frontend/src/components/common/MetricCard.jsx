@@ -14,8 +14,8 @@ export const MetricCard = ({
   subtext = ''
 }) => {
   return (
-    <div className="panel" style={{
-      padding: '1.1rem 1.25rem',
+    <div className="bento-card" style={{
+      padding: '1.2rem',
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'space-between',
@@ -23,17 +23,31 @@ export const MetricCard = ({
     }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <span style={{
-          fontSize: '0.72rem',
+          fontSize: '0.78rem',
           fontWeight: 600,
-          color: 'var(--text-muted)',
+          color: 'var(--text-secondary)',
           textTransform: 'uppercase',
-          letterSpacing: '0.05em'
+          letterSpacing: '0.04em'
         }}>
           {title}
         </span>
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
           {badge}
-          {Icon && <Icon size={15} color="var(--text-muted)" />}
+          {Icon && (
+            <div style={{
+              width: '28px',
+              height: '28px',
+              borderRadius: '8px',
+              backgroundColor: 'var(--bg-surface-elevated)',
+              border: '1px solid var(--border-subtle)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              color: color || 'var(--text-secondary)'
+            }}>
+              <Icon size={15} />
+            </div>
+          )}
         </div>
       </div>
 
@@ -41,9 +55,9 @@ export const MetricCard = ({
         {range ? (
           <RangeBadge range={range} isCurrency={isCurrency} unit={unit} />
         ) : (
-          <div className="kpi-value" style={{
-            fontSize: '1.5rem',
-            fontWeight: 700,
+          <div className="mono" style={{
+            fontSize: '1.65rem',
+            fontWeight: 800,
             color: color || 'var(--text-primary)',
             lineHeight: '1.2'
           }}>
@@ -58,15 +72,15 @@ export const MetricCard = ({
           alignItems: 'center',
           gap: '0.5rem',
           fontSize: '0.75rem',
-          color: 'var(--text-muted)',
+          color: 'var(--text-secondary)',
           borderTop: '1px solid var(--border-subtle)',
-          paddingTop: '0.45rem'
+          paddingTop: '0.5rem'
         }}>
           {delta !== null && (
             <span style={{
-              fontWeight: 600,
+              fontWeight: 700,
               fontFamily: 'var(--font-mono)',
-              color: delta > 0 ? 'var(--accent-emerald)' : delta < 0 ? 'var(--accent-rose)' : 'var(--text-tertiary)'
+              color: delta > 0 ? 'var(--accent-green)' : delta < 0 ? 'var(--accent-rose)' : 'var(--text-secondary)'
             }}>
               {delta > 0 ? `+${delta}` : delta}
             </span>

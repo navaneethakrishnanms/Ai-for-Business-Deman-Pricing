@@ -3,15 +3,15 @@ import { useMenu } from '../../hooks/useMenu';
 import { useComboStudio } from '../../hooks/useComboStudio';
 import { useGuardrailsContext } from '../../context/GuardrailsContext';
 import { MetricCard } from '../../components/common/MetricCard';
-import { RangeBadge } from '../../components/common/RangeBadge';
 import { StatusTag } from '../../components/common/StatusTag';
 import { DayTypeSelector } from '../../components/common/DayTypeSelector';
 import { SuggestionsDrawer } from './SuggestionsDrawer';
 import { formatINR, formatPct, formatRatioAsPct } from '../../utils/formatters';
 import { 
-  ShoppingBag, 
+  Layers, 
   TrendingUp, 
-  ShieldAlert
+  ShieldAlert,
+  ArrowRight
 } from 'lucide-react';
 
 export const ComboStudio = () => {
@@ -50,10 +50,8 @@ export const ComboStudio = () => {
     }
   }, [mainId, addonId, discountPct, dayType, evaluate]);
 
-  // Combined price calculations
   const standaloneFullPrice = (selectedMain?.price || 0) + (selectedAddon?.price || 0);
   const bundlePrice = standaloneFullPrice * (1 - discountPct / 100);
-  const totalCost = (selectedMain?.cost || 0) + (selectedAddon?.cost || 0);
 
   const handleSelectSuggestion = (sugg) => {
     setMainId(sugg.main_item_id);
@@ -64,19 +62,19 @@ export const ComboStudio = () => {
   const isCannibalisationRisk = (evaluation?.cannibalised_share || 0) > 0.55;
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', width: '100%', maxWidth: '1440px', margin: '0 auto' }}>
       {/* Header */}
       <div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
           <span className="badge badge-neutral">
             Part D · POST /combos/evaluate
           </span>
-          <span style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>Layer 2 Combo Cannibalisation & Cross-Sell Model</span>
+          <span style={{ fontSize: '0.72rem', color: '#8a94a6' }}>Layer 2 Combo Cannibalisation & Cross-Sell Model</span>
         </div>
-        <h2 style={{ fontSize: '1.45rem', fontWeight: 700, color: 'var(--text-primary)', margin: 0 }}>
-          Combo Studio & Cannibalisation Governance
+        <h2 style={{ fontSize: '1.45rem', fontWeight: 700, color: '#ffffff', margin: 0 }}>
+          Combo Studio & Cannibalisation Guard
         </h2>
-        <p style={{ fontSize: '0.82rem', color: 'var(--text-tertiary)', marginTop: '3px' }}>
+        <p style={{ fontSize: '0.82rem', color: '#8a94a6', marginTop: '3px' }}>
           Test meal pairing discounts while preventing the <strong>Cannibalisation Trap</strong> — where discounts erode gross margin on students who would have purchased both items at standard prices.
         </p>
       </div>
@@ -85,15 +83,15 @@ export const ComboStudio = () => {
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '1.25rem' }}>
         
         {/* Left Column: Pairing Configuration */}
-        <div className="panel" style={{ padding: '1.25rem', display: 'flex', flexDirection: 'column', gap: '1.15rem' }}>
+        <div className="bento-card" style={{ padding: '1.25rem', display: 'flex', flexDirection: 'column', gap: '1.15rem' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', borderBottom: '1px solid var(--border-subtle)', paddingBottom: '0.65rem' }}>
-            <ShoppingBag size={15} color="var(--accent-blue)" />
-            <h3 style={{ fontSize: '0.95rem', margin: 0 }}>Combo Pairing Inputs</h3>
+            <Layers size={16} color="#34d399" />
+            <h3 style={{ fontSize: '1rem', color: '#ffffff', margin: 0 }}>Combo Pairing Inputs</h3>
           </div>
 
           {/* Main Item Select */}
           <div>
-            <label style={{ fontSize: '0.78rem', color: 'var(--text-muted)', display: 'block', marginBottom: '4px' }}>
+            <label style={{ fontSize: '0.78rem', color: '#8a94a6', display: 'block', marginBottom: '6px' }}>
               Main Course Selection:
             </label>
             <select
@@ -111,7 +109,7 @@ export const ComboStudio = () => {
 
           {/* Add-on Select */}
           <div>
-            <label style={{ fontSize: '0.78rem', color: 'var(--text-muted)', display: 'block', marginBottom: '4px' }}>
+            <label style={{ fontSize: '0.78rem', color: '#8a94a6', display: 'block', marginBottom: '6px' }}>
               Add-On / Beverage Selection:
             </label>
             <select
@@ -130,8 +128,8 @@ export const ComboStudio = () => {
           {/* Combo Discount Slider */}
           <div>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '4px' }}>
-              <label style={{ fontSize: '0.78rem', fontWeight: 600, color: 'var(--text-secondary)' }}>Combo Bundle Discount (%)</label>
-              <span className="mono" style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--accent-amber)' }}>
+              <label style={{ fontSize: '0.82rem', fontWeight: 600, color: '#cbd5e1' }}>Combo Bundle Discount (%)</label>
+              <span className="mono" style={{ fontSize: '1.1rem', fontWeight: 800, color: '#fbbf24' }}>
                 {discountPct}%
               </span>
             </div>
@@ -144,7 +142,7 @@ export const ComboStudio = () => {
               onChange={(e) => setDiscountPct(parseFloat(e.target.value))}
               style={{ width: '100%', cursor: 'pointer' }}
             />
-            <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.7rem', color: 'var(--text-muted)', marginTop: '2px' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.7rem', color: '#8a94a6', marginTop: '2px' }}>
               <span>0% (Standalone)</span>
               <span>Guardrail Cap: {guardrails.combo_discount_cap_pct}%</span>
             </div>
@@ -152,7 +150,7 @@ export const ComboStudio = () => {
 
           {/* Day Context */}
           <div>
-            <label style={{ fontSize: '0.78rem', color: 'var(--text-muted)', display: 'block', marginBottom: '4px' }}>
+            <label style={{ fontSize: '0.78rem', color: '#8a94a6', display: 'block', marginBottom: '6px' }}>
               Day Operating Context:
             </label>
             <DayTypeSelector
@@ -164,24 +162,24 @@ export const ComboStudio = () => {
 
           {/* Pricing Summary Box */}
           <div style={{
-            padding: '10px 12px',
-            borderRadius: 'var(--radius-md)',
-            backgroundColor: 'var(--bg-canvas)',
+            padding: '12px',
+            borderRadius: '14px',
+            backgroundColor: 'var(--bg-surface-inset)',
             border: '1px solid var(--border-subtle)',
             display: 'flex',
             flexDirection: 'column',
-            gap: '5px',
-            fontSize: '0.78rem'
+            gap: '6px',
+            fontSize: '0.82rem'
           }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', color: 'var(--text-muted)' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', color: 'var(--text-secondary)' }}>
               <span>Standalone Sum:</span>
               <span className="mono" style={{ textDecoration: 'line-through' }}>{formatINR(standaloneFullPrice)}</span>
             </div>
             <div style={{ display: 'flex', justifyContent: 'space-between', fontWeight: 600, color: 'var(--text-primary)' }}>
               <span>Combo Offering Price:</span>
-              <span className="mono" style={{ color: 'var(--accent-emerald)', fontSize: '0.92rem' }}>{formatINR(bundlePrice)}</span>
+              <span className="mono" style={{ color: 'var(--accent-green)', fontSize: '1.05rem', fontWeight: 800 }}>{formatINR(bundlePrice)}</span>
             </div>
-            <div style={{ display: 'flex', justifyContent: 'space-between', color: 'var(--text-tertiary)', fontSize: '0.72rem' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', color: 'var(--text-secondary)', fontSize: '0.75rem' }}>
               <span>Student Savings:</span>
               <span className="mono">{formatINR(standaloneFullPrice - bundlePrice)} ({discountPct}%)</span>
             </div>
@@ -189,98 +187,99 @@ export const ComboStudio = () => {
         </div>
 
         {/* Right Column: AI Analysis & Cannibalisation Engine */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.15rem' }}>
           
           {/* Decision Status Panel */}
           {evaluation && (
-            <div className="panel" style={{
-              padding: '1.1rem',
+            <div className="bento-card" style={{
+              padding: '1.25rem',
               display: 'flex',
               flexDirection: 'column',
-              gap: '0.65rem',
+              gap: '0.75rem',
               backgroundColor: 'var(--bg-surface-elevated)',
               borderLeft: evaluation.status === 'apply'
-                ? '3px solid var(--accent-emerald)'
+                ? '4px solid var(--accent-green)'
                 : evaluation.status === 'pilot'
-                ? '3px solid var(--accent-amber)'
-                : '3px solid var(--accent-rose)'
+                ? '4px solid var(--accent-amber)'
+                : '4px solid var(--accent-rose)'
             }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                   <StatusTag status={evaluation.status} />
-                  <span style={{ fontSize: '0.82rem', fontWeight: 600, color: 'var(--text-primary)' }}>
+                  <span style={{ fontSize: '0.88rem', fontWeight: 700, color: 'var(--text-primary)' }}>
                     Gatekeeper Recommendation
                   </span>
                 </div>
 
-                <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
-                  Probability Profit Improves: <strong className="mono" style={{ color: 'var(--accent-emerald)' }}>{formatRatioAsPct(evaluation.prob_profit_improves)}</strong>
+                <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)' }}>
+                  Probability Profit Improves: <strong className="mono" style={{ color: 'var(--accent-green)' }}>{formatRatioAsPct(evaluation.prob_profit_improves)}</strong>
                 </div>
               </div>
 
-              <p style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', margin: 0, lineHeight: '1.45' }}>
+              <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', margin: 0, lineHeight: '1.45' }}>
                 {evaluation.reason}
               </p>
             </div>
           )}
 
           {/* Key Output Metrics */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(170px, 1fr))', gap: '0.75rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(170px, 1fr))', gap: '0.85rem' }}>
             <MetricCard
               title="Incremental Profit"
               range={evaluation?.incremental_profit_per_day}
               isCurrency={true}
               subtext="₹ / day net gain"
-              color="var(--accent-emerald)"
+              color="var(--accent-green)"
             />
 
             <MetricCard
               title="Predicted Take Rate"
               range={evaluation?.take_rate}
               isCurrency={false}
-              subtext="Share of main course buyers"
+              subtext="Share of main buyers"
+              color="var(--accent-blue)"
             />
 
             <MetricCard
               title="Cannibalised Share"
               value={formatRatioAsPct(evaluation?.cannibalised_share || 0)}
-              subtext="Would purchase both anyway"
-              color={isCannibalisationRisk ? 'var(--accent-rose)' : 'var(--text-secondary)'}
+              subtext="Would buy both anyway"
+              color={isCannibalisationRisk ? 'var(--accent-rose)' : 'var(--text-primary)'}
               badge={isCannibalisationRisk ? <ShieldAlert size={14} color="var(--accent-rose)" /> : null}
             />
 
             <MetricCard
               title="Break-Even Take Rate"
               value={formatRatioAsPct(evaluation?.break_even_take_rate || 0)}
-              subtext="Minimum adoption threshold"
+              subtext="Minimum threshold"
             />
           </div>
 
           {/* Volume Dynamics Breakdown */}
-          <div className="panel" style={{ padding: '1.1rem', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-            <h4 style={{ fontSize: '0.88rem', margin: 0, display: 'flex', alignItems: 'center', gap: '6px', color: 'var(--text-secondary)' }}>
-              <TrendingUp size={14} color="var(--accent-blue)" />
+          <div className="bento-card" style={{ padding: '1.25rem', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+            <h4 style={{ fontSize: '0.92rem', margin: 0, display: 'flex', alignItems: 'center', gap: '6px', color: 'var(--text-primary)' }}>
+              <TrendingUp size={15} color="var(--accent-green)" />
               <span>Volume Dynamics & Cross-Sell Lift Drivers</span>
             </h4>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '0.75rem', fontSize: '0.78rem' }}>
-              <div style={{ padding: '8px 10px', borderRadius: 'var(--radius-sm)', backgroundColor: 'var(--bg-canvas)', border: '1px solid var(--border-subtle)' }}>
-                <span style={{ color: 'var(--text-muted)', display: 'block', marginBottom: '2px' }}>Incremental Add-On Lift</span>
-                <strong className="mono" style={{ fontSize: '0.98rem', color: 'var(--accent-blue)' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '0.85rem', fontSize: '0.78rem' }}>
+              <div style={{ padding: '10px 12px', borderRadius: '12px', backgroundColor: 'var(--bg-surface-inset)', border: '1px solid var(--border-subtle)' }}>
+                <span style={{ color: 'var(--text-secondary)', display: 'block', marginBottom: '2px' }}>Incremental Add-On Lift</span>
+                <strong className="mono" style={{ fontSize: '1.15rem', color: 'var(--accent-green)' }}>
                   +{evaluation?.addon_lift || 0} units/day
                 </strong>
-                <p style={{ fontSize: '0.7rem', color: 'var(--text-muted)', margin: '3px 0 0 0' }}>
-                  Additional snack/beverage units sold due to bundle incentive.
+                <p style={{ fontSize: '0.72rem', color: 'var(--text-secondary)', margin: '3px 0 0 0' }}>
+                  Additional snack units sold due to bundle incentive.
                 </p>
               </div>
 
-              <div style={{ padding: '8px 10px', borderRadius: 'var(--radius-sm)', backgroundColor: 'var(--bg-canvas)', border: '1px solid var(--border-subtle)' }}>
-                <span style={{ color: 'var(--text-muted)', display: 'block', marginBottom: '2px' }}>Main Traffic Spillover</span>
-                <strong className="mono" style={{ fontSize: '0.98rem', color: 'var(--text-primary)' }}>
+              <div style={{ padding: '10px 12px', borderRadius: '12px', backgroundColor: 'var(--bg-surface-inset)', border: '1px solid var(--border-subtle)' }}>
+                <span style={{ color: 'var(--text-secondary)', display: 'block', marginBottom: '2px' }}>Main Traffic Spillover</span>
+                <strong className="mono" style={{ fontSize: '1.15rem', color: 'var(--accent-blue)' }}>
                   +{evaluation?.main_traffic_lift || 0} units/day
                 </strong>
-                <p style={{ fontSize: '0.7rem', color: 'var(--text-muted)', margin: '3px 0 0 0' }}>
-                  Incremental cafeteria visits attracted by the combo value.
+                <p style={{ fontSize: '0.72rem', color: 'var(--text-secondary)', margin: '3px 0 0 0' }}>
+                  Incremental student visits attracted by combo value.
                 </p>
               </div>
             </div>
@@ -289,7 +288,7 @@ export const ComboStudio = () => {
       </div>
 
       {/* High-Affinity Suggestions Grid */}
-      <div className="panel" style={{ padding: '1.25rem' }}>
+      <div className="bento-card" style={{ padding: '1.25rem' }}>
         <SuggestionsDrawer
           suggestions={suggestions}
           items={items}

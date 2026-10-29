@@ -42,15 +42,15 @@ export const PilotPlanCard = ({ pilotPlan }) => {
                 minWidth: '160px',
                 padding: '6px 8px',
                 borderRadius: '6px',
-                backgroundColor: 'rgba(0,0,0,0.3)',
+                backgroundColor: 'var(--bg-surface-inset)',
                 border: '1px solid var(--border-subtle)',
                 fontSize: '0.72rem'
               }}
             >
-              <div style={{ fontWeight: 700, color: 'var(--text-main)', marginBottom: '2px' }}>
+              <div style={{ fontWeight: 700, color: 'var(--text-primary)', marginBottom: '2px' }}>
                 {arm.label || `Arm ${idx + 1}`}
               </div>
-              <div style={{ color: '#34d399', fontWeight: 600 }}>
+              <div style={{ color: 'var(--accent-green)', fontWeight: 600 }}>
                 Price: {formatINR(arm.price, 0)} {arm.portion_size_g ? `· ${arm.portion_size_g}g` : ''}
               </div>
             </div>

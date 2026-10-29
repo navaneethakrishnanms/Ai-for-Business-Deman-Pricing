@@ -64,8 +64,8 @@ export const ScenarioBuilderModal = ({ isOpen, onClose, items = [], onAddScenari
               padding: '8px 12px',
               borderRadius: 'var(--radius-md)',
               border: '1px solid var(--border-subtle)',
-              background: 'rgba(0,0,0,0.3)',
-              color: '#ffffff',
+              background: 'var(--input-bg)',
+              color: 'var(--text-primary)',
               fontSize: '0.88rem'
             }}
           />
@@ -78,9 +78,9 @@ export const ScenarioBuilderModal = ({ isOpen, onClose, items = [], onAddScenari
               type="button"
               onClick={handleAddChange}
               style={{
-                background: 'rgba(99, 102, 241, 0.15)',
-                border: '1px solid rgba(99, 102, 241, 0.3)',
-                color: '#818cf8',
+                background: 'var(--accent-blue-subtle)',
+                border: '1px solid var(--accent-blue)',
+                color: 'var(--accent-blue)',
                 borderRadius: '4px',
                 padding: '4px 8px',
                 fontSize: '0.75rem',
@@ -108,7 +108,7 @@ export const ScenarioBuilderModal = ({ isOpen, onClose, items = [], onAddScenari
                     alignItems: 'center',
                     padding: '8px',
                     borderRadius: '6px',
-                    backgroundColor: 'rgba(0,0,0,0.2)',
+                    backgroundColor: 'var(--bg-surface-inset)',
                     border: '1px solid var(--border-subtle)'
                   }}
                 >
@@ -125,9 +125,9 @@ export const ScenarioBuilderModal = ({ isOpen, onClose, items = [], onAddScenari
                     style={{
                       padding: '6px',
                       borderRadius: '4px',
-                      background: '#0f172a',
+                      background: 'var(--input-bg)',
                       border: '1px solid var(--border-subtle)',
-                      color: '#ffffff',
+                      color: 'var(--text-primary)',
                       fontSize: '0.78rem'
                     }}
                   >
@@ -148,9 +148,9 @@ export const ScenarioBuilderModal = ({ isOpen, onClose, items = [], onAddScenari
                         width: '100%',
                         padding: '6px',
                         borderRadius: '4px',
-                        background: '#0f172a',
+                        background: 'var(--input-bg)',
                         border: '1px solid var(--border-subtle)',
-                        color: '#ffffff',
+                        color: 'var(--text-primary)',
                         fontSize: '0.78rem'
                       }}
                     />
@@ -158,6 +158,21 @@ export const ScenarioBuilderModal = ({ isOpen, onClose, items = [], onAddScenari
 
                   <div>
                     <input
+                      type="number"
+                      value={change.portion_size_g}
+                      onChange={(e) => handleUpdateChange(idx, 'portion_size_g', parseInt(e.target.value, 10))}
+                      placeholder="Portion (g)"
+                      style={{
+                        width: '100%',
+                        padding: '6px',
+                        borderRadius: '4px',
+                        background: 'var(--input-bg)',
+                        border: '1px solid var(--border-subtle)',
+                        color: 'var(--text-primary)',
+                        fontSize: '0.78rem'
+                      }}
+                    />
+                  </div>
                       type="number"
                       value={change.portion_size_g}
                       onChange={(e) => handleUpdateChange(idx, 'portion_size_g', parseInt(e.target.value, 10))}

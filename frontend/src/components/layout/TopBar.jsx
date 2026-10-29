@@ -1,14 +1,11 @@
 import React, { useState } from 'react';
 import { 
+  ChevronDown, 
+  Grid, 
   Key, 
   ShieldCheck, 
-  Sun, 
-  Moon, 
-  Terminal, 
-  Search, 
-  UserCheck, 
-  ChevronDown,
-  Layers
+  Sun,
+  Moon
 } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
 import { useGuardrailsContext } from '../../context/GuardrailsContext';
@@ -16,21 +13,25 @@ import { useTheme } from '../../context/ThemeContext';
 import { SCREENS } from './Navbar';
 
 const SCREEN_TITLES = {
-  [SCREENS.MENU_HEALTH]: { title: 'Menu Health & Cost Structure', category: 'Catalog Operations', part: 'Part A: GET /items' },
-  [SCREENS.DEMAND_LAB]: { title: 'Demand Lab & Elasticity Simulator', category: 'Quantitative Simulation', part: 'Part B: POST /predict' },
-  [SCREENS.SCENARIOS]: { title: 'Scenario Compare & Trade-Offs', category: 'Strategic Benchmarking', part: 'Part C: POST /scenarios/compare' },
-  [SCREENS.COMBO_STUDIO]: { title: 'Combo Studio & Cannibalisation Guard', category: 'Cross-Sell Optimization', part: 'Part D: POST /combos/evaluate' },
-  [SCREENS.RECOMMENDATIONS]: { title: 'Policy Recommendations & Pilot Gate', category: 'Multi-Objective Optimizer', part: 'Part E: POST /recommend' },
-  [SCREENS.STUDENT_BUDGET]: { title: 'Student Budget Meal Finder', category: 'Student Client', part: 'Part F: GET /student/offers' }
+  [SCREENS.MENU_HEALTH]: 'Sales Dashboard',
+  [SCREENS.DEMAND_LAB]: 'Demand Simulator',
+  [SCREENS.SCENARIOS]: 'Scenario Compare',
+  [SCREENS.COMBO_STUDIO]: 'Combo Studio',
+  [SCREENS.RECOMMENDATIONS]: 'Recommendations & Pilots',
+  [SCREENS.STUDENT_BUDGET]: 'Student Budget Builder'
 };
 
-export const TopBar = ({ activeScreen, onOpenGuardrails, onOpenAssistant }) => {
-  const { activeRole, ownerToken, updateToken } = useAuth();
+export const TopBar = ({ activeScreen, onOpenGuardrails, onOpenAssistant, dayType = 'regular', onDayTypeChange }) => {
+  const { ownerToken, updateToken } = useAuth();
   const { guardrails } = useGuardrailsContext();
-  const { theme, toggleTheme, isLight } = useTheme();
+  const { theme, toggleTheme, isDark } = useTheme();
 
+  const [showTimeDropdown, setShowTimeDropdown] = useState(false);
+  const [selectedTimeframe, setSelectedTimeframe] = useState('This Week');
   const [showTokenEdit, setShowTokenEdit] = useState(false);
   const [tokenInput, setTokenInput] = useState(ownerToken || '');
+
+  const timeframes = ['Today', 'This Week', 'Exam Period', 'Full Semester'];
 
   const handleSaveToken = (e) => {
     e.preventDefault();
@@ -38,112 +39,98 @@ export const TopBar = ({ activeScreen, onOpenGuardrails, onOpenAssistant }) => {
     setShowTokenEdit(false);
   };
 
-  const currentMeta = SCREEN_TITLES[activeScreen] || {
-    title: 'Console',
-    category: 'Revenue Operations',
-    part: 'PS 2.4'
-  };
+  const title = SCREEN_TITLES[activeScreen] || 'Sales Dashboard';
 
   return (
     <header style={{
-      height: '64px',
-      backgroundColor: 'var(--bg-surface)',
-      borderBottom: '1px solid var(--border-subtle)',
-      padding: '0 1.5rem',
+      height: '76px',
+      backgroundColor: 'transparent',
+      padding: '1.25rem 2rem 0.5rem 2rem',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'space-between',
-      gap: '1.25rem',
-      position: 'sticky',
-      top: 0,
-      zIndex: 30,
-      boxShadow: 'var(--shadow-subtle)'
+      gap: '1rem',
+      userSelect: 'none'
     }}>
-      {/* Left: Breadcrumbs & Current Screen Info */}
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '1px' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.72rem', color: 'var(--text-muted)' }}>
-          <span>CampusPrice</span>
-          <span>/</span>
-          <span style={{ color: 'var(--text-secondary)' }}>{currentMeta.category}</span>
-          <span>/</span>
-          <span className="mono" style={{ color: 'var(--accent-blue)', fontSize: '0.68rem' }}>{currentMeta.part}</span>
-        </div>
-        <h2 style={{ fontSize: '1.05rem', fontWeight: 700, color: 'var(--text-primary)', margin: 0, letterSpacing: '-0.015em' }}>
-          {currentMeta.title}
-        </h2>
+      {/* Screen Title (Exact match to "Sales Dashboard" in screenshot) */}
+      <div>
+        <h1 style={{
+          fontSize: '1.65rem',
+          fontWeight: 700,
+          color: 'var(--text-primary)',
+          letterSpacing: '-0.025em',
+          margin: 0
+        }}>
+          {title}
+        </h1>
       </div>
 
-      {/* Center: Search / What-If Quick Command Trigger */}
-      <button
-        onClick={onOpenAssistant}
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-          gap: '10px',
-          padding: '0.45rem 1rem',
-          borderRadius: 'var(--radius-md)',
-          backgroundColor: 'var(--bg-canvas)',
-          border: '1px solid var(--border-subtle)',
-          color: 'var(--text-muted)',
-          fontSize: '0.78rem',
-          cursor: 'pointer',
-          minWidth: '280px',
-          maxWidth: '380px',
-          width: '100%',
-          justifyContent: 'space-between'
-        }}
-        title="Open What-If Query Assistant"
-      >
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <Search size={14} color="var(--text-muted)" />
-          <span>Ask What-If or search menu...</span>
-        </div>
-        <kbd style={{
-          fontSize: '0.65rem',
-          backgroundColor: 'var(--bg-surface)',
-          border: '1px solid var(--border-medium)',
-          borderRadius: '3px',
-          padding: '1px 5px',
-          color: 'var(--text-tertiary)',
-          fontFamily: 'var(--font-mono)'
-        }}>
-          ⌘K
-        </kbd>
-      </button>
+      {/* Right Controls: Theme Switcher, Floor Pill, Grid, Timeframe & Token Indicator */}
+      <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+        
+        {/* Interactive Theme Switcher Toggle (Light / Dark) */}
+        <button
+          onClick={toggleTheme}
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '7px',
+            padding: '0.45rem 0.9rem',
+            borderRadius: 'var(--radius-pill)',
+            backgroundColor: 'var(--bg-surface-elevated)',
+            border: '1px solid var(--border-medium)',
+            color: 'var(--text-primary)',
+            fontSize: '0.78rem',
+            fontWeight: 600,
+            cursor: 'pointer',
+            boxShadow: 'var(--shadow-card)',
+            transition: 'all 0.15s ease'
+          }}
+          title={isDark ? "Switch to Clean Light Theme" : "Switch to Obsidian Dark Theme"}
+        >
+          {isDark ? (
+            <>
+              <Sun size={15} color="#fbbf24" />
+              <span>Light Mode</span>
+            </>
+          ) : (
+            <>
+              <Moon size={15} color="#6366f1" />
+              <span>Dark Mode</span>
+            </>
+          )}
+        </button>
 
-      {/* Right: Actions, Guardrails Badge, Token, Theme Toggle */}
-      <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
-        {/* Guardrails Summary Badge */}
+        {/* Guardrail Floor Pill */}
         <button
           onClick={onOpenGuardrails}
           style={{
             display: 'flex',
             alignItems: 'center',
             gap: '6px',
-            padding: '0.35rem 0.65rem',
-            backgroundColor: 'var(--accent-emerald-subtle)',
-            border: '1px solid var(--accent-emerald-border)',
-            borderRadius: 'var(--radius-md)',
-            color: 'var(--accent-emerald)',
-            fontSize: '0.75rem',
+            padding: '0.45rem 0.85rem',
+            borderRadius: 'var(--radius-pill)',
+            backgroundColor: 'var(--accent-green-subtle)',
+            border: '1px solid var(--accent-green-border)',
+            color: 'var(--accent-green)',
+            fontSize: '0.78rem',
             fontWeight: 600,
             cursor: 'pointer'
           }}
           title="Owner Guardrails Config"
         >
           <ShieldCheck size={14} />
-          <span>Floor: {guardrails.margin_floor_pct}%</span>
+          <span>Floor {guardrails.margin_floor_pct}%</span>
         </button>
 
-        {/* Theme Toggle (Light / Dark) */}
+        {/* View Grid Icon Capsule Button (from screenshot) */}
         <button
-          onClick={toggleTheme}
           style={{
-            width: '34px',
-            height: '34px',
-            borderRadius: 'var(--radius-md)',
+            width: '40px',
+            height: '40px',
+            borderRadius: '12px',
+            backgroundColor: 'var(--bg-surface-elevated)',
             border: '1px solid var(--border-subtle)',
-            backgroundColor: 'var(--bg-surface)',
             color: 'var(--text-secondary)',
             display: 'flex',
             alignItems: 'center',
@@ -151,65 +138,124 @@ export const TopBar = ({ activeScreen, onOpenGuardrails, onOpenAssistant }) => {
             cursor: 'pointer',
             transition: 'all 0.15s ease'
           }}
-          title={isLight ? 'Switch to Dark Slate Theme' : 'Switch to Clean Light Theme'}
+          title="Grid Layout View"
         >
-          {isLight ? <Moon size={15} /> : <Sun size={15} color="#fbbf24" />}
+          <Grid size={17} />
         </button>
 
-        {/* Owner Session Token Inspector */}
+        {/* Timeframe Dropdown Capsule Button (Exact match to "This Week ⌄" in screenshot) */}
+        <div style={{ position: 'relative' }}>
+          <button
+            onClick={() => setShowTimeDropdown(!showTimeDropdown)}
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '8px',
+              padding: '0.55rem 1.15rem',
+              borderRadius: 'var(--radius-pill)',
+              backgroundColor: 'var(--bg-surface-elevated)',
+              border: '1px solid var(--border-subtle)',
+              color: 'var(--text-primary)',
+              fontSize: '0.82rem',
+              fontWeight: 600,
+              cursor: 'pointer',
+              transition: 'all 0.15s ease'
+            }}
+          >
+            <span>{selectedTimeframe}</span>
+            <ChevronDown size={14} color="var(--text-secondary)" />
+          </button>
+
+          {showTimeDropdown && (
+            <div style={{
+              position: 'absolute',
+              right: 0,
+              top: 'calc(100% + 6px)',
+              backgroundColor: 'var(--bg-surface-elevated)',
+              border: '1px solid var(--border-medium)',
+              borderRadius: '14px',
+              padding: '6px',
+              minWidth: '150px',
+              boxShadow: 'var(--shadow-modal)',
+              zIndex: 100
+            }}>
+              {timeframes.map(tf => (
+                <button
+                  key={tf}
+                  onClick={() => {
+                    setSelectedTimeframe(tf);
+                    setShowTimeDropdown(false);
+                  }}
+                  style={{
+                    width: '100%',
+                    textAlign: 'left',
+                    padding: '8px 12px',
+                    borderRadius: '8px',
+                    border: 'none',
+                    backgroundColor: selectedTimeframe === tf ? 'var(--accent-green-subtle)' : 'transparent',
+                    color: selectedTimeframe === tf ? 'var(--accent-green)' : 'var(--text-secondary)',
+                    fontSize: '0.8rem',
+                    fontWeight: 600,
+                    cursor: 'pointer'
+                  }}
+                >
+                  {tf}
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
+
+        {/* Owner Session Token Pill */}
         <div style={{ position: 'relative' }}>
           <button
             onClick={() => setShowTokenEdit(!showTokenEdit)}
             style={{
+              width: '40px',
+              height: '40px',
+              borderRadius: '12px',
+              backgroundColor: 'var(--bg-surface-elevated)',
+              border: '1px solid var(--border-subtle)',
+              color: 'var(--accent-amber)',
               display: 'flex',
               alignItems: 'center',
-              gap: '6px',
-              padding: '0.35rem 0.65rem',
-              backgroundColor: 'var(--bg-canvas)',
-              border: '1px solid var(--border-medium)',
-              borderRadius: 'var(--radius-md)',
-              fontSize: '0.75rem',
-              color: 'var(--text-secondary)',
+              justifyContent: 'center',
               cursor: 'pointer'
             }}
             title="Owner Bearer Token"
           >
-            <Key size={13} color="var(--accent-amber)" />
-            <span className="mono" style={{ maxWidth: '85px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-              {ownerToken ? ownerToken.substring(0, 10) + '...' : 'Auth'}
-            </span>
-            <ChevronDown size={12} color="var(--text-muted)" />
+            <Key size={16} />
           </button>
 
           {showTokenEdit && (
             <div style={{
               position: 'absolute',
               right: 0,
-              top: 'calc(100% + 8px)',
-              width: '300px',
+              top: 'calc(100% + 6px)',
+              width: '280px',
               backgroundColor: 'var(--bg-surface-elevated)',
               border: '1px solid var(--border-strong)',
-              borderRadius: 'var(--radius-lg)',
+              borderRadius: '14px',
               padding: '1rem',
               boxShadow: 'var(--shadow-modal)',
               zIndex: 100
             }}>
-              <div style={{ fontSize: '0.82rem', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '4px' }}>
+              <div style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '4px' }}>
                 Owner Bearer Token
               </div>
-              <p style={{ fontSize: '0.72rem', color: 'var(--text-tertiary)', marginBottom: '8px', lineHeight: '1.4' }}>
-                Attached to Part A, B, C, D, E requests via <code className="mono" style={{ color: 'var(--text-secondary)' }}>Authorization: Bearer</code>.
+              <p style={{ fontSize: '0.72rem', color: 'var(--text-secondary)', marginBottom: '8px' }}>
+                Included in owner requests via Authorization header.
               </p>
               <form onSubmit={handleSaveToken}>
                 <input
                   type="text"
                   value={tokenInput}
                   onChange={(e) => setTokenInput(e.target.value)}
-                  placeholder="Bearer token string..."
+                  placeholder="Enter token string..."
                   style={{
                     width: '100%',
                     padding: '6px 8px',
-                    borderRadius: 'var(--radius-sm)',
+                    borderRadius: '6px',
                     fontSize: '0.75rem',
                     marginBottom: '8px'
                   }}
@@ -218,7 +264,7 @@ export const TopBar = ({ activeScreen, onOpenGuardrails, onOpenAssistant }) => {
                   <button
                     type="button"
                     onClick={() => setShowTokenEdit(false)}
-                    style={{ fontSize: '0.72rem', padding: '4px 8px', background: 'transparent', border: 'none', color: 'var(--text-muted)', cursor: 'pointer' }}
+                    style={{ fontSize: '0.72rem', padding: '4px 8px', background: 'transparent', border: 'none', color: 'var(--text-secondary)', cursor: 'pointer' }}
                   >
                     Cancel
                   </button>
