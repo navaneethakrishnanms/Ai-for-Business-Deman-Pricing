@@ -159,8 +159,8 @@ export const StudentBudgetBuilder = () => {
                 </div>
               ) : (
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                  {offers.combos.map(combo => (
-                    <OfferCard key={combo.offer_id} offer={combo} />
+                  {offers.combos.map((combo, idx) => (
+                    <OfferCard key={combo.offer_id ? `${combo.offer_id}-${idx}` : `combo-${idx}`} offer={combo} />
                   ))}
                 </div>
               )}
@@ -178,9 +178,9 @@ export const StudentBudgetBuilder = () => {
               </div>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
-                {offers.single_items.map(item => (
+                {offers.single_items.map((item, idx) => (
                   <div
-                    key={item.item_id}
+                    key={`${item.item_id || 'item'}-${idx}`}
                     style={{
                       padding: '8px 10px',
                       borderRadius: 'var(--radius-sm)',

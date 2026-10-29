@@ -173,21 +173,6 @@ export const ScenarioBuilderModal = ({ isOpen, onClose, items = [], onAddScenari
                       }}
                     />
                   </div>
-                      type="number"
-                      value={change.portion_size_g}
-                      onChange={(e) => handleUpdateChange(idx, 'portion_size_g', parseInt(e.target.value, 10))}
-                      placeholder="Grams"
-                      style={{
-                        width: '100%',
-                        padding: '6px',
-                        borderRadius: '4px',
-                        background: '#0f172a',
-                        border: '1px solid var(--border-subtle)',
-                        color: '#ffffff',
-                        fontSize: '0.78rem'
-                      }}
-                    />
-                  </div>
 
                   <button
                     type="button"

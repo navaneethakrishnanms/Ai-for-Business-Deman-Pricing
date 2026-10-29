@@ -1,5 +1,8 @@
 # CampusPrice: AI-Powered Pricing & Combo Decision Support (PS 2.4)
 
+> 📘 **Looking for the Full System & User Guide?**  
+> Read the complete [CampusPrice System & User Manual (CAMPUSPRICE_SYSTEM_GUIDE.md)](file:///i:/Project/Ai-for-Business-Deman-Pricing/CAMPUSPRICE_SYSTEM_GUIDE.md) for a screen-by-screen walk-through, econometric model specifications, and evaluation demo script based on the PS 2.4 build plan.
+
 CampusPrice is an intelligent pricing and combo decision-support co-pilot for cafeteria owners, balancing owner profitability with student affordability. It implements a 7-step decision loop powered by a 6-layer analytical engine, synthetic student behavioral simulations, and guardrail protections.
 
 ---
