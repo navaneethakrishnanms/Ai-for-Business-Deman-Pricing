@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
+import menuRouter from './routes/menu.js';
 
 dotenv.config();
 
@@ -12,11 +13,14 @@ const AI_SERVICE_URL = process.env.AI_SERVICE_URL || 'http://localhost:8000';
 app.use(cors({ origin: CLIENT_ORIGIN, credentials: true }));
 app.use(express.json());
 
+// API Routes
+app.use('/api/menu', menuRouter);
+
 // Health Check
 app.get('/api/health', (req, res) => {
   res.json({
     status: 'ok',
-    service: 'CampusPrice Backend API Gateway (JavaScript)',
+    service: 'CampusPrice Backend API Gateway (JavaScript + MySQL2)',
     timestamp: new Date().toISOString(),
     aiServiceUrl: AI_SERVICE_URL
   });
@@ -24,7 +28,7 @@ app.get('/api/health', (req, res) => {
 
 // Global Error Handler
 app.use((err, req, res, next) => {
-  console.error('Unhandled Server Error:', err);
+  console.error('[CampusPrice Backend Error]:', err);
   res.status(500).json({ error: 'Internal Server Error', message: err.message });
 });
 

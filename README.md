@@ -10,7 +10,7 @@ The system is organized into three decoupled services:
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                       Frontend (Vite + React)               │
+│                  Frontend (Vite + React JSX)                │
 │  - 5 Owner Screens: Menu Health, Demand Lab, Scenarios,     │
 │                     Combo Studio, Recommendations            │
 │  - 1 Student Screen: Student Budget Builder (Mobile-First)   │
@@ -18,15 +18,16 @@ The system is organized into three decoupled services:
                                │ HTTP / REST (JSON)
                                ▼
 ┌─────────────────────────────────────────────────────────────┐
-│                    Backend (Node.js + Express)              │
+│             Backend (Node.js + Express JS + MySQL2)         │
 │  - System of Record & API Gateway                           │
-│  - SQLite Database (Menu Items, Scenarios, Override Logs)   │
+│  - MySQL2 Connection Pool (Promise-Based Queries)           │
+│  - Transaction-Based Execution (`withTransaction`)          │
 │  - Guardrails Enforcement & Pilot Test Workflow             │
 └──────────────────────────────┬──────────────────────────────┘
                                │ Internal REST API
                                ▼
 ┌─────────────────────────────────────────────────────────────┐
-│                   AI Service (Python + FastAPI)             │
+│                 AI Service (Python + FastAPI)               │
 │  - Layer 1: Demand Response (Log-Linear with Pooling)       │
 │  - Layer 2: Combo Cannibalisation & Lift Engine             │
 │  - Layer 3: Student Budget Tiers & Coverage Filter          │
@@ -44,36 +45,44 @@ The system is organized into three decoupled services:
 ```text
 Ai-for-Business-Deman-Pricing/
 ├── .env.example                     # Central environment configuration template
-├── .gitignore                       # Multi-stack gitignore (Node, Python, SQLite, secrets)
+├── .gitignore                       # Multi-stack gitignore (Node, Python, MySQL, secrets)
 ├── README.md                        # Project documentation
 ├── Docs/                            # Project specifications & PDFs
 │   └── PS 2.4 Pricing & Combo Decision Support Full Analysis.pdf
 │
-├── frontend/                        # Client application (Vite + React + TS)
+├── frontend/                        # Client application (Vite + React JS)
 │   ├── .env.example
 │   ├── package.json
-│   ├── src/
-│   │   ├── components/              # Shared UI components & charts
-│   │   ├── pages/                   # 5 Owner screens + 1 Student screen
-│   │   ├── services/                # Backend API client
-│   │   └── types/                   # Frontend TypeScript interfaces
+│   ├── vite.config.js
+│   ├── index.html
+│   └── src/
+│       ├── components/              # Shared UI components & charts
+│       ├── pages/                   # 5 Owner screens + 1 Student screen
+│       ├── services/                # Backend API client
+│       ├── App.jsx                  # Main app navigation & layout
+│       ├── index.css                # Custom theme & design tokens
+│       └── main.jsx                 # Entry point
 │
-├── backend/                         # Business logic & Gateway (Node.js + TS)
+├── backend/                         # Business logic & Gateway (Node.js ES Modules)
 │   ├── .env.example
 │   ├── package.json
-│   ├── src/
-│   │   ├── controllers/             # Route handlers
-│   │   ├── routes/                  # Express API routers
-│   │   ├── services/                # Business logic & AI proxy
-│   │   ├── models/                  # SQLite schema & DB client
-│   │   └── server.ts                # Server entry point
-│   └── data/                        # Local SQLite databases (.gitignored)
+│   └── src/
+│       ├── controllers/             # Route controllers
+│       ├── db/
+│       │   └── index.js             # MySQL2 promise pool & transaction helper
+│       ├── middleware/              # Auth, validation, error handler
+│       ├── routes/
+│       │   └── menu.js              # Menu routes with transaction templates
+│       ├── services/
+│       │   └── aiClient.js          # AI Service HTTP proxy
+│       └── server.js                # Server entry point
 │
 └── ai_service/                      # Mathematical & ML Core (Python FastAPI)
     ├── .env.example
     ├── requirements.txt
     ├── app/
-    │   ├── api/                     # FastAPI route endpoints
+    │   ├── api/
+    │   │   └── endpoints.py         # FastAPI endpoints (/predict, /evaluate-combo, etc.)
     │   ├── core/                    # 6-layer model algorithms
     │   ├── generator/               # 120-day synthetic student simulation
     │   ├── llm/                     # Explainer & offer copywriting (with fallback)
@@ -84,18 +93,23 @@ Ai-for-Business-Deman-Pricing/
 
 ---
 
-## Seven Core Screen Features
+## Database Architecture (MySQL2)
 
-1. **Menu Health**: Per-item price, cost, unit margins (₹ and %), sales velocity, and automated classification flags (*loss-maker, poor seller, underpriced star*).
-2. **Demand Lab**: Interactive real-time sliders for price, portion, discount, and day type (regular, exam, weekend, event). Shows response curves with uncertainty bands and margin floor alerts.
-3. **Scenario Compare**: Compare up to 4 scenarios side-by-side (*Today, My Scenario, AI Plan, Student-First*) on units, revenue, profit, student budget coverage, and risk.
-4. **Combo Studio**: Interactive bundle designer calculating take rates, add-on lift, cannibalisation risk, and break-even take rates.
-5. **Recommendations (Apply / Pilot / Hold)**:
-   - **Apply (>=80% confidence)**: Direct price or combo update.
-   - **Pilot (<80% confidence)**: Generates a 1-week randomized A/B test plan.
-   - **Hold**: Retains baseline when uncertainty is high or guardrails are breached.
-6. **Student Budget Builder (Mobile-First)**: Allows students to slide their ₹ budget to view high-value, nutrition-dense, profit-safe meal deals with "save ₹X" badges and ₹/gram transparency.
-7. **Override & Audit Log**: Records owner approvals, overrides, and adjustments to refine future model iterations.
+The backend uses `mysql2/promise` with structured transaction support:
+
+- **Promise-based query execution**:
+  ```javascript
+  import { query } from './db/index.js';
+  const [rows] = await query('SELECT * FROM menu_items WHERE role = ?', ['main']);
+  ```
+- **Transaction-based execution**:
+  ```javascript
+  import { withTransaction } from './db/index.js';
+  await withTransaction(async (conn) => {
+    await conn.execute('UPDATE menu_items SET price = ? WHERE id = ?', [newPrice, id]);
+    await conn.execute('INSERT INTO override_logs (item_id, action) VALUES (?, ?)', [id, 'approved']);
+  });
+  ```
 
 ---
 
@@ -105,19 +119,19 @@ Ai-for-Business-Deman-Pricing/
 ```bash
 cd ai_service
 python -m venv .venv
-# Windows:
-.venv\Scripts\activate
+# Windows: .venv\Scripts\activate
 # Linux/Mac: source .venv/bin/activate
 pip install -r requirements.txt
 cp .env.example .env
 uvicorn app.main:app --reload --port 8000
 ```
 
-### 2. Backend Service (Node.js)
+### 2. Backend Service (Node.js + Express + MySQL2)
 ```bash
 cd backend
 npm install
 cp .env.example .env
+# Ensure MySQL is running and database is created
 npm run dev
 ```
 
