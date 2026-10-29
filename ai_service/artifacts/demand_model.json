@@ -1,0 +1,98 @@
+{
+  "item_ids": [
+    "veg_meals",
+    "egg_fried_rice",
+    "chicken_biryani",
+    "dosa",
+    "chapati_kurma",
+    "paneer_roll",
+    "salad_bowl",
+    "tea",
+    "cold_coffee",
+    "samosa",
+    "fresh_juice"
+  ],
+  "kinds": [
+    "main",
+    "main",
+    "main",
+    "main",
+    "main",
+    "main",
+    "main",
+    "addon",
+    "addon",
+    "addon",
+    "addon"
+  ],
+  "price_ref": [
+    70.0,
+    60.0,
+    90.0,
+    40.0,
+    50.0,
+    55.0,
+    65.0,
+    12.0,
+    40.0,
+    15.0,
+    45.0
+  ],
+  "portion_ref": [
+    350.0,
+    300.0,
+    350.0,
+    180.0,
+    250.0,
+    200.0,
+    200.0,
+    150.0,
+    250.0,
+    80.0,
+    250.0
+  ],
+  "cost_ref": [
+    45.0,
+    36.0,
+    96.0,
+    24.0,
+    30.0,
+    57.0,
+    38.0,
+    4.0,
+    17.0,
+    7.0,
+    30.0
+  ],
+  "meta": {
+    "validation": {
+      "tau_beta": 0.3,
+      "holdout_from_day": 96,
+      "n_holdout_rows": 264,
+      "n_direction_rows": 210,
+      "holdout_direction_hit_rate": 0.780952380952381,
+      "holdout_direction_hit_rate_naive": 0.7761904761904762,
+      "holdout_unit_wape": 0.19159489730694831,
+      "holdout_unit_wape_item_average": 0.42469779319945133,
+      "tau_cv_deviance": {
+        "0.3": 741.1,
+        "0.5": 753.1,
+        "0.8": 763.6,
+        "1.2": 771.0
+      }
+    },
+    "n_boot": 200,
+    "bootstrap_block_days": 7,
+    "seed": 2026,
+    "tau_beta": 0.3,
+    "prior_beta": [
+      -2.44,
+      0.41
+    ],
+    "n_rows": 1320,
+    "n_test_rows": 660,
+    "trained_through_day": 119,
+    "fit_seconds": 5.3,
+    "dispersion_note": "ranges come from the cluster bootstrap over days"
+  }
+}

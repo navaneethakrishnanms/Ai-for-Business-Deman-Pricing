@@ -1,0 +1,14 @@
+# Student tiers. Replace these numbers with the student-survey results (30-50 Van Westendorp-style
+# responses: "highest price you would still pay for a lunch") and re-run scripts/bootstrap.py --force.
+# No code change is needed.
+source: "placeholder pending student survey (synthetic)"
+budget_sigma: 0.30            # lognormal sigma of the per-meal budget inside each tier
+tiers:
+  tight:    {budget_median: 60.0,  price_sensitivity: 1.25}
+  mid:      {budget_median: 100.0, price_sensitivity: 1.00}
+  flexible: {budget_median: 170.0, price_sensitivity: 0.75}
+day_types:
+  regular: {footfall: 700, shares: {tight: 0.40, mid: 0.40, flexible: 0.20}}
+  exam:    {footfall: 520, shares: {tight: 0.50, mid: 0.38, flexible: 0.12}}
+  weekend: {footfall: 230, shares: {tight: 0.30, mid: 0.40, flexible: 0.30}}
+  event:   {footfall: 860, shares: {tight: 0.35, mid: 0.40, flexible: 0.25}}
