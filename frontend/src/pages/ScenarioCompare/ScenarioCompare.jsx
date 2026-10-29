@@ -21,18 +21,18 @@ export const ScenarioCompare = ({ initialCustomScenario }) => {
 
   const [scenariosList, setScenariosList] = useState([
     {
-      name: 'Affordability & Volume (Budget Focus)',
+      name: 'Affordability & Volume (Student First)',
       item_changes: [
-        { item_id: 'item_masala_dosa', price: 60.0, portion_size_g: 280 },
-        { item_id: 'item_veg_thali', price: 85.0, portion_size_g: 450 }
+        { item_id: 'item_dosa', price: 38.0, portion_size_g: 250 },
+        { item_id: 'item_veg_meals', price: 65.0, portion_size_g: 500 }
       ],
       combo_changes: []
     },
     {
-      name: 'Margin Maximization (Premium Push)',
+      name: 'Margin Maximization (AI Recommended)',
       item_changes: [
-        { item_id: 'item_biryani', price: 130.0, portion_size_g: 400 },
-        { item_id: 'item_chicken_fried_rice', price: 120.0, portion_size_g: 400 }
+        { item_id: 'item_dosa', price: 44.0, portion_size_g: 250 },
+        { item_id: 'item_biryani', price: 95.0, portion_size_g: 400 }
       ],
       combo_changes: []
     }

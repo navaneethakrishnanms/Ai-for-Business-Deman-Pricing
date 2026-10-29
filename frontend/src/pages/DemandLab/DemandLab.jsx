@@ -32,11 +32,12 @@ export const DemandLab = ({ preselectedItemId }) => {
 
   useEffect(() => {
     if (currentItem) {
+      setSelectedItemId(currentItem.item_id);
       setPrice(currentItem.price);
       setPortionSizeG(currentItem.portion_size_g);
       setDiscountPct(0);
     }
-  }, [selectedItemId]);
+  }, [currentItem]);
 
   useEffect(() => {
     if (selectedItemId && price) {

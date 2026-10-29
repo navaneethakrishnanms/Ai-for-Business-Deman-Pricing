@@ -31,9 +31,13 @@ export const ComboStudio = () => {
   const selectedAddon = items.find(i => i.item_id === addonId) || addons[0];
 
   useEffect(() => {
-    if (mains.length && !mainId) setMainId(mains[0].item_id);
-    if (addons.length && !addonId) setAddonId(addons[0].item_id);
-  }, [items]);
+    if (mains.length && (!mainId || !mains.some(m => m.item_id === mainId))) {
+      setMainId(mains[0].item_id);
+    }
+    if (addons.length && (!addonId || !addons.some(a => a.item_id === addonId))) {
+      setAddonId(addons[0].item_id);
+    }
+  }, [items, mainId, addonId]);
 
   useEffect(() => {
     if (mainId && addonId) {

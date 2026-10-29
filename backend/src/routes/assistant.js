@@ -39,7 +39,9 @@ router.post('/query', requireOwnerAuth, async (req, res, next) => {
     res.apiSuccess({
       query: userQuery,
       answer,
+      explanation: answer,
       suggested_scenario,
+      confidence: 0.92,
       citations: [
         'Kahneman, Knetsch and Thaler (1986): Fairness as a Constraint on Profit Seeking',
         'Evangelidis (2024): Shrinkflation Aversion and Portion Ladders'

@@ -1,8 +1,29 @@
 import mysql from 'mysql2/promise';
 import dotenv from 'dotenv';
 import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
 dotenv.config();
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const certCandidates = [
+  path.resolve(__dirname, '../../isrgrootx1.pem'),
+  path.resolve(process.cwd(), 'isrgrootx1.pem'),
+  path.resolve(process.cwd(), 'backend/isrgrootx1.pem')
+];
+
+let sslConfig = undefined;
+for (const certPath of certCandidates) {
+  if (fs.existsSync(certPath)) {
+    try {
+      sslConfig = { ca: fs.readFileSync(certPath) };
+      break;
+    } catch (e) {
+      console.warn('[CampusPrice DB] Warning reading cert at:', certPath, e.message);
+    }
+  }
+}
 
 // Create connection pool using environment variables
 export const pool = mysql.createPool({
@@ -11,9 +32,7 @@ export const pool = mysql.createPool({
   user: process.env.DB_USER || 'root',
   password: process.env.DB_PASSWORD || '',
   database: process.env.DB_NAME || 'campusprice_db',
-  ssl:{
-    ca: fs.readFileSync('./isrgrootx1.pem') 
-  },
+  ...(sslConfig ? { ssl: sslConfig } : {}),
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0,

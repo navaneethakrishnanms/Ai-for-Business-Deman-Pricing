@@ -173,17 +173,22 @@ router.put('/config', requireOwnerAuth, async (req, res, next) => {
       };
     }
 
-    res.apiSuccess({
-      message: 'Guardrails successfully updated',
-      updated: {
-        margin_floor_pct,
-        max_weekly_change_pct,
-        student_price_cap,
-        coverage_target,
-        combo_discount_cap_pct,
-        fairness_mode
+    try {
+      const [rows] = await query('SELECT * FROM guardrails WHERE id = 1');
+      if (rows.length > 0) {
+        const g = rows[0];
+        return res.apiSuccess({
+          margin_floor_pct: parseFloat(g.margin_floor_pct),
+          max_weekly_change_pct: parseFloat(g.max_weekly_change_pct),
+          student_price_cap: parseFloat(g.student_price_cap),
+          coverage_target: parseFloat(g.coverage_target),
+          combo_discount_cap_pct: parseFloat(g.combo_discount_cap_pct),
+          fairness_mode: Boolean(g.fairness_mode)
+        });
       }
-    });
+    } catch (e) {}
+
+    res.apiSuccess(memoryGuardrails);
   } catch (error) {
     next(error);
   }

@@ -118,6 +118,8 @@ router.get('/offers', studentLimiter, studentDataSanitizer, async (req, res, nex
 
     res.apiSuccess({
       budget,
+      single_items: affordableItems,
+      combos: affordableCombos,
       student_offers: {
         combos: affordableCombos,
         items: affordableItems
